@@ -4,8 +4,8 @@ from openai import OpenAI
 # PLACE API KEY HERE
 # Initialize OpenAI client
 
-
-# client = OpenAI(api_key="") # uncomment and place it here
+API_KEY=""
+client = OpenAI(api_key=API_KEY) 
 
 def convert_extracted_to_span_annotated(output_responses_path, text_sample_path, final_output_path, pmid="00000000"):
     import json
