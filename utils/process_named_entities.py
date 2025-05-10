@@ -5,21 +5,23 @@ from openai import OpenAI
 # Initialize OpenAI client
 
 API_KEY=""
-client = OpenAI(api_key=API_KEY) 
+client = OpenAI(api_key=API_KEY)
 
 def convert_extracted_to_span_annotated(output_responses_path, text_sample_path, final_output_path, pmid="00000000"):
     import json
     from collections import defaultdict
 
     def find_all_occurrences(text, substring):
-        """Yield all start indices of substring in text."""
+        """Return all start indices of substring in text."""
         start = 0
+        indices = []
         while True:
             start = text.find(substring, start)
             if start == -1:
                 break
-            yield start
+            indices.append(start)
             start += len(substring)
+        return indices
 
     # Load extracted mentions from GPT output
     with open(output_responses_path, "r", encoding="utf-8") as f:
@@ -56,10 +58,6 @@ def convert_extracted_to_span_annotated(output_responses_path, text_sample_path,
 
     entities = []
 
-    # Pre-index occurrences
-    title_occurrences = defaultdict(list)
-    abstract_occurrences = defaultdict(list)
-
     for class_name, content in data.items():
         if not content or "schemaResponse" not in content or "mentions" not in content["schemaResponse"]:
             continue
@@ -68,31 +66,34 @@ def convert_extracted_to_span_annotated(output_responses_path, text_sample_path,
         label = class_name_to_label.get(class_name, class_name)
 
         for span in mentions:
-            # Precompute and store all match locations
-            if span not in title_occurrences:
-                title_occurrences[span] = list(find_all_occurrences(title, span))
-            if span not in abstract_occurrences:
-                abstract_occurrences[span] = list(find_all_occurrences(abstract, span))
+            found = False
 
-            # Use first available match, in order
-            if title_occurrences[span]:
-                start_idx = title_occurrences[span].pop(0)
-                location = "title"
-            elif abstract_occurrences[span]:
-                start_idx = abstract_occurrences[span].pop(0)
-                location = "abstract"
-            else:
+            title_positions = find_all_occurrences(title, span)
+            for start_idx in title_positions:
+                entity = {
+                    "start_idx": start_idx,
+                    "end_idx": start_idx + len(span) - 1,
+                    "location": "title",
+                    "text_span": span,
+                    "label": label
+                }
+                entities.append(entity)
+                found = True
+
+            abstract_positions = find_all_occurrences(abstract, span)
+            for start_idx in abstract_positions:
+                entity = {
+                    "start_idx": start_idx,
+                    "end_idx": start_idx + len(span) - 1,
+                    "location": "abstract",
+                    "text_span": span,
+                    "label": label
+                }
+                entities.append(entity)
+                found = True
+
+            if not found:
                 print(f"⚠️ Could not find span: '{span}'")
-                continue
-
-            entity = {
-                "start_idx": start_idx,
-                "end_idx": start_idx + len(span) -1,
-                "location": location,
-                "text_span": span,
-                "label": label
-            }
-            entities.append(entity)
 
     # Output in BioNLP required format
     output = {pmid: {"entities": entities}}
@@ -101,6 +102,7 @@ def convert_extracted_to_span_annotated(output_responses_path, text_sample_path,
         json.dump(output, f, indent=4, ensure_ascii=True)
 
     print(f"✅ Final span-based entity output saved to {final_output_path}")
+
 
 
 
@@ -213,19 +215,25 @@ def process_named_entity_classes(
         extracted_labels = []
 
         instructions = f"""
-                 Your task is to extract mentions of type '{class_name}' from the provided biomedical text. Rules are:
-                 * Always annotate full words, including context modifiers when needed (e.g., "Parkinson's disease" not just "disease").
-                 * Do NOT annotate generic terms alone (e.g., “disease”) or overlapping spans.
-                 * Use the longest meaningful mention (e.g., “major depressive disorder” not "depressive").
-                 * Include both full forms and abbreviations if present (“Prostaglandin E2 (PGE2)” → annotate both "Prostaglandin E2" and "PGE2").
-                 * Ignore formatting tags unless the tag is part of a mixed phrase.
-                 * Composite entities (e.g., "short-chain fatty acids") should be labeled as one if contextually correct.
-                 * Choose labels based on context if multiple apply.
-                 * Do NOT annotate adjective forms (e.g., "hypertensive" is not a disease).
-                 * Mentions containing Greek letters (e.g., α, β) must be annotated exactly **as they appear in the text**, even when part of a compound (e.g., "alpha-synuclein (βsyn) inclusions"). These mentions are biologically relevant and must **never** be skipped.
-                 * The extraction MUST be strictly limited to the words present in the text.
-                 * Do not annotate general statistical terms.
-                 """
+        Your task is to extract mentions of type '{class_name}' from the provided biomedical text. Rules are:
+        - Annotate only full, standalone words or word groups. Do NOT extract partial words.
+        - Composite names (e.g., "short-chain fatty acids") must be labeled as one entity if meaningful.
+        - Always extract the **longest valid version** of a mention, including important modifiers.
+        - Do NOT include punctuation at the start/end. Internal punctuation (like hyphens) is allowed.
+        - Avoid overlapping mentions. Each span must be independent.
+
+        ### Abbreviations
+        - Extract both full names **and** abbreviations when they appear together:  
+          e.g., `Prostaglandin E2 (PGE2)` → "Prostaglandin E2" and "PGE2"
+        - Also extract **standalone abbreviations** if they clearly refer to known biomedical terms, **even when the full form is NOT present**:  
+          e.g., "AD", "MDD", "PD", "HC"
+
+        ### Do NOT Extract
+        - Generic terms alone (e.g., “disease”, “patients”).
+        - Morphological variants like adjectives ("hypertensive").
+        - Mentions that overlap with previously extracted spans.
+        """
+
         if annotation_rules:
             instructions += f"""
             * {annotation_rules}
@@ -313,6 +321,9 @@ def process_named_entity_classes(
                 print(f"✅ Entities extraction completed for {class_name}")
             except Exception as e:
                 print(f"❌ Error processing schema prompt for {class_name}: {e}")
+
+
+
 
             generated_prompts[class_name] = {"schema_prompt": schema_prompt}
         

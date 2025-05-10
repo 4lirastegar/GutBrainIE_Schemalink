@@ -9,6 +9,20 @@
                 "label": "anatomical location"
             },
             {
+                "start_idx": 419,
+                "end_idx": 421,
+                "location": "abstract",
+                "text_span": "gut",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 1463,
+                "end_idx": 1465,
+                "location": "abstract",
+                "text_span": "gut",
+                "label": "anatomical location"
+            },
+            {
                 "start_idx": 270,
                 "end_idx": 273,
                 "location": "abstract",
@@ -30,8 +44,148 @@
                 "label": "anatomical location"
             },
             {
+                "start_idx": 641,
+                "end_idx": 645,
+                "location": "abstract",
+                "text_span": "blood",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 1775,
+                "end_idx": 1779,
+                "location": "abstract",
+                "text_span": "blood",
+                "label": "anatomical location"
+            },
+            {
                 "start_idx": 573,
                 "end_idx": 577,
+                "location": "abstract",
+                "text_span": "brain",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 751,
+                "end_idx": 755,
+                "location": "abstract",
+                "text_span": "brain",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 992,
+                "end_idx": 996,
+                "location": "abstract",
+                "text_span": "brain",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 515,
+                "end_idx": 519,
+                "location": "abstract",
+                "text_span": "blood",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 641,
+                "end_idx": 645,
+                "location": "abstract",
+                "text_span": "blood",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 1775,
+                "end_idx": 1779,
+                "location": "abstract",
+                "text_span": "blood",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 650,
+                "end_idx": 653,
+                "location": "abstract",
+                "text_span": "body",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 573,
+                "end_idx": 577,
+                "location": "abstract",
+                "text_span": "brain",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 751,
+                "end_idx": 755,
+                "location": "abstract",
+                "text_span": "brain",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 992,
+                "end_idx": 996,
+                "location": "abstract",
+                "text_span": "brain",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 265,
+                "end_idx": 267,
+                "location": "abstract",
+                "text_span": "gut",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 419,
+                "end_idx": 421,
+                "location": "abstract",
+                "text_span": "gut",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 1463,
+                "end_idx": 1465,
+                "location": "abstract",
+                "text_span": "gut",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 515,
+                "end_idx": 519,
+                "location": "abstract",
+                "text_span": "blood",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 641,
+                "end_idx": 645,
+                "location": "abstract",
+                "text_span": "blood",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 1775,
+                "end_idx": 1779,
+                "location": "abstract",
+                "text_span": "blood",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 573,
+                "end_idx": 577,
+                "location": "abstract",
+                "text_span": "brain",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 751,
+                "end_idx": 755,
+                "location": "abstract",
+                "text_span": "brain",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 992,
+                "end_idx": 996,
                 "location": "abstract",
                 "text_span": "brain",
                 "label": "anatomical location"
@@ -58,6 +212,13 @@
                 "label": "animal"
             },
             {
+                "start_idx": 1604,
+                "end_idx": 1608,
+                "location": "abstract",
+                "text_span": "mouse",
+                "label": "animal"
+            },
+            {
                 "start_idx": 207,
                 "end_idx": 228,
                 "location": "abstract",
@@ -75,6 +236,118 @@
                 "start_idx": 4,
                 "end_idx": 12,
                 "location": "title",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 4,
+                "end_idx": 12,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 69,
+                "end_idx": 77,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 355,
+                "end_idx": 363,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 487,
+                "end_idx": 495,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 624,
+                "end_idx": 632,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 880,
+                "end_idx": 888,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 998,
+                "end_idx": 1006,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 1195,
+                "end_idx": 1203,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 1326,
+                "end_idx": 1334,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 1527,
+                "end_idx": 1535,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 1624,
+                "end_idx": 1632,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 1684,
+                "end_idx": 1692,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 1781,
+                "end_idx": 1789,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 2031,
+                "end_idx": 2039,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 2133,
+                "end_idx": 2141,
+                "location": "abstract",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 2153,
+                "end_idx": 2161,
+                "location": "abstract",
                 "text_span": "endotoxin",
                 "label": "chemical"
             },
@@ -107,6 +380,13 @@
                 "label": "chemical"
             },
             {
+                "start_idx": 1354,
+                "end_idx": 1364,
+                "location": "abstract",
+                "text_span": "\u03b1-synuclein",
+                "label": "chemical"
+            },
+            {
                 "start_idx": 1944,
                 "end_idx": 1955,
                 "location": "abstract",
@@ -135,6 +415,34 @@
                 "label": "DDF"
             },
             {
+                "start_idx": 28,
+                "end_idx": 44,
+                "location": "abstract",
+                "text_span": "neurodegeneration",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 104,
+                "end_idx": 120,
+                "location": "abstract",
+                "text_span": "neurodegeneration",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1847,
+                "end_idx": 1863,
+                "location": "abstract",
+                "text_span": "neurodegeneration",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 2086,
+                "end_idx": 2102,
+                "location": "abstract",
+                "text_span": "neurodegeneration",
+                "label": "DDF"
+            },
+            {
                 "start_idx": 419,
                 "end_idx": 434,
                 "location": "abstract",
@@ -149,8 +457,22 @@
                 "label": "DDF"
             },
             {
+                "start_idx": 1107,
+                "end_idx": 1117,
+                "location": "abstract",
+                "text_span": "gum disease",
+                "label": "DDF"
+            },
+            {
                 "start_idx": 453,
                 "end_idx": 477,
+                "location": "abstract",
+                "text_span": "neurodegenerative disease",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 954,
+                "end_idx": 978,
                 "location": "abstract",
                 "text_span": "neurodegenerative disease",
                 "label": "DDF"
@@ -163,20 +485,6 @@
                 "label": "DDF"
             },
             {
-                "start_idx": 723,
-                "end_idx": 737,
-                "location": "abstract",
-                "text_span": "memory deficits",
-                "label": "DDF"
-            },
-            {
-                "start_idx": 743,
-                "end_idx": 764,
-                "location": "abstract",
-                "text_span": "loss of brain synapses",
-                "label": "DDF"
-            },
-            {
                 "start_idx": 1031,
                 "end_idx": 1049,
                 "location": "abstract",
@@ -184,17 +492,10 @@
                 "label": "DDF"
             },
             {
-                "start_idx": 1076,
-                "end_idx": 1094,
+                "start_idx": 1224,
+                "end_idx": 1242,
                 "location": "abstract",
-                "text_span": "systemic infections",
-                "label": "DDF"
-            },
-            {
-                "start_idx": 1107,
-                "end_idx": 1117,
-                "location": "abstract",
-                "text_span": "gum disease",
+                "text_span": "Alzheimer's disease",
                 "label": "DDF"
             },
             {
@@ -205,24 +506,10 @@
                 "label": "DDF"
             },
             {
-                "start_idx": 1354,
-                "end_idx": 1375,
+                "start_idx": 1489,
+                "end_idx": 1507,
                 "location": "abstract",
-                "text_span": "\u03b1-synuclein production",
-                "label": "DDF"
-            },
-            {
-                "start_idx": 816,
-                "end_idx": 826,
-                "location": "abstract",
-                "text_span": "aggregation",
-                "label": "DDF"
-            },
-            {
-                "start_idx": 1405,
-                "end_idx": 1432,
-                "location": "abstract",
-                "text_span": "loss of dopaminergic neurons",
+                "text_span": "Parkinson's disease",
                 "label": "DDF"
             },
             {
@@ -230,27 +517,6 @@
                 "end_idx": 1677,
                 "location": "abstract",
                 "text_span": "amyotrophic lateral sclerosis",
-                "label": "DDF"
-            },
-            {
-                "start_idx": 1703,
-                "end_idx": 1720,
-                "location": "abstract",
-                "text_span": "TDP-43 aggregation",
-                "label": "DDF"
-            },
-            {
-                "start_idx": 832,
-                "end_idx": 845,
-                "location": "abstract",
-                "text_span": "neuropathology",
-                "label": "DDF"
-            },
-            {
-                "start_idx": 1742,
-                "end_idx": 1760,
-                "location": "abstract",
-                "text_span": "Peripheral diseases",
                 "label": "DDF"
             },
             {
@@ -275,11 +541,32 @@
                 "label": "DDF"
             },
             {
-                "start_idx": 28,
-                "end_idx": 44,
+                "start_idx": 2171,
+                "end_idx": 2187,
                 "location": "abstract",
-                "text_span": "neurodegeneration",
+                "text_span": "neuroinflammation",
                 "label": "DDF"
+            },
+            {
+                "start_idx": 1148,
+                "end_idx": 1151,
+                "location": "abstract",
+                "text_span": "APOE",
+                "label": "gene"
+            },
+            {
+                "start_idx": 1162,
+                "end_idx": 1165,
+                "location": "abstract",
+                "text_span": "APOE",
+                "label": "gene"
+            },
+            {
+                "start_idx": 1162,
+                "end_idx": 1166,
+                "location": "abstract",
+                "text_span": "APOE4",
+                "label": "gene"
             },
             {
                 "start_idx": 1354,
@@ -296,10 +583,10 @@
                 "label": "gene"
             },
             {
-                "start_idx": 532,
+                "start_idx": 524,
                 "end_idx": 537,
                 "location": "abstract",
-                "text_span": "humans",
+                "text_span": "healthy humans",
                 "label": "human"
             },
             {

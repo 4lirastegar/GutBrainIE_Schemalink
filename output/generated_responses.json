@@ -7,6 +7,13 @@
                 "skin",
                 "blood",
                 "brain",
+                "blood",
+                "body",
+                "brain",
+                "gut",
+                "blood",
+                "brain",
+                "intestine",
                 "substantia nigra"
             ]
         }
@@ -15,7 +22,8 @@
         "schemaResponse": {
             "mentions": [
                 "rodents",
-                "mice"
+                "mice",
+                "mouse"
             ]
         }
     },
@@ -40,6 +48,7 @@
                 "LPS",
                 "amyloid \u03b2",
                 "tau",
+                "\u03b1-synuclein",
                 "nitric oxide",
                 "oxidants",
                 "cytokines"
@@ -64,23 +73,14 @@
                 "gum disease",
                 "neurodegenerative disease",
                 "systemic inflammation",
-                "memory deficits",
-                "loss of brain synapses",
                 "Alzheimer's disease",
-                "systemic infections",
-                "gum disease",
                 "Parkinson's disease",
-                "\u03b1-synuclein production",
-                "aggregation",
-                "loss of dopaminergic neurons",
                 "amyotrophic lateral sclerosis",
-                "TDP-43 aggregation",
-                "neuropathology",
-                "Peripheral diseases",
+                "peripheral diseases",
                 "sepsis",
                 "AIDS",
                 "liver failure",
-                "neurodegeneration"
+                "neuroinflammation"
             ]
         }
     },
@@ -97,8 +97,8 @@
     "Gene": {
         "schemaResponse": {
             "mentions": [
-                "amyloid \u03b2",
-                "tau",
+                "APOE",
+                "APOE4",
                 "\u03b1-synuclein",
                 "TDP-43"
             ]
@@ -107,7 +107,7 @@
     "Human": {
         "schemaResponse": {
             "mentions": [
-                "humans",
+                "healthy humans",
                 "patients"
             ]
         }
