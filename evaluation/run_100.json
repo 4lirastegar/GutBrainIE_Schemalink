@@ -1,0 +1,125 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": [
+                "Heart Brake lncRNA 1",
+                "HBL1",
+                "LINC00458",
+                "lncRNA-ES3",
+                "ES3"
+            ]
+        },
+        "attributeResponse": {
+            "LncRNAAttributes": [
+                {
+                    "label": "Heart Brake lncRNA 1",
+                    "synonyms": [
+                        "HBL1"
+                    ]
+                },
+                {
+                    "label": "LINC00458",
+                    "synonyms": [
+                        "lncRNA-ES3",
+                        "ES3"
+                    ]
+                }
+            ]
+        }
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": [
+                "immune response",
+                "apoptosis"
+            ]
+        },
+        "attributeResponse": {
+            "GOAttributes": [
+                {
+                    "label": "immune response",
+                    "synonyms": [
+                        "immune defence",
+                        "immune function"
+                    ]
+                },
+                {
+                    "label": "apoptosis",
+                    "synonyms": [
+                        "programmed cell death",
+                        "cell suicide",
+                        "PCD"
+                    ]
+                }
+            ]
+        }
+    },
+    "LncRNAToGORelationship": {
+        "LncRNAToGORelationshipRelationships": [
+            {
+                "subject": "Heart Brake lncRNA 1",
+                "object": "immune response",
+                "predicate": "participates_in"
+            },
+            {
+                "subject": "Heart Brake lncRNA 1",
+                "object": "apoptosis",
+                "predicate": "participates_in"
+            }
+        ]
+    }
+}

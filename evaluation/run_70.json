@@ -1,0 +1,136 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "substance abuse"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "substance abuse",
+                    "synonyms": [
+                        "substance use disorder",
+                        "drug abuse",
+                        "addiction",
+                        "substance dependence"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "anxiety disorders",
+                "object": "depressive disorders",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "anxiety disorders",
+                "object": "attention deficit hyperactivity disorders",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "anxiety disorders",
+                "object": "oppositional defiant and conduct disorders",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "anxiety disorders",
+                "object": "substance abuse",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "depressive disorders",
+                "object": "attention deficit hyperactivity disorders",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "depressive disorders",
+                "object": "oppositional defiant and conduct disorders",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "depressive disorders",
+                "object": "substance abuse",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "attention deficit hyperactivity disorders",
+                "object": "oppositional defiant and conduct disorders",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "attention deficit hyperactivity disorders",
+                "object": "substance abuse",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "oppositional defiant and conduct disorders",
+                "object": "substance abuse",
+                "predicate": "causally_related_to"
+            }
+        ]
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "food protein-induced enterocolitis syndrome"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "Food Protein-Induced Enterocolitis Syndrome",
+                    "synonyms": [
+                        "FPIES"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "food protein-induced enterocolitis syndrome",
+                "object": "allergic disorders",
+                "predicate": "causally_related_to"
+            }
+        ]
+    }
+}

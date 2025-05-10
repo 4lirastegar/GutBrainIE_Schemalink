@@ -1,0 +1,368 @@
+{
+    "AnatomicalLocation": {
+        "dependencies": []
+    },
+    "Animal": {
+        "dependencies": []
+    },
+    "BiomedicalTechnique": {
+        "dependencies": []
+    },
+    "Bacteria": {
+        "dependencies": []
+    },
+    "Chemical": {
+        "dependencies": []
+    },
+    "Metabolites": {
+        "dependencies": []
+    },
+    "DietarySupplement": {
+        "dependencies": []
+    },
+    "DiseaseDisorderOrFinding": {
+        "dependencies": []
+    },
+    "Drug": {
+        "dependencies": []
+    },
+    "Food": {
+        "dependencies": []
+    },
+    "Gene": {
+        "dependencies": []
+    },
+    "Human": {
+        "dependencies": []
+    },
+    "Microbiome": {
+        "dependencies": []
+    },
+    "StatisticalTechnique": {
+        "dependencies": []
+    },
+    "AnatomicalLocationHumanRelationship": {
+        "dependencies": [
+            "AnatomicalLocation",
+            "Human"
+        ]
+    },
+    "AnatomicalLocationAnimalRelationship": {
+        "dependencies": [
+            "AnatomicalLocation",
+            "Animal"
+        ]
+    },
+    "BacteriaBacteriaRelationship": {
+        "dependencies": [
+            "Bacterium",
+            "Bacterium"
+        ]
+    },
+    "BacteriaChemicalRelationship": {
+        "dependencies": [
+            "Bacterium",
+            "Chemical"
+        ]
+    },
+    "BacteriaDrugRelationship": {
+        "dependencies": [
+            "Bacterium",
+            "Drug"
+        ]
+    },
+    "BacteriaDDFRelationship": {
+        "dependencies": [
+            "Bacterium",
+            "DDF"
+        ]
+    },
+    "BacteriaGeneRelationship": {
+        "dependencies": [
+            "Bacterium",
+            "Gene"
+        ]
+    },
+    "BacteriaHumanRelationship": {
+        "dependencies": [
+            "Bacterium",
+            "Human"
+        ]
+    },
+    "BacteriaAnimalRelationship": {
+        "dependencies": [
+            "Bacterium",
+            "Animal"
+        ]
+    },
+    "BacteriaMicrobiomeRelationship": {
+        "dependencies": [
+            "Bacterium",
+            "Microbiome"
+        ]
+    },
+    "ChemicalAnatomicalLocationRelationship": {
+        "dependencies": [
+            "Chemical",
+            "AnatomicalLocation"
+        ]
+    },
+    "ChemicalAnimalRelationship": {
+        "dependencies": [
+            "Chemical",
+            "Animal"
+        ]
+    },
+    "ChemicalChemicalRelationship": {
+        "dependencies": [
+            "Chemical",
+            "Chemical"
+        ]
+    },
+    "ChemicalMicrobiomeRelationship": {
+        "dependencies": [
+            "Chemical",
+            "Microbiome"
+        ]
+    },
+    "ChemicalBacteriaRelationship": {
+        "dependencies": [
+            "Chemical",
+            "Bacterium"
+        ]
+    },
+    "DietarySupplementBacteriaRelationship": {
+        "dependencies": [
+            "DietarySupplement",
+            "Bacterium"
+        ]
+    },
+    "DietarySupplementMicrobiomeRelationship": {
+        "dependencies": [
+            "DietarySupplement",
+            "Microbiome"
+        ]
+    },
+    "DrugBacteriaRelationship": {
+        "dependencies": [
+            "Drug",
+            "Bacterium"
+        ]
+    },
+    "DrugMicrobiomeRelationship": {
+        "dependencies": [
+            "Drug",
+            "Microbiome"
+        ]
+    },
+    "FoodBacteriaRelationship": {
+        "dependencies": [
+            "Food",
+            "Bacterium"
+        ]
+    },
+    "FoodMicrobiomeRelationship": {
+        "dependencies": [
+            "Food",
+            "Microbiome"
+        ]
+    },
+    "ChemicalDDFRelationship": {
+        "dependencies": [
+            "Chemical",
+            "DDF"
+        ]
+    },
+    "DietarySupplementDDFRelationship": {
+        "dependencies": [
+            "DietarySupplement",
+            "DDF"
+        ]
+    },
+    "FoodDDFRelationship": {
+        "dependencies": [
+            "Food",
+            "DDF"
+        ]
+    },
+    "ChemicalGeneRelationship": {
+        "dependencies": [
+            "Chemical",
+            "Gene"
+        ]
+    },
+    "DietarySupplementGeneRelationship": {
+        "dependencies": [
+            "DietarySupplement",
+            "Gene"
+        ]
+    },
+    "DrugGeneRelationship": {
+        "dependencies": [
+            "Drug",
+            "Gene"
+        ]
+    },
+    "FoodGeneRelationship": {
+        "dependencies": [
+            "Food",
+            "Gene"
+        ]
+    },
+    "ChemicalHumanRelationship": {
+        "dependencies": [
+            "Chemical",
+            "Human"
+        ]
+    },
+    "DietarySupplementHumanRelationship": {
+        "dependencies": [
+            "DietarySupplement",
+            "Human"
+        ]
+    },
+    "DietarySupplementAnimalRelationship": {
+        "dependencies": [
+            "DietarySupplement",
+            "Animal"
+        ]
+    },
+    "DrugHumanRelationship": {
+        "dependencies": [
+            "Drug",
+            "Human"
+        ]
+    },
+    "DrugAnimalRelationship": {
+        "dependencies": [
+            "Drug",
+            "Animal"
+        ]
+    },
+    "FoodHumanRelationship": {
+        "dependencies": [
+            "Food",
+            "Human"
+        ]
+    },
+    "FoodAnimalRelationship": {
+        "dependencies": [
+            "Food",
+            "Animal"
+        ]
+    },
+    "DDFAnatomicalLocationRelationship": {
+        "dependencies": [
+            "DDF",
+            "AnatomicalLocation"
+        ]
+    },
+    "DDFBacteriaRelationship": {
+        "dependencies": [
+            "DDF",
+            "Bacterium"
+        ]
+    },
+    "DDFMicrobiomeRelationship": {
+        "dependencies": [
+            "DDF",
+            "Microbiome"
+        ]
+    },
+    "DDFChemicalRelationship": {
+        "dependencies": [
+            "DDF",
+            "Chemical"
+        ]
+    },
+    "DDFDDFRelationship": {
+        "dependencies": [
+            "DDF",
+            "DDF"
+        ]
+    },
+    "DDFHumanRelationship": {
+        "dependencies": [
+            "DDF",
+            "Human"
+        ]
+    },
+    "DDFAnimalRelationship": {
+        "dependencies": [
+            "DDF",
+            "Animal"
+        ]
+    },
+    "DrugChemicalRelationship": {
+        "dependencies": [
+            "Drug",
+            "Chemical"
+        ]
+    },
+    "DrugDrugRelationship": {
+        "dependencies": [
+            "Drug",
+            "Drug"
+        ]
+    },
+    "DrugDDFRelationship": {
+        "dependencies": [
+            "Drug",
+            "DDF"
+        ]
+    },
+    "HumanBioMedicalTechniqueRelationship": {
+        "dependencies": [
+            "Human",
+            "BiomedicalTechnique"
+        ]
+    },
+    "AnimalBioMedicalTechniqueRelationship": {
+        "dependencies": [
+            "Animal",
+            "BiomedicalTechnique"
+        ]
+    },
+    "MicrobiomeBioMedicalTechniqueRelationship": {
+        "dependencies": [
+            "Microbiome",
+            "BiomedicalTechnique"
+        ]
+    },
+    "MicrobiomeAnatomicalLocationRelationship": {
+        "dependencies": [
+            "Microbiome",
+            "AnatomicalLocation"
+        ]
+    },
+    "MicrobiomeHumanRelationship": {
+        "dependencies": [
+            "Microbiome",
+            "Human"
+        ]
+    },
+    "MicrobiomeAnimalRelationship": {
+        "dependencies": [
+            "Microbiome",
+            "Animal"
+        ]
+    },
+    "MicrobiomeGeneRelationship": {
+        "dependencies": [
+            "Microbiome",
+            "Gene"
+        ]
+    },
+    "MicrobiomeDDFRelationship": {
+        "dependencies": [
+            "Microbiome",
+            "DDF"
+        ]
+    },
+    "MicrobiomeMicrobiomeRelationship": {
+        "dependencies": [
+            "Microbiome",
+            "Microbiome"
+        ]
+    }
+}

@@ -1,0 +1,338 @@
+{
+    "AnatomicalLocation": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "AnatomicalLocation_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    },
+    "Animal": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "Animal_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    },
+    "BiomedicalTechnique": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "BiomedicalTechnique_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    },
+    "Bacteria": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "Bacteria_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    },
+    "Chemical": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "Chemical_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    },
+    "Metabolites": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "Metabolites_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    },
+    "DietarySupplement": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "DietarySupplement_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    },
+    "DiseaseDisorderOrFinding": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "DiseaseDisorderOrFinding_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    },
+    "Drug": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "Drug_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    },
+    "Food": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "Food_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    },
+    "Gene": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "Gene_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    },
+    "Human": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "Human_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    },
+    "Microbiome": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "Microbiome_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    },
+    "StatisticalTechnique": {
+        "schemaResponseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "StatisticalTechnique_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "mentions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "mentions"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    }
+}

@@ -1,0 +1,533 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "BACE1",
+                "TDP-43",
+                "FUS",
+                "UCHL1"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "BACE1",
+                    "synonyms": [
+                        "beta-secretase 1"
+                    ],
+                    "sequence": "No sequence provided"
+                },
+                {
+                    "label": "TDP-43",
+                    "synonyms": [
+                        "TAR DNA-binding protein 43"
+                    ],
+                    "sequence": "No sequence provided"
+                },
+                {
+                    "label": "FUS",
+                    "synonyms": [
+                        "Fused in Sarcoma"
+                    ],
+                    "sequence": "No sequence provided"
+                },
+                {
+                    "label": "UCHL1",
+                    "synonyms": [
+                        "Ubiquitin C-terminal hydrolase L1"
+                    ],
+                    "sequence": "No sequence provided"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "BACE1",
+                "UCHL1",
+                "HTT",
+                "BDNF",
+                "FUS"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "BACE1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "beta-secretase 1"
+                    ]
+                },
+                {
+                    "label": "UCHL1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Ubiquitin carboxyl-terminal hydrolase isozyme L1",
+                        "PGP9.5"
+                    ]
+                },
+                {
+                    "label": "HTT",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Huntingtin"
+                    ]
+                },
+                {
+                    "label": "BDNF",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Brain-derived neurotrophic factor"
+                    ]
+                },
+                {
+                    "label": "FUS",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Fused in sarcoma"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "BACE1"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "BACE1",
+                    "synonyms": [
+                        "beta-secretase 1"
+                    ]
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": [
+                "BACE1-AS",
+                "NEAT1_2",
+                "MALAT1",
+                "UCHL1-AS1",
+                "HTT-AS",
+                "BDNF-AS",
+                "HAR1",
+                "FMR1-AS1",
+                "FMR6",
+                "SCAANT1-AS",
+                "ATXN8OS"
+            ]
+        },
+        "attributeResponse": {
+            "LncRNAAttributes": [
+                {
+                    "label": "BACE1-AS",
+                    "synonyms": []
+                },
+                {
+                    "label": "NEAT1_2",
+                    "synonyms": []
+                },
+                {
+                    "label": "MALAT1",
+                    "synonyms": []
+                },
+                {
+                    "label": "UCHL1-AS1",
+                    "synonyms": []
+                },
+                {
+                    "label": "HTT-AS",
+                    "synonyms": []
+                },
+                {
+                    "label": "BDNF-AS",
+                    "synonyms": []
+                },
+                {
+                    "label": "HAR1",
+                    "synonyms": []
+                },
+                {
+                    "label": "FMR1-AS1",
+                    "synonyms": []
+                },
+                {
+                    "label": "FMR6",
+                    "synonyms": []
+                },
+                {
+                    "label": "SCAANT1-AS",
+                    "synonyms": []
+                },
+                {
+                    "label": "ATXN8OS",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "ubiquitin"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "ubiquitin",
+                    "synonyms": [
+                        "UB",
+                        "Ubiquitin C",
+                        "RPS27A",
+                        "UBB",
+                        "UBC"
+                    ]
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "Alzheimer's Disease",
+                "Frontotemporal dementia",
+                "Amyotrophic lateral sclerosis",
+                "Parkinson's Disease",
+                "Huntington's Disease",
+                "Fragile X syndrome",
+                "Fragile X tremor/ataxia syndrome",
+                "spinocerebellar ataxia 7",
+                "spinocerebellar ataxia 8"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "Alzheimer's Disease",
+                    "synonyms": [
+                        "AD"
+                    ]
+                },
+                {
+                    "label": "Frontotemporal dementia",
+                    "synonyms": [
+                        "FTD"
+                    ]
+                },
+                {
+                    "label": "Amyotrophic lateral sclerosis",
+                    "synonyms": [
+                        "ALS",
+                        "Lou Gehrig's Disease"
+                    ]
+                },
+                {
+                    "label": "Parkinson's Disease",
+                    "synonyms": [
+                        "PD"
+                    ]
+                },
+                {
+                    "label": "Huntington's Disease",
+                    "synonyms": [
+                        "HD",
+                        "Huntington's Chorea"
+                    ]
+                },
+                {
+                    "label": "Fragile X syndrome",
+                    "synonyms": [
+                        "FXS",
+                        "Martin-Bell Syndrome"
+                    ]
+                },
+                {
+                    "label": "Fragile X tremor/ataxia syndrome",
+                    "synonyms": [
+                        "FXTAS"
+                    ]
+                },
+                {
+                    "label": "spinocerebellar ataxia 7",
+                    "synonyms": [
+                        "SCA7"
+                    ]
+                },
+                {
+                    "label": "spinocerebellar ataxia 8",
+                    "synonyms": [
+                        "SCA8"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": [
+                "regulation of mRNA stability",
+                "chromatin remodeling"
+            ]
+        },
+        "attributeResponse": {
+            "GOAttributes": [
+                {
+                    "label": "regulation of mRNA stability",
+                    "synonyms": []
+                },
+                {
+                    "label": "chromatin remodeling",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "BACE1",
+                "object": "BACE1",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "TDP-43",
+                "object": "FUS",
+                "predicate": "gene_product_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "BACE1",
+                "object": "BACE1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "UCHL1",
+                "object": "UCHL1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "FUS",
+                "object": "FUS",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "Frontotemporal dementia",
+                "object": "Amyotrophic lateral sclerosis",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "BACE1",
+                "object": "Alzheimer's Disease",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "TDP-43",
+                "object": "Frontotemporal dementia",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "TDP-43",
+                "object": "Amyotrophic lateral sclerosis",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "FUS",
+                "object": "Frontotemporal dementia",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "FUS",
+                "object": "Amyotrophic lateral sclerosis",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "UCHL1",
+                "object": "Parkinson's Disease",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "LncRNAToDiseaseRelationship": {
+        "LncRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "BACE1-AS",
+                "object": "Alzheimer's Disease",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "NEAT1_2",
+                "object": "Frontotemporal dementia",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "MALAT1",
+                "object": "Frontotemporal dementia",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "NEAT1_2",
+                "object": "Amyotrophic lateral sclerosis",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "MALAT1",
+                "object": "Amyotrophic lateral sclerosis",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "UCHL1-AS1",
+                "object": "Parkinson's Disease",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "HTT-AS",
+                "object": "Huntington's Disease",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "BDNF-AS",
+                "object": "Huntington's Disease",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "HAR1",
+                "object": "Huntington's Disease",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "FMR1-AS1",
+                "object": "Fragile X syndrome",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "FMR1-AS1",
+                "object": "Fragile X tremor/ataxia syndrome",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "FMR6",
+                "object": "Fragile X syndrome",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "FMR6",
+                "object": "Fragile X tremor/ataxia syndrome",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "SCAANT1-AS",
+                "object": "spinocerebellar ataxia 7",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "ATXN8OS",
+                "object": "spinocerebellar ataxia 8",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "LncRNAToGORelationship": {
+        "LncRNAToGORelationshipRelationships": [
+            {
+                "subject": "BACE1-AS",
+                "object": "regulation of mRNA stability",
+                "predicate": "participates_in"
+            },
+            {
+                "subject": "NEAT1_2",
+                "object": "chromatin remodeling",
+                "predicate": "participates_in"
+            },
+            {
+                "subject": "MALAT1",
+                "object": "chromatin remodeling",
+                "predicate": "participates_in"
+            }
+        ]
+    },
+    "LncRNAToGeneRelationship": {
+        "LncRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "BACE1-AS",
+                "object": "BACE1",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "UCHL1-AS1",
+                "object": "UCHL1",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "LncRNAToMRNARelationship": {
+        "LncRNAToMRNARelationshipRelationships": [
+            {
+                "subject": "BACE1-AS",
+                "object": "BACE1",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "MRNAToChemicalRelationship": {
+        "MRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "BACE1",
+                "object": "ubiquitin",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "LncRNAToChemicalRelationship": {
+        "LncRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "UCHL1-AS1",
+                "object": "ubiquitin",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    }
+}

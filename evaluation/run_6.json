@@ -1,0 +1,477 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "BCL2",
+                "KIT",
+                "MYC"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "BCL2",
+                    "synonyms": [
+                        "B-cell lymphoma 2"
+                    ],
+                    "sequence": "MDTHPASDASTSTL"
+                },
+                {
+                    "label": "KIT",
+                    "synonyms": [
+                        "CD117",
+                        "C-KIT",
+                        "Mast/stem cell growth factor receptor",
+                        "SCFR"
+                    ],
+                    "sequence": "MKTVTENIQFENESF"
+                },
+                {
+                    "label": "MYC",
+                    "synonyms": [
+                        "C-MYC",
+                        "BHLHE39",
+                        "Class E basic helix-loop-helix protein 39"
+                    ],
+                    "sequence": "MPLNVSFANVPVDMS"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "BCL2",
+                "KIT",
+                "MYC"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "BCL2",
+                    "geneType": "oncogene",
+                    "synonyms": [
+                        "B-cell lymphoma 2"
+                    ]
+                },
+                {
+                    "label": "KIT",
+                    "geneType": "oncogene",
+                    "synonyms": [
+                        "CD117",
+                        "c-Kit",
+                        "stem cell factor receptor"
+                    ]
+                },
+                {
+                    "label": "MYC",
+                    "geneType": "oncogene",
+                    "synonyms": [
+                        "c-Myc"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "RAS",
+                "BCL2",
+                "KIT",
+                "MYC",
+                "KIT"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "RAS",
+                    "synonyms": [
+                        "HRAS",
+                        "KRAS",
+                        "NRAS"
+                    ]
+                },
+                {
+                    "label": "BCL2",
+                    "synonyms": [
+                        "B-cell lymphoma 2"
+                    ]
+                },
+                {
+                    "label": "KIT",
+                    "synonyms": [
+                        "CD117",
+                        "c-Kit"
+                    ]
+                },
+                {
+                    "label": "MYC",
+                    "synonyms": [
+                        "c-Myc",
+                        "MYCC"
+                    ]
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "miR-15a",
+                "miR-16-1",
+                "miR-143",
+                "miR-145",
+                "let-7",
+                "miR-21",
+                "miR-155",
+                "miR-17-19b-1",
+                "miR-221",
+                "miR-222",
+                "miR-146"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "miR-15a",
+                    "miRNAfamily": "miR-15",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-16-1",
+                    "miRNAfamily": "miR-16",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-143",
+                    "miRNAfamily": "miR-143",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-145",
+                    "miRNAfamily": "miR-145",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "let-7",
+                    "miRNAfamily": "let-7",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-21",
+                    "miRNAfamily": "miR-21",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-155",
+                    "miRNAfamily": "miR-155",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-17-19b-1",
+                    "miRNAfamily": "miR-17-19b",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-221",
+                    "miRNAfamily": "miR-221",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-222",
+                    "miRNAfamily": "miR-222",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-146",
+                    "miRNAfamily": "miR-146",
+                    "sequence": "",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "cancer",
+                "tumor",
+                "papillary thyroid carcinoma"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "cancer",
+                    "synonyms": []
+                },
+                {
+                    "label": "tumor",
+                    "synonyms": []
+                },
+                {
+                    "label": "papillary thyroid carcinoma",
+                    "synonyms": []
+                },
+                {
+                    "label": "tumor",
+                    "synonyms": [
+                        "tumors"
+                    ]
+                },
+                {
+                    "label": "cancer",
+                    "synonyms": [
+                        "cancer progression"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "BCL2",
+                "object": "BCL2",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "KIT",
+                "object": "KIT",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "MYC",
+                "object": "MYC",
+                "predicate": "gene_product_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "BCL2",
+                "object": "BCL2",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "KIT",
+                "object": "KIT",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "MYC",
+                "object": "MYC",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "MiRNAToGeneRelationship": {
+        "MiRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "miR-15a",
+                "object": "BCL2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-16-1",
+                "object": "BCL2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-143",
+                "object": "BCL2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-145",
+                "object": "BCL2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "let-7",
+                "object": "BCL2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-21",
+                "object": "BCL2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-21",
+                "object": "KIT",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-21",
+                "object": "MYC",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-155",
+                "object": "BCL2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-155",
+                "object": "KIT",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-155",
+                "object": "MYC",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-17-19b-1",
+                "object": "MYC",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "miR-221",
+                "object": "KIT",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-222",
+                "object": "KIT",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-146",
+                "object": "KIT",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "MiRNAToDiseaseRelationship": {
+        "MiRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "miR-15a",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-16-1",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-143",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-145",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "let-7",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-21",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-155",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-221",
+                "object": "papillary thyroid carcinoma",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-222",
+                "object": "papillary thyroid carcinoma",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-146",
+                "object": "papillary thyroid carcinoma",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "tumor",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "papillary thyroid carcinoma",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "KIT",
+                "object": "papillary thyroid carcinoma",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": []
+    }
+}

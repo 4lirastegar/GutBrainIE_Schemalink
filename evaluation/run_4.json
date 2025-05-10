@@ -1,0 +1,139 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "PMP-22"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "PMP-22",
+                    "synonyms": [
+                        "peripheral myelin protein-22",
+                        "pmp-22"
+                    ],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "pmp-22",
+                "PMP-22"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "pmp-22",
+                    "synonyms": [
+                        "PMP-22"
+                    ]
+                },
+                {
+                    "label": "PMP-22",
+                    "synonyms": [
+                        "pmp-22"
+                    ]
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "Charcot-Marie-Tooth disease",
+                "neuropathy"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "Charcot-Marie-Tooth disease",
+                    "synonyms": [
+                        "CMT1",
+                        "CMT1A"
+                    ]
+                },
+                {
+                    "label": "neuropathy",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "Charcot-Marie-Tooth disease",
+                "object": "neuropathy",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "PMP-22",
+                "object": "Charcot-Marie-Tooth disease",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "PMP-22",
+                "object": "neuropathy",
+                "predicate": "causally_related_to"
+            }
+        ]
+    }
+}

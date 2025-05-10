@@ -1,0 +1,215 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "androgen receptor",
+                "GATA3"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "androgen receptor",
+                    "synonyms": [
+                        "AR"
+                    ],
+                    "sequence": "DIEFRVLH"
+                },
+                {
+                    "label": "GATA3",
+                    "synonyms": [
+                        "GATA binding protein 3"
+                    ],
+                    "sequence": "MSPQLWSELC"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "GATA3"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "GATA3",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "GATA-3"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "prostate cancer",
+                "breast cancer",
+                "systemic lupus erythematosus",
+                "multiple sclerosis",
+                "rheumatoid arthritis",
+                "inflammatory bowel disease",
+                "type 1 diabetes",
+                "juvenile idiopathic arthritis",
+                "celiac disease"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "prostate cancer",
+                    "synonyms": []
+                },
+                {
+                    "label": "breast cancer",
+                    "synonyms": []
+                },
+                {
+                    "label": "systemic lupus erythematosus",
+                    "synonyms": []
+                },
+                {
+                    "label": "multiple sclerosis",
+                    "synonyms": []
+                },
+                {
+                    "label": "rheumatoid arthritis",
+                    "synonyms": []
+                },
+                {
+                    "label": "inflammatory bowel disease",
+                    "synonyms": []
+                },
+                {
+                    "label": "type 1 diabetes",
+                    "synonyms": []
+                },
+                {
+                    "label": "juvenile idiopathic arthritis",
+                    "synonyms": []
+                },
+                {
+                    "label": "celiac disease",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "GATA3",
+                "object": "GATA3",
+                "predicate": "gene_product_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "GATA3",
+                "object": "GATA3",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "systemic lupus erythematosus",
+                "object": "multiple sclerosis",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "systemic lupus erythematosus",
+                "object": "rheumatoid arthritis",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "systemic lupus erythematosus",
+                "object": "inflammatory bowel disease",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "systemic lupus erythematosus",
+                "object": "type 1 diabetes",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "systemic lupus erythematosus",
+                "object": "juvenile idiopathic arthritis",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "systemic lupus erythematosus",
+                "object": "celiac disease",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "androgen receptor",
+                "object": "prostate cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "GATA3",
+                "object": "breast cancer",
+                "predicate": "causally_related_to"
+            }
+        ]
+    }
+}

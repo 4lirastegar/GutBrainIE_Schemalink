@@ -1,0 +1,136 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "SPEN"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "SPEN",
+                    "synonyms": [
+                        "spen protein",
+                        "SHARP"
+                    ],
+                    "sequence": "DIEFRVLH"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": [
+                "Xist"
+            ]
+        },
+        "attributeResponse": {
+            "LncRNAAttributes": [
+                {
+                    "label": "Xist",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "X1"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "X1",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": [
+                "cell differentiation",
+                "cell growth"
+            ]
+        },
+        "attributeResponse": {
+            "GOAttributes": [
+                {
+                    "label": "cell differentiation",
+                    "synonyms": []
+                },
+                {
+                    "label": "cell growth",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "LncRNAToGORelationship": {
+        "LncRNAToGORelationshipRelationships": [
+            {
+                "subject": "Xist",
+                "object": "cell differentiation",
+                "predicate": "participates_in"
+            },
+            {
+                "subject": "Xist",
+                "object": "cell growth",
+                "predicate": "participates_in"
+            }
+        ]
+    },
+    "LncRNAToChemicalRelationship": {
+        "LncRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "Xist",
+                "object": "X1",
+                "predicate": "interacts_with"
+            }
+        ]
+    }
+}

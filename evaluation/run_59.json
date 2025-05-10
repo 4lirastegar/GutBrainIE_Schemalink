@@ -1,0 +1,169 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "LIN28A"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "LIN28A",
+                    "synonyms": [
+                        ""
+                    ],
+                    "sequence": "DIEFRVLH"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "LIN28A"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "LIN28A",
+                    "geneType": "RNA binding protein",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "miR-7",
+                "miR-9",
+                "let-7"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "miR-7",
+                    "miRNAfamily": "let-7",
+                    "sequence": "",
+                    "synonyms": [
+                        "miRNA-7"
+                    ]
+                },
+                {
+                    "label": "miR-9",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": [
+                        "miRNA-9"
+                    ]
+                },
+                {
+                    "label": "let-7",
+                    "miRNAfamily": "let-7",
+                    "sequence": "",
+                    "synonyms": [
+                        "miRNA-let-7"
+                    ]
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "uridylation"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "uridylation",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "LIN28A",
+                "object": "LIN28A",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "LIN28A",
+                "object": "LIN28A",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "MiRNAToGeneRelationship": {
+        "MiRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "miR-9",
+                "object": "LIN28A",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": []
+    },
+    "MiRNAToChemicalRelationship": {
+        "MiRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "miR-9",
+                "object": "uridylation",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    }
+}

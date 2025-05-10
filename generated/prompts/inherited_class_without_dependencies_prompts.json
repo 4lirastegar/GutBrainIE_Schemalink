@@ -1,0 +1,6 @@
+{
+    "Athlete": {
+        "schemaPrompts": "The schema is titled 'Medical center Template' and described as follows: A template for a medical center for the Olympic games in Paris. Extract all instances of class 'Athlete' from the provided text. A 'Athlete' is defined as: A person who is proficient in sports and other forms of physical exercise.Return a list of all SSN values for the class Athlete",
+        "attributePrompts": "For each unique identifier identified as a 'Athlete', extract the following attributes: SSN, name, dateOfBirth, freeExams, sport. . Consider the identifiers should match the Identified entities in the previous step: 123-45-6789, 987-65-4321, 111-22-3333, 444-55-6666, 777-88-9999."
+    }
+}

@@ -1,0 +1,273 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "PDCD4"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "PDCD4",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Programmed Cell Death 4"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "miR-424",
+                "miR-503",
+                "miR-9",
+                "let-7",
+                "miR-122",
+                "miR-21",
+                "miR-107",
+                "miR-484",
+                "miR-361"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "miR-424",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-503",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-9",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "let-7",
+                    "miRNAfamily": "let-7",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-122",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-21",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-107",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-484",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-361",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "tumour",
+                "myocardial infarction",
+                "cancer"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "tumour",
+                    "synonyms": [
+                        "tumor",
+                        "neoplasm"
+                    ]
+                },
+                {
+                    "label": "myocardial infarction",
+                    "synonyms": [
+                        "heart attack",
+                        "cardiac infarction",
+                        "MI"
+                    ]
+                },
+                {
+                    "label": "cancer",
+                    "synonyms": [
+                        "malignancy",
+                        "neoplasia",
+                        "tumor"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNAToGeneRelationship": {
+        "MiRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "miR-21",
+                "object": "PDCD4",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-122",
+                "object": "PDCD4",
+                "predicate": "regulates_activity_of"
+            }
+        ]
+    },
+    "MiRNAToDiseaseRelationship": {
+        "MiRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "miR-107",
+                "object": "tumour",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-361",
+                "object": "myocardial infarction",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-503",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-484",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-122",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-21",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "tumour",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "myocardial infarction",
+                "object": "cardiac diseases",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": [
+            {
+                "subject": "miR-424",
+                "object": "miR-9",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-503",
+                "object": "miR-9",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-122",
+                "object": "miR-21",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-107",
+                "object": "let-7",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-361",
+                "object": "miR-484",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-484",
+                "object": "miR-9",
+                "predicate": "regulates_activity_of"
+            }
+        ]
+    }
+}

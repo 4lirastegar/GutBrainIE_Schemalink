@@ -1,0 +1,245 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "glutamate decarboxylase 2"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "glutamate decarboxylase 2",
+                    "synonyms": [
+                        "GAD65",
+                        "GAD2"
+                    ],
+                    "sequence": "MQPPLALLPLALGPAGGGAPRLPALAQAGGAAPAERAGGAAAPAVAAAAAAPGSAARRWRRPFSSMLVGYYDLLDESLKALSRALKELGFKHHQNLVGQDVVMVALDGASGFGLLSTPPKRSEFTTLACCLETCSVSPNERGTTANPPGVRLRNQNQRDPTTAPDFFALFAYAKRIEEKGTAGAPGRRDFILGVISKANKAADETIEDLQKWMMDFAGFDIEPDSQTPELFLDCLPHLYCLGGQREVCLKFGPQFALGFGHSCDDPGEIAPJMLFASNPTIIYCDNPREVFNTIERLQNSEGFDVDMQVLGRLTSGQESWVGQSNFLERGYDYAALPLLMQNLAKPVIYPHTEEGTMTLESKPLPARERGDLTTGAKCNVLLLTANLAALGAYTGNFGGGPGGDVTLEMLPGRASEGIFCFGAKKMGPKDALSLDKIAKLSNKEEVEVWKEDGGNDQALAEEIAVVFFNSDPDAPINIAFSNKEAEDFIIDIAYCRSSLLTYAMWIVRKNADKHVSIEFEVVDQRAATSFDWISHDPREYIRALPWELPNRLDVTKLRPQMTDPKEIFRNPSEIETDVSVFFSTEEIVLMETNNENEEMTVAGFKWNKDQDTVLDGFLIKTLKSVSIVDQLSEATVVTVLRLSPNPAAFGPHISVQHPFVSSSCHPPTAAATATTPKEPPTPSTTMSPPGVELLPTSVTVTPTTTVATTV"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "miR-181a",
+                "miR-181b",
+                "miR-181c",
+                "miR-181d"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "miR-181a",
+                    "miRNAfamily": "miR-181",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-181b",
+                    "miRNAfamily": "miR-181",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-181c",
+                    "miRNAfamily": "miR-181",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-181d",
+                    "miRNAfamily": "miR-181",
+                    "sequence": "",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "nicotinamide adenine dinucleotide"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "nicotinamide adenine dinucleotide",
+                    "synonyms": [
+                        "NAD"
+                    ]
+                },
+                {
+                    "label": "glutamate decarboxylase 2",
+                    "synonyms": [
+                        "GAD65"
+                    ]
+                },
+                {
+                    "label": "sirtuin-1",
+                    "synonyms": [
+                        "SIRT1"
+                    ]
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "type I diabetes mellitus",
+                "diabetes mellitus",
+                "diabetes"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "type I diabetes mellitus",
+                    "synonyms": [
+                        "type 1 diabetes mellitus",
+                        "juvenile diabetes",
+                        "insulin-dependent diabetes mellitus",
+                        "IDDM"
+                    ]
+                },
+                {
+                    "label": "diabetes mellitus",
+                    "synonyms": [
+                        "DM",
+                        "sugar diabetes"
+                    ]
+                },
+                {
+                    "label": "diabetes",
+                    "synonyms": [
+                        "diabetes mellitus",
+                        "sugar diabetes"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNAToDiseaseRelationship": {
+        "MiRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "miR-181a",
+                "object": "diabetes mellitus",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-181b",
+                "object": "diabetes mellitus",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-181c",
+                "object": "diabetes mellitus",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-181d",
+                "object": "diabetes mellitus",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-181",
+                "object": "diabetes",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "type I diabetes mellitus",
+                "object": "diabetes mellitus",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "glutamate decarboxylase 2",
+                "object": "diabetes mellitus",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "glutamate decarboxylase 2",
+                "object": "type I diabetes mellitus",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": []
+    },
+    "MiRNAToChemicalRelationship": {
+        "MiRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "miR-181a",
+                "object": "nicotinamide adenine dinucleotide",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "miR-181b",
+                "object": "nicotinamide adenine dinucleotide",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "miR-181c",
+                "object": "nicotinamide adenine dinucleotide",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "miR-181d",
+                "object": "nicotinamide adenine dinucleotide",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    }
+}

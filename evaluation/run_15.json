@@ -1,0 +1,203 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "SERPINA1"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "SERPINA1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Alpha-1 antitrypsin"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "SERPINA1"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "SERPINA1",
+                    "synonyms": [
+                        "Alpha-1 antitrypsin",
+                        "AAT"
+                    ]
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "miR-320",
+                "miR-320c"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "miR-320",
+                    "miRNAfamily": "miR-320",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-320c",
+                    "miRNAfamily": "miR-320",
+                    "sequence": "",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "lipopolysaccharide"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "lipopolysaccharide",
+                    "synonyms": [
+                        "LPS",
+                        "Endotoxin"
+                    ]
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "lung disease",
+                "liver disease",
+                "pulmonary disease"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "lung disease",
+                    "synonyms": [
+                        "pulmonary disease"
+                    ]
+                },
+                {
+                    "label": "liver disease",
+                    "synonyms": []
+                },
+                {
+                    "label": "pulmonary disease",
+                    "synonyms": [
+                        "lung disease"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNAToGeneRelationship": {
+        "MiRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "miR-320",
+                "object": "SERPINA1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-320c",
+                "object": "SERPINA1",
+                "predicate": "regulates_activity_of"
+            }
+        ]
+    },
+    "MiRNAToDiseaseRelationship": {
+        "MiRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "miR-320c",
+                "object": "pulmonary disease",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "lung disease",
+                "object": "pulmonary disease",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "liver disease",
+                "object": "lung disease",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": []
+    },
+    "MiRNAToChemicalRelationship": {
+        "MiRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "miR-320c",
+                "object": "lipopolysaccharide",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    },
+    "MRNAToChemicalRelationship": {
+        "MRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "SERPINA1",
+                "object": "lipopolysaccharide",
+                "predicate": "interacts_with"
+            }
+        ]
+    }
+}

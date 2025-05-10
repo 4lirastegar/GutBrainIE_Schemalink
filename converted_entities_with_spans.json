@@ -1,0 +1,321 @@
+{
+    "00000000": {
+        "entities": [
+            {
+                "start_idx": 265,
+                "end_idx": 267,
+                "location": "abstract",
+                "text_span": "gut",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 270,
+                "end_idx": 273,
+                "location": "abstract",
+                "text_span": "gums",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 279,
+                "end_idx": 282,
+                "location": "abstract",
+                "text_span": "skin",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 515,
+                "end_idx": 519,
+                "location": "abstract",
+                "text_span": "blood",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 573,
+                "end_idx": 577,
+                "location": "abstract",
+                "text_span": "brain",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 1441,
+                "end_idx": 1456,
+                "location": "abstract",
+                "text_span": "substantia nigra",
+                "label": "anatomical location"
+            },
+            {
+                "start_idx": 658,
+                "end_idx": 664,
+                "location": "abstract",
+                "text_span": "rodents",
+                "label": "animal"
+            },
+            {
+                "start_idx": 1341,
+                "end_idx": 1344,
+                "location": "abstract",
+                "text_span": "mice",
+                "label": "animal"
+            },
+            {
+                "start_idx": 207,
+                "end_idx": 228,
+                "location": "abstract",
+                "text_span": "gram-negative bacteria",
+                "label": "bacteria"
+            },
+            {
+                "start_idx": 1527,
+                "end_idx": 1563,
+                "location": "abstract",
+                "text_span": "endotoxin-producing bacterial species",
+                "label": "bacteria"
+            },
+            {
+                "start_idx": 4,
+                "end_idx": 12,
+                "location": "title",
+                "text_span": "endotoxin",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 138,
+                "end_idx": 155,
+                "location": "abstract",
+                "text_span": "lipopolysaccharide",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 158,
+                "end_idx": 160,
+                "location": "abstract",
+                "text_span": "LPS",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 798,
+                "end_idx": 806,
+                "location": "abstract",
+                "text_span": "amyloid \u03b2",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 812,
+                "end_idx": 814,
+                "location": "abstract",
+                "text_span": "tau",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 1944,
+                "end_idx": 1955,
+                "location": "abstract",
+                "text_span": "nitric oxide",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 1958,
+                "end_idx": 1965,
+                "location": "abstract",
+                "text_span": "oxidants",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 1971,
+                "end_idx": 1979,
+                "location": "abstract",
+                "text_span": "cytokines",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 28,
+                "end_idx": 44,
+                "location": "title",
+                "text_span": "neurodegeneration",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 419,
+                "end_idx": 434,
+                "location": "abstract",
+                "text_span": "gut inflammation",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 437,
+                "end_idx": 447,
+                "location": "abstract",
+                "text_span": "gum disease",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 453,
+                "end_idx": 477,
+                "location": "abstract",
+                "text_span": "neurodegenerative disease",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 547,
+                "end_idx": 567,
+                "location": "abstract",
+                "text_span": "systemic inflammation",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 723,
+                "end_idx": 737,
+                "location": "abstract",
+                "text_span": "memory deficits",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 743,
+                "end_idx": 764,
+                "location": "abstract",
+                "text_span": "loss of brain synapses",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1031,
+                "end_idx": 1049,
+                "location": "abstract",
+                "text_span": "Alzheimer's disease",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1076,
+                "end_idx": 1094,
+                "location": "abstract",
+                "text_span": "systemic infections",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1107,
+                "end_idx": 1117,
+                "location": "abstract",
+                "text_span": "gum disease",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1288,
+                "end_idx": 1306,
+                "location": "abstract",
+                "text_span": "Parkinson's disease",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1354,
+                "end_idx": 1375,
+                "location": "abstract",
+                "text_span": "\u03b1-synuclein production",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 816,
+                "end_idx": 826,
+                "location": "abstract",
+                "text_span": "aggregation",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1405,
+                "end_idx": 1432,
+                "location": "abstract",
+                "text_span": "loss of dopaminergic neurons",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1649,
+                "end_idx": 1677,
+                "location": "abstract",
+                "text_span": "amyotrophic lateral sclerosis",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1703,
+                "end_idx": 1720,
+                "location": "abstract",
+                "text_span": "TDP-43 aggregation",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 832,
+                "end_idx": 845,
+                "location": "abstract",
+                "text_span": "neuropathology",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1742,
+                "end_idx": 1760,
+                "location": "abstract",
+                "text_span": "Peripheral diseases",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1800,
+                "end_idx": 1805,
+                "location": "abstract",
+                "text_span": "sepsis",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1808,
+                "end_idx": 1811,
+                "location": "abstract",
+                "text_span": "AIDS",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1817,
+                "end_idx": 1829,
+                "location": "abstract",
+                "text_span": "liver failure",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 28,
+                "end_idx": 44,
+                "location": "abstract",
+                "text_span": "neurodegeneration",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1354,
+                "end_idx": 1364,
+                "location": "abstract",
+                "text_span": "\u03b1-synuclein",
+                "label": "gene"
+            },
+            {
+                "start_idx": 1703,
+                "end_idx": 1708,
+                "location": "abstract",
+                "text_span": "TDP-43",
+                "label": "gene"
+            },
+            {
+                "start_idx": 532,
+                "end_idx": 537,
+                "location": "abstract",
+                "text_span": "humans",
+                "label": "human"
+            },
+            {
+                "start_idx": 1591,
+                "end_idx": 1598,
+                "location": "abstract",
+                "text_span": "patients",
+                "label": "human"
+            },
+            {
+                "start_idx": 1463,
+                "end_idx": 1476,
+                "location": "abstract",
+                "text_span": "gut microbiome",
+                "label": "microbiome"
+            }
+        ]
+    }
+}

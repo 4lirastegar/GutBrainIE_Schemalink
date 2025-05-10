@@ -1,0 +1,139 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "myc"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "myc",
+                    "synonyms": [],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": [
+                "CACS11",
+                "CCAT family",
+                "PVT1"
+            ]
+        },
+        "attributeResponse": {
+            "LncRNAAttributes": [
+                {
+                    "label": "CACS11",
+                    "synonyms": []
+                },
+                {
+                    "label": "CCAT family",
+                    "synonyms": []
+                },
+                {
+                    "label": "PVT1",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "Colorectal cancer"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "Colorectal cancer",
+                    "synonyms": [
+                        "CRC"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": []
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "myc",
+                "object": "Colorectal cancer",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "LncRNAToDiseaseRelationship": {
+        "LncRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "CACS11",
+                "object": "Colorectal cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "CCAT family",
+                "object": "Colorectal cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "PVT1",
+                "object": "Colorectal cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    }
+}

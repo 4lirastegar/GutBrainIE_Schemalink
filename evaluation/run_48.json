@@ -1,0 +1,279 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "RBM15",
+                "RBM15B",
+                "METTL3",
+                "WTAP",
+                "YTHDC1"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "RBM15",
+                    "synonyms": [
+                        "RNA-binding motif protein 15"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "RBM15B",
+                    "synonyms": [
+                        "RNA-binding motif protein 15B"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "METTL3",
+                    "synonyms": [
+                        "Methyltransferase-like 3"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "WTAP",
+                    "synonyms": [
+                        "Wilms tumor 1-associating protein"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "YTHDC1",
+                    "synonyms": [
+                        "YTH domain containing 1"
+                    ],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "ATRX",
+                "GPC4"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "ATRX",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "XH2",
+                        "JH1",
+                        "ADD"
+                    ]
+                },
+                {
+                    "label": "GPC4",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "K-glypican",
+                        "glypican-4"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "Gpc4",
+                "Atrx"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "Gpc4",
+                    "synonyms": []
+                },
+                {
+                    "label": "Atrx",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": [
+                "Xist",
+                "XIST"
+            ]
+        },
+        "attributeResponse": {
+            "LncRNAAttributes": [
+                {
+                    "label": "Xist",
+                    "synonyms": [
+                        "XIST"
+                    ]
+                },
+                {
+                    "label": "XIST",
+                    "synonyms": [
+                        "Xist"
+                    ]
+                }
+            ]
+        }
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "doxycycline"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "doxycycline",
+                    "synonyms": [
+                        "Doxycycline Hyclate",
+                        "Vibramycin",
+                        "Monodox"
+                    ]
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "RBM15",
+                "object": "GPC4",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "RBM15",
+                "object": "ATRX",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "RBM15B",
+                "object": "GPC4",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "RBM15B",
+                "object": "ATRX",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "GPC4",
+                "object": "RBM15",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "GPC4",
+                "object": "RBM15B",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "ATRX",
+                "object": "RBM15",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "ATRX",
+                "object": "RBM15B",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "LncRNAToGeneRelationship": {
+        "LncRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "Xist",
+                "object": "GPC4",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "Xist",
+                "object": "ATRX",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "LncRNAToMRNARelationship": {
+        "LncRNAToMRNARelationshipRelationships": [
+            {
+                "subject": "Xist",
+                "object": "Gpc4",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "Xist",
+                "object": "Atrx",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "MRNAToChemicalRelationship": {
+        "MRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "Gpc4",
+                "object": "doxycycline",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "Atrx",
+                "object": "doxycycline",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    },
+    "LncRNAToChemicalRelationship": {
+        "LncRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "XIST",
+                "object": "doxycycline",
+                "predicate": "interacts_with"
+            }
+        ]
+    }
+}

@@ -1,0 +1,180 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "IL-23",
+                "IL-17",
+                "TNF"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "IL-23",
+                    "synonyms": [
+                        "Interleukin 23"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "IL-17",
+                    "synonyms": [
+                        "Interleukin 17"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "TNF",
+                    "synonyms": [
+                        "Tumor Necrosis Factor"
+                    ],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "Psoriatic arthritis",
+                "psoriasis",
+                "uveitis",
+                "inflammatory bowel disease",
+                "Crohn's disease",
+                "ulcerative colitis"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "Psoriatic arthritis",
+                    "synonyms": [
+                        "PsA"
+                    ]
+                },
+                {
+                    "label": "psoriasis",
+                    "synonyms": []
+                },
+                {
+                    "label": "uveitis",
+                    "synonyms": []
+                },
+                {
+                    "label": "inflammatory bowel disease",
+                    "synonyms": []
+                },
+                {
+                    "label": "Crohn's disease",
+                    "synonyms": []
+                },
+                {
+                    "label": "ulcerative colitis",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "Psoriatic arthritis",
+                "object": "psoriasis",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "Psoriatic arthritis",
+                "object": "uveitis",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "Psoriatic arthritis",
+                "object": "inflammatory bowel disease",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "inflammatory bowel disease",
+                "object": "Crohn's disease",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "inflammatory bowel disease",
+                "object": "ulcerative colitis",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "IL-23",
+                "object": "Psoriatic arthritis",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "IL-17",
+                "object": "Psoriatic arthritis",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "TNF",
+                "object": "Psoriatic arthritis",
+                "predicate": "causally_related_to"
+            }
+        ]
+    }
+}

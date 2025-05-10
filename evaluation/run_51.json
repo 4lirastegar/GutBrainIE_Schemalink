@@ -1,0 +1,433 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "ZAP70"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "ZAP70",
+                    "synonyms": [
+                        "ZAP-70",
+                        "Zeta-chain-associated protein kinase 70",
+                        "Syk-related tyrosine kinase (Syk-Z)"
+                    ],
+                    "sequence": "MLLPSRVLQRAVPSFLAPNTVAAOurmethodwasbasedonthisconclusionandweintendedtointerpretthecauseand"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "ZAP70",
+                "DAB2",
+                "PTENP1",
+                "ANAPC1",
+                "RPIA",
+                "IGF2BP2",
+                "CYP2J2",
+                "LRIG1"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "ZAP70",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "SRK",
+                        "STD"
+                    ]
+                },
+                {
+                    "label": "DAB2",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "DOC-2",
+                        "p96"
+                    ]
+                },
+                {
+                    "label": "PTENP1",
+                    "geneType": "pseudo gene",
+                    "synonyms": [
+                        "PTEN2",
+                        "PTENx"
+                    ]
+                },
+                {
+                    "label": "ANAPC1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "ANAPC11",
+                        "ANAPC12"
+                    ]
+                },
+                {
+                    "label": "RPIA",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Ribose-5-phosphate isomerase A"
+                    ]
+                },
+                {
+                    "label": "IGF2BP2",
+                    "geneType": "RNA binding protein gene",
+                    "synonyms": [
+                        "IMP-2",
+                        "VICKZ2"
+                    ]
+                },
+                {
+                    "label": "CYP2J2",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "CYPIIJ2",
+                        "CPJ2"
+                    ]
+                },
+                {
+                    "label": "LRIG1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "LIG-1",
+                        "LIG1"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "ZAP70",
+                "DAB2",
+                "PTENP1",
+                "ANAPC1",
+                "RPIA",
+                "IGF2BP2",
+                "CYP2J2",
+                "LRIG1"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "ZAP70",
+                    "synonyms": []
+                },
+                {
+                    "label": "DAB2",
+                    "synonyms": []
+                },
+                {
+                    "label": "PTENP1",
+                    "synonyms": []
+                },
+                {
+                    "label": "ANAPC1",
+                    "synonyms": []
+                },
+                {
+                    "label": "RPIA",
+                    "synonyms": []
+                },
+                {
+                    "label": "IGF2BP2",
+                    "synonyms": []
+                },
+                {
+                    "label": "CYP2J2",
+                    "synonyms": []
+                },
+                {
+                    "label": "LRIG1",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "hsa-miR-34a",
+                "hsa-miR-34b",
+                "hsa-miR-34c",
+                "hsa-miR-106b",
+                "hsa-miR-93"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "hsa-miR-34a",
+                    "miRNAfamily": "miR-34",
+                    "sequence": "UGGCAGUGUCUUAGCUGGUUGU",
+                    "synonyms": [
+                        "miR-34a"
+                    ]
+                },
+                {
+                    "label": "hsa-miR-34b",
+                    "miRNAfamily": "miR-34",
+                    "sequence": "CAAUCACUAACUCCACUGCCAU",
+                    "synonyms": [
+                        "miR-34b"
+                    ]
+                },
+                {
+                    "label": "hsa-miR-34c",
+                    "miRNAfamily": "miR-34",
+                    "sequence": "AAUCACUAACUCCACUGCCUA",
+                    "synonyms": [
+                        "miR-34c"
+                    ]
+                },
+                {
+                    "label": "hsa-miR-106b",
+                    "miRNAfamily": "miR-106",
+                    "sequence": "UAAAGUGCUGACAGUGCAGAU",
+                    "synonyms": [
+                        "miR-106b"
+                    ]
+                },
+                {
+                    "label": "hsa-miR-93",
+                    "miRNAfamily": "miR-93",
+                    "sequence": "CAAAGUGCUGUUCGUGCAGGUAG",
+                    "synonyms": [
+                        "miR-93"
+                    ]
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "tyrosine kinase"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "tyrosine kinase",
+                    "synonyms": [
+                        "Protein kinase",
+                        "TK"
+                    ]
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "sarcoma",
+                "Cataract"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "sarcoma",
+                    "synonyms": [
+                        "Malignant tumor",
+                        "Connective tissue cancer"
+                    ]
+                },
+                {
+                    "label": "Cataract",
+                    "synonyms": [
+                        "Lens opacity",
+                        "Clouding of the lens",
+                        "Opacity of the lens"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "ZAP70",
+                "object": "ZAP70",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "ZAP70",
+                "object": "ANAPC1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "ZAP70",
+                "object": "RPIA",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "ZAP70",
+                "object": "IGF2BP2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "ZAP70",
+                "object": "CYP2J2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "ZAP70",
+                "object": "LRIG1",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "ZAP70",
+                "object": "ZAP70",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "MiRNAToGeneRelationship": {
+        "MiRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "hsa-miR-34a",
+                "object": "ZAP70",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "hsa-miR-34b",
+                "object": "ZAP70",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "hsa-miR-34c",
+                "object": "ZAP70",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "hsa-miR-106b",
+                "object": "DAB2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "hsa-miR-106b",
+                "object": "PTENP1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "hsa-miR-93",
+                "object": "DAB2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "hsa-miR-93",
+                "object": "PTENP1",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "MiRNAToDiseaseRelationship": {
+        "MiRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "hsa-miR-34a",
+                "object": "sarcoma",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-34b",
+                "object": "sarcoma",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-34c",
+                "object": "sarcoma",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "sarcoma",
+                "object": "Cataract",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "ZAP70",
+                "object": "sarcoma",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": []
+    },
+    "MiRNAToChemicalRelationship": {
+        "MiRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "hsa-miR-34a",
+                "object": "tyrosine kinase",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "hsa-miR-34b",
+                "object": "tyrosine kinase",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "hsa-miR-34c",
+                "object": "tyrosine kinase",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "MRNAToChemicalRelationship": {
+        "MRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "ZAP70",
+                "object": "tyrosine kinase",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    }
+}

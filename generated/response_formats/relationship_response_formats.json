@@ -1,0 +1,46 @@
+{
+    "AnatomicalLocationHumanRelationship": {
+        "responseFormat": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "AnatomicalLocationHumanRelationship_instances",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "AnatomicalLocationHumanRelationshipRelationships": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "subject": {
+                                        "type": "string"
+                                    },
+                                    "object": {
+                                        "type": "string"
+                                    },
+                                    "predicate": {
+                                        "type": "string",
+                                        "enum": [
+                                            "located in"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "subject",
+                                    "object",
+                                    "predicate"
+                                ],
+                                "additionalProperties": false
+                            }
+                        }
+                    },
+                    "required": [
+                        "AnatomicalLocationHumanRelationshipRelationships"
+                    ],
+                    "additionalProperties": false
+                },
+                "strict": true
+            }
+        }
+    }
+}

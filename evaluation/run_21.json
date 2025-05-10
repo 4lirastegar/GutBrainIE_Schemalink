@@ -1,0 +1,244 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "TP53"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "TP53",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "tumor protein p53",
+                        "cellular tumor antigen p53",
+                        "phosphoprotein p53",
+                        "tumor suppressor p53"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": [
+                "AC099329.2",
+                "DNMBP-AS1",
+                "AC138904.1",
+                "DEPDC1-AS1",
+                "GIHCG",
+                "AC145343.1"
+            ]
+        },
+        "attributeResponse": {
+            "LncRNAAttributes": [
+                {
+                    "label": "AC099329.2",
+                    "synonyms": []
+                },
+                {
+                    "label": "DNMBP-AS1",
+                    "synonyms": []
+                },
+                {
+                    "label": "AC138904.1",
+                    "synonyms": []
+                },
+                {
+                    "label": "DEPDC1-AS1",
+                    "synonyms": []
+                },
+                {
+                    "label": "GIHCG",
+                    "synonyms": []
+                },
+                {
+                    "label": "AC145343.1",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "Lapatinib"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "Lapatinib",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "HCC",
+                "Breast Cancer",
+                "lung adenocarcinoma",
+                "HCC",
+                "HCC",
+                "HCC",
+                "Breast"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "Hepatocellular Carcinoma",
+                    "synonyms": [
+                        "HCC"
+                    ]
+                },
+                {
+                    "label": "Breast Cancer",
+                    "synonyms": [
+                        "Breast"
+                    ]
+                },
+                {
+                    "label": "Lung Adenocarcinoma",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "Breast Cancer",
+                "object": "Breast",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "HCC",
+                "object": "Breast Cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "lung adenocarcinoma",
+                "object": "HCC",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "LncRNAToDiseaseRelationship": {
+        "LncRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "AC099329.2",
+                "object": "HCC",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "DNMBP-AS1",
+                "object": "HCC",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "AC138904.1",
+                "object": "HCC",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "DEPDC1-AS1",
+                "object": "HCC",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "GIHCG",
+                "object": "HCC",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "AC145343.1",
+                "object": "HCC",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "AC099329.2",
+                "object": "Breast Cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "DNMBP-AS1",
+                "object": "Breast Cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "DEPDC1-AS1",
+                "object": "lung adenocarcinoma",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "GIHCG",
+                "object": "Breast",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "LncRNAToGeneRelationship": {
+        "LncRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "AC145343.1",
+                "object": "TP53",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "LncRNAToChemicalRelationship": {
+        "LncRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "GIHCG",
+                "object": "Lapatinib",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    }
+}

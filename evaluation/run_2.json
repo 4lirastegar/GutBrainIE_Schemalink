@@ -1,0 +1,223 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "C-reactive protein",
+                "D-dimer",
+                "fibrinogen"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "C-reactive protein",
+                    "synonyms": [
+                        "CRP"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "D-dimer",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "fibrinogen",
+                    "synonyms": [],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "C-reactive protein",
+                "D-dimer",
+                "fibrinogen"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "C-reactive protein",
+                    "synonyms": [
+                        "CRP"
+                    ]
+                },
+                {
+                    "label": "D-dimer",
+                    "synonyms": []
+                },
+                {
+                    "label": "fibrinogen",
+                    "synonyms": []
+                },
+                {
+                    "label": "CRP",
+                    "synonyms": [
+                        "C-reactive protein"
+                    ]
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "COVID-19",
+                "cardiovascular disease",
+                "hypertension",
+                "diabetes",
+                "stroke",
+                "thromboses",
+                "ischemic stroke",
+                "cerebrovascular disease"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "COVID-19",
+                    "synonyms": [
+                        "novel coronavirus disease",
+                        "SARS-CoV-2"
+                    ]
+                },
+                {
+                    "label": "cardiovascular disease",
+                    "synonyms": []
+                },
+                {
+                    "label": "hypertension",
+                    "synonyms": []
+                },
+                {
+                    "label": "diabetes",
+                    "synonyms": [
+                        "diabetes mellitus"
+                    ]
+                },
+                {
+                    "label": "stroke",
+                    "synonyms": []
+                },
+                {
+                    "label": "thromboses",
+                    "synonyms": []
+                },
+                {
+                    "label": "ischemic stroke",
+                    "synonyms": []
+                },
+                {
+                    "label": "cerebrovascular disease",
+                    "synonyms": [
+                        "cerebrovascular diseases"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "COVID-19",
+                "object": "cerebrovascular diseases",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "COVID-19",
+                "object": "cardiovascular disease",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "COVID-19",
+                "object": "hypertension",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "COVID-19",
+                "object": "diabetes",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "inflammation",
+                "object": "stroke",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "ischemia",
+                "object": "stroke",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "C-reactive protein",
+                "object": "stroke",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "D-dimer",
+                "object": "stroke",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "fibrinogen",
+                "object": "stroke",
+                "predicate": "causally_related_to"
+            }
+        ]
+    }
+}

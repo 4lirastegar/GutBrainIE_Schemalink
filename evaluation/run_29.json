@@ -1,0 +1,363 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "GJA1",
+                "KCNJ2"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "GJA1",
+                    "synonyms": [
+                        "Gap Junction Alpha-1 Protein",
+                        "Connexin 43",
+                        "Cx43"
+                    ],
+                    "sequence": "MTSKGWLSRISFAECFLHLTVLGGLWCILMVRSSCPSNRFYGFHRL"
+                },
+                {
+                    "label": "KCNJ2",
+                    "synonyms": [
+                        "Inward Rectifier Potassium Channel 2",
+                        "IRK1",
+                        "Kir2.1"
+                    ],
+                    "sequence": "MDALSRSKGRMMDALVVNNATGGAQGSTGLMEKGFQVSSRLQENREPRMRWALFSTLASGRTTGKRCVDKLTQHVISVRDGKSCLMSYAFVKSERLDHHIVGSHMILVGAIFVLICVFSVLSLLANIAMHSYQNLRVPTLKSHQFWLLFIMVYTVTWLFFGMIWWIAGMIKDLFSHACVLDVVSRFTSVDAIVTRIQVVKFSKAGSRAFQQCLNVQKAVVHHGSDLFTAILVATFEGRMAVVMVIGTFSFKSFAQTLGSVADTRLPLRMVKDLRLKSMIISATVSTTVGYGDMTPKTEEGEFIPLNQTTSQVGKLLQTHITYHVIDAKPGTFTRGVPMSATPSDSTTSQASAGPSRLPATTVVM"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "GJA1",
+                "KCNJ2"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "GJA1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Connexin43",
+                        "CX43"
+                    ]
+                },
+                {
+                    "label": "KCNJ2",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Kir2.1"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "miR-23a",
+                "miR-23b",
+                "miR-24",
+                "miR-195",
+                "miR-199a",
+                "miR-214",
+                "miR-125b",
+                "miR-1"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "miR-23a",
+                    "miRNAfamily": "miR-23",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-23b",
+                    "miRNAfamily": "miR-23",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-24",
+                    "miRNAfamily": "miR-24",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-195",
+                    "miRNAfamily": "miR-15",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-199a",
+                    "miRNAfamily": "miR-199",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-214",
+                    "miRNAfamily": "miR-199",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-125b",
+                    "miRNAfamily": "miR-125",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-1",
+                    "miRNAfamily": "miR-1",
+                    "sequence": "",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "heart failure",
+                "coronary heart disease",
+                "myocardial infarction"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "heart failure",
+                    "synonyms": [
+                        "cardiac failure",
+                        "congestive heart failure",
+                        "CHF"
+                    ]
+                },
+                {
+                    "label": "coronary heart disease",
+                    "synonyms": [
+                        "coronary artery disease",
+                        "CAD",
+                        "ischemic heart disease",
+                        "IHD"
+                    ]
+                },
+                {
+                    "label": "myocardial infarction",
+                    "synonyms": [
+                        "heart attack",
+                        "MI"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": [
+                "growth"
+            ]
+        },
+        "attributeResponse": {
+            "GOAttributes": [
+                {
+                    "label": "growth",
+                    "synonyms": [
+                        "increase in size",
+                        "increase in mass",
+                        "expansion"
+                    ]
+                }
+            ]
+        }
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "GJA1",
+                "object": "GJA1",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "KCNJ2",
+                "object": "KCNJ2",
+                "predicate": "gene_product_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "GJA1",
+                "object": "GJA1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "KCNJ2",
+                "object": "KCNJ2",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "MiRNAToGeneRelationship": {
+        "MiRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "miR-1",
+                "object": "GJA1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-1",
+                "object": "KCNJ2",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "MiRNAToDiseaseRelationship": {
+        "MiRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "miR-23a",
+                "object": "heart failure",
+                "predicate": "causes_condition"
+            },
+            {
+                "subject": "miR-23b",
+                "object": "heart failure",
+                "predicate": "causes_condition"
+            },
+            {
+                "subject": "miR-24",
+                "object": "heart failure",
+                "predicate": "causes_condition"
+            },
+            {
+                "subject": "miR-195",
+                "object": "heart failure",
+                "predicate": "causes_condition"
+            },
+            {
+                "subject": "miR-199a",
+                "object": "heart failure",
+                "predicate": "causes_condition"
+            },
+            {
+                "subject": "miR-214",
+                "object": "heart failure",
+                "predicate": "causes_condition"
+            },
+            {
+                "subject": "miR-1",
+                "object": "coronary heart disease",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-1",
+                "object": "myocardial infarction",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "coronary heart disease",
+                "object": "myocardial infarction",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "GJA1",
+                "object": "arrhythmias",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "KCNJ2",
+                "object": "arrhythmias",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "MiRNAToGORelationship": {
+        "MiRNAToGORelationshipRelationships": [
+            {
+                "subject": "miR-23a",
+                "object": "growth",
+                "predicate": "participates_in"
+            },
+            {
+                "subject": "miR-23b",
+                "object": "growth",
+                "predicate": "participates_in"
+            },
+            {
+                "subject": "miR-24",
+                "object": "growth",
+                "predicate": "participates_in"
+            },
+            {
+                "subject": "miR-195",
+                "object": "growth",
+                "predicate": "participates_in"
+            },
+            {
+                "subject": "miR-199a",
+                "object": "growth",
+                "predicate": "participates_in"
+            },
+            {
+                "subject": "miR-214",
+                "object": "growth",
+                "predicate": "participates_in"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": []
+    }
+}

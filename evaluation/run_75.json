@@ -1,0 +1,155 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "RPL5",
+                "RPL11",
+                "MDM2",
+                "p53"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "RPL5",
+                    "synonyms": [
+                        "Ribosomal Protein L5"
+                    ],
+                    "sequence": "Not provided"
+                },
+                {
+                    "label": "RPL11",
+                    "synonyms": [
+                        "Ribosomal Protein L11"
+                    ],
+                    "sequence": "Not provided"
+                },
+                {
+                    "label": "MDM2",
+                    "synonyms": [
+                        "Mouse double minute 2 homolog"
+                    ],
+                    "sequence": "Not provided"
+                },
+                {
+                    "label": "p53",
+                    "synonyms": [
+                        "Tumor Protein 53",
+                        "TP53"
+                    ],
+                    "sequence": "Not provided"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "TP53"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "TP53",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "p53"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": [
+                "SNORA18L5"
+            ]
+        },
+        "attributeResponse": {
+            "SnoRNAAttributes": [
+                {
+                    "label": "SNORA18L5",
+                    "synonyms": [
+                        "small nucleolar RNA H/ACA box 18-like 5"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "MDM2",
+                "object": "TP53",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "TP53",
+                "object": "p53",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "SnoRNAToGeneRelationship": {
+        "SnoRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "SNORA18L5",
+                "object": "TP53",
+                "predicate": "interacts_with"
+            }
+        ]
+    }
+}

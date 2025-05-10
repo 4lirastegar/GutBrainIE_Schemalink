@@ -1,0 +1,1883 @@
+id: https://hereditary.dei.unipd.it/challenges/gutbrainie/2025
+name: GutBrainIE
+title: GutBrainIE CLEF 2025 Challenge
+# https://hereditary.dei.unipd.it/challenges/gutbrainie/2025/files/GutBrainIE%20-%20Annotation%20Guidelines%20-%20Public%20Version.pdf
+# For the ease of copy-pasting:
+# https://docs.google.com/document/d/14NlDwyFk3JyYLgxwh9RzlTJBqnI9wKzBj7i1YmIY0sI/edit?hl=it&tab=t.gytahrsdsahg
+# Open Question: Should we introduce "part of" and other relationships and entities (e.g. "Genome") that we do not extract into this schema?
+# Can these items (referred to as "Concepts to be ignored for CLEF" in the picture within Section "Conceptual System") be exploited to enhance prompts?
+description: >-
+  This template is meant for extracting structured information from biomedical abstracts
+  related to the gut microbiota and its connections with Parkinson's disease and mental
+  health.
+
+general_entity_annotation_rules: >-
+  You are an expert biomedical annotator. Your task is to annotate entity mentions
+  related to gut microbiota, Parkinson’s disease, and mental health. Follow these strict guidelines:
+  Use context to choose the correct entity type. Prefer the longest valid mention. Do not annotate generic terms.
+  Ignore markup tags unless they enclose mixed content.
+  If unsure, do not annotate.
+
+general_relation_annotation_rules: >-
+  You are an expert biomedical annotator. Your task is to annotate relationships
+  related to gut microbiota, Parkinson’s disease, and mental health. Follow these strict guidelines:
+  Relations must be explicit or inferred from the text only; head and tail can appear in any order. 
+  Use context to determine relation validity, prefer specific, well-evidenced links; avoid overgeneralization.
+  If unsure, do not annotate.
+
+license: https://creativecommons.org/publicdomain/zero/1.0/
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+
+imports:
+  - linkml:types
+  - core
+
+classes:
+  AnatomicalLocation:
+    is_a: NamedEntity
+    description: >-
+      Named, specific physical parts or regions of a living organism, particularly a human or animal body, including internal and external anatomical structures. These refer to concrete biological locations (e.g., "gut", "skin", "lungs") rather than conceptual systems (e.g., "nervous system").
+    attributes:
+      term:
+        identifier: true
+        slot_uri: NCIT:C13717
+    annotations:
+      annotators: sqlite:obo:ncit
+      prompt.examples: oral cavity, nasal passages, lungs, gut, skin, bladder, vagina
+      input.example: >-
+        title: "Microbe and host interaction in gastrointestinal homeostasis.",
+        abstract: "Researchers in psychiatry and neuroscience are increasingly recognizing the importance of gut-brain communication in mental health. Both genetics and environmental factors influence gut microbiota composition and function. This study examines host-microbe signaling at the gastrointestinal barrier to identify bottom-up mechanisms of microbiota-brain communication. We examined differences in gut microbiota composition and fecal miRNA profiles in BALB/c and C57BL/6 mice, in relation to gastrointestinal homeostasis and evaluated the response to perturbation of the gut microbiota by broad-spectrum antibiotic treatment. Differences in the gut microbiota composition between BALB/c and C57BL/6 mice, evaluated by fecal 16S rRNA gene sequencing, included significant differences in genera Prevotella, Alistipes, Akkermansia, and Ruminococcus. Significant differences in fecal miRNA profiles were determined using the nCounter NanoString platform. A BLASTn analysis identified conserved fecal miRNA target regions in bacterial metagenomes with 14 significant correlations found between fecal miRNA and predicted taxa relative abundance in our dataset. Treatment with broad-spectrum antibiotics for 2\u00a0weeks resulted in a host-specific physiological response at the gastrointestinal barrier including a decrease in barrier permeability in BALB/c mice and alterations in the expression of barrier regulating genes in both strains. Genera Parabacteroides and Bacteroides were associated with changes in barrier function. The results of this study provide insight into how specific taxa influence gut barrier integrity and function. More generally, these data in the context of recent published studies makes a significant contribution to our understanding of host-microbe interactions providing new knowledge that can be harnessed by us and others in future mechanistic studies."
+      output.example: >-
+        "AnatomicalLocation": {{
+          "schemaResponse": {{
+            "mentions": [
+              "gastrointestinal barrier"
+            ]
+          }}
+        }}
+      algorithmic_rules: "^(?!.*(axis|system)$).*"
+
+  Animal:
+    is_a: NamedEntity
+    description: >-
+      Non-human, multicellular organisms that belong to the kingdom Animalia and exhibit voluntary movement. Includes laboratory animals (e.g., “mice”, “rats”), model organisms (e.g., “Drosophila”), and wild or domestic animals, but explicitly excludes humans.
+    attributes:
+      term:
+        identifier: true
+        slot_uri: NCIT:C14182
+    annotations:
+      annotators: sqlite:obo:ncit
+      prompt.examples: mice, CUS mice, CUMS-vulnerable, CUMS-resilient mice
+      input.example: >-
+        title: "Microbe and host interaction in gastrointestinal homeostasis.",
+        abstract: "Researchers in psychiatry and neuroscience are increasingly recognizing the importance of gut-brain communication in mental health. Both genetics and environmental factors influence gut microbiota composition and function. This study examines host-microbe signaling at the gastrointestinal barrier to identify bottom-up mechanisms of microbiota-brain communication. We examined differences in gut microbiota composition and fecal miRNA profiles in BALB/c and C57BL/6 mice, in relation to gastrointestinal homeostasis and evaluated the response to perturbation of the gut microbiota by broad-spectrum antibiotic treatment. Differences in the gut microbiota composition between BALB/c and C57BL/6 mice, evaluated by fecal 16S rRNA gene sequencing, included significant differences in genera Prevotella, Alistipes, Akkermansia, and Ruminococcus. Significant differences in fecal miRNA profiles were determined using the nCounter NanoString platform. A BLASTn analysis identified conserved fecal miRNA target regions in bacterial metagenomes with 14 significant correlations found between fecal miRNA and predicted taxa relative abundance in our dataset. Treatment with broad-spectrum antibiotics for 2\u00a0weeks resulted in a host-specific physiological response at the gastrointestinal barrier including a decrease in barrier permeability in BALB/c mice and alterations in the expression of barrier regulating genes in both strains. Genera Parabacteroides and Bacteroides were associated with changes in barrier function. The results of this study provide insight into how specific taxa influence gut barrier integrity and function. More generally, these data in the context of recent published studies makes a significant contribution to our understanding of host-microbe interactions providing new knowledge that can be harnessed by us and others in future mechanistic studies."
+      output.example: >-
+        "Animal": {{
+          "schemaResponse": {{
+            "mentions": [
+              "BALB/c and C57BL/6 mice",
+              "BALB/c mice"
+            ]
+          }}
+        }}
+      annotation_rules: Instances of humans should NOT be labeled as animal entity mentions.
+      algorithmic_rules: "^(?!.*(model)$).*"
+
+  BiomedicalTechnique:
+    is_a: NamedEntity
+    description: >-
+      Experimental, diagnostic, or analytical methods used in biomedical research or clinical studies. This includes assays, sequencing platforms, imaging tools, and molecular biology techniques (e.g., “qPCR”, “Western blot”, “MRI”).
+    attributes:
+      term:
+        identifier: true
+        slot_uri: NCIT:C15188
+    annotations:
+      annotators: sqlite:obo:ncit
+      prompt.examples: 16S rRNA amplicon sequencing method, enzyme-linked immunosorbent assays
+      input.examples: >-
+        title: "Microbe and host interaction in gastrointestinal homeostasis.",
+        abstract: "Researchers in psychiatry and neuroscience are increasingly recognizing the importance of gut-brain communication in mental health. Both genetics and environmental factors influence gut microbiota composition and function. This study examines host-microbe signaling at the gastrointestinal barrier to identify bottom-up mechanisms of microbiota-brain communication. We examined differences in gut microbiota composition and fecal miRNA profiles in BALB/c and C57BL/6 mice, in relation to gastrointestinal homeostasis and evaluated the response to perturbation of the gut microbiota by broad-spectrum antibiotic treatment. Differences in the gut microbiota composition between BALB/c and C57BL/6 mice, evaluated by fecal 16S rRNA gene sequencing, included significant differences in genera Prevotella, Alistipes, Akkermansia, and Ruminococcus. Significant differences in fecal miRNA profiles were determined using the nCounter NanoString platform. A BLASTn analysis identified conserved fecal miRNA target regions in bacterial metagenomes with 14 significant correlations found between fecal miRNA and predicted taxa relative abundance in our dataset. Treatment with broad-spectrum antibiotics for 2\u00a0weeks resulted in a host-specific physiological response at the gastrointestinal barrier including a decrease in barrier permeability in BALB/c mice and alterations in the expression of barrier regulating genes in both strains. Genera Parabacteroides and Bacteroides were associated with changes in barrier function. The results of this study provide insight into how specific taxa influence gut barrier integrity and function. More generally, these data in the context of recent published studies makes a significant contribution to our understanding of host-microbe interactions providing new knowledge that can be harnessed by us and others in future mechanistic studies."
+      output.examples: >-
+        "BiomedicalTechnique": {{
+            "schemaResponse": {{
+              "mentions": [
+                "fecal 16S rRNA gene sequencing",
+                "nCounter NanoString platform",
+                "BLASTn analysis"
+              ]
+            }}
+          }}
+      algorithmic_rules: ^(?!microbiota analysis$).*
+
+  Bacteria:
+    is_a: NamedEntity
+    description: >-
+      Microorganisms belonging to the domain Bacteria (or Eubacteria), often referenced by genus, species, or common bacterial groups (e.g., “Bacteroides”, “Lactobacillus”). Includes terms like "butyrate-producing bacteria" when they denote bacterial taxa, but excludes general microbiome terms or metabolites.
+    attributes:
+      term:
+        identifier: true
+        slot_uri: NCBITaxon:2
+    annotations:
+      prompt.examples: >-
+        Lactobacillus, Akkermansia, Bacteroides, Alloprevotella, Helicobacter,
+        Lachnoclostridium, Blautia, Roseburia, Colidextibacter Lachnospiraceae NK4A136,
+        Akkermansia, Megamonas, Prevotellaceae NK3B31 group, butyrate-producing bacteria,
+        Lachnospira, Subdoligranulum, Blautia, Dialister, acetate-producing bacteria, Streptococcus
+      input.example: >-
+        title: "Microbe and host interaction in gastrointestinal homeostasis.",
+        abstract: "Researchers in psychiatry and neuroscience are increasingly recognizing the importance of gut-brain communication in mental health. Both genetics and environmental factors influence gut microbiota composition and function. This study examines host-microbe signaling at the gastrointestinal barrier to identify bottom-up mechanisms of microbiota-brain communication. We examined differences in gut microbiota composition and fecal miRNA profiles in BALB/c and C57BL/6 mice, in relation to gastrointestinal homeostasis and evaluated the response to perturbation of the gut microbiota by broad-spectrum antibiotic treatment. Differences in the gut microbiota composition between BALB/c and C57BL/6 mice, evaluated by fecal 16S rRNA gene sequencing, included significant differences in genera Prevotella, Alistipes, Akkermansia, and Ruminococcus. Significant differences in fecal miRNA profiles were determined using the nCounter NanoString platform. A BLASTn analysis identified conserved fecal miRNA target regions in bacterial metagenomes with 14 significant correlations found between fecal miRNA and predicted taxa relative abundance in our dataset. Treatment with broad-spectrum antibiotics for 2\u00a0weeks resulted in a host-specific physiological response at the gastrointestinal barrier including a decrease in barrier permeability in BALB/c mice and alterations in the expression of barrier regulating genes in both strains. Genera Parabacteroides and Bacteroides were associated with changes in barrier function. The results of this study provide insight into how specific taxa influence gut barrier integrity and function. More generally, these data in the context of recent published studies makes a significant contribution to our understanding of host-microbe interactions providing new knowledge that can be harnessed by us and others in future mechanistic studies."
+      output.example: >-
+        "Bacteria": {{
+          "schemaResponse": {{
+            "mentions": [
+              "Prevotella",
+              "Alistipes",
+              "Akkermansia",
+              "Ruminococcus",
+              "Parabacteroides",
+              "Bacteroides"
+            ]
+          }}
+        }}
+      annotators: sqlite:obo:ncbitaxon
+
+  Chemical:
+    is_a: NamedEntity
+    description: >-
+      Substances defined by molecular composition, including simple molecules (e.g., “glucose”), complex compounds (e.g., “serotonin”), and named chemical classes (e.g., “cytokines”). Excludes genes/proteins unless clearly referred to as chemical agents (e.g., “dopamine as a neurotransmitter”).
+    attributes:
+      term:
+        identifier: true
+        slot_uri: CHEBI:59999
+    annotations:
+      prompt.examples: >-
+        sodium butyrate, cryptotanshinone, CPT, B-vitamins, kynurenic acid, gamma-aminobutyric acid,
+        short-chain fatty acids, short-chain fatty acids,
+        SCFAs, bile acids, amino acids, tryptophan -trp- derivatives, GABA, serotonin,
+        dopamine, glutamate, anti-depressant neurotransmitters, dopamine, DA, 5-HT, 
+        norepinephrine, NE
+      input.example: >-
+        title: "Plasma cytokine levels in patients with chronic alcohol overconsumption: Relations to gut microbiota markers and clinical correlates.",
+        abstract: "Alcohol-related morbidity may involve changes in the gut microbiota and immune dysregulation. We have previously demonstrated alterations in gut microbiota composition and functions in patients with alcohol overconsumption, and now aimed to investigate possible associations between cytokine levels, gut microbiota, and clinical symptoms. We included hospital inpatients with a history of chronic alcohol overconsumption. For comparison, we included control patients with a low alcohol intake. Cytokine levels (TGF-\u03b21, TNF-\u03b1, IL-10, IL-8, IL-6, IFN-\u03b3, MCP-1, IL-1RA, IL-1\u03b2, and IL-17) were determined using a customized V-plex assay. We then examined associations of cytokine levels with the abundance of Proteobacteria and Faecalibacterium, percentage of the short-chain fatty acid butyrate, psychiatric symptoms (Hospital Anxiety and Depression Scale), and biochemical liver variables. We included 28 patients with alcohol overconsumption (79% men), and 25 control patients (72% men). Patients with alcohol overconsumption had higher levels of IL-6 (p\u00a0=\u00a00.002), IFN-\u03b3 (p\u00a0=\u00a00.018), and MCP-1 (p\u00a0=\u00a00.006), and lower levels of TGF-\u03b21 (p\u00a0=\u00a00.017) compared with control patients. Inverse correlations were found between Proteobacteria abundance and TNF-\u03b1 (R<sub>s</sub>\u00a0=\u00a0-0.55, p\u00a0=\u00a00.02) and IL-8 (R<sub>s</sub>\u00a0=\u00a0-0.58, p\u00a0=\u00a00.014), and between Faecalibacterium and MCP-1 levels (R<sub>s</sub>\u00a0=\u00a0-0.56, p\u00a0=\u00a00.02) in the control patients, but not in patients with alcohol overconsumption. Patients with alcohol overconsumption reported more psychiatric symptoms, and these symptoms were inversely correlated with IL-10 levels. There were positive correlations between several of the assessed cytokines and biochemical liver variables, and negative correlations between cytokine levels and albumin. Patients with alcohol overconsumption had a cytokine profile suggestive of increased systemic inflammatory activity, with higher levels of pro-inflammatory cytokines (IL-6, IFN-\u03b3, and MCP-1) and lower levels of anti-inflammatory cytokines (TGF-\u03b21). The findings may represent a link between alcohol use and alcohol-related morbidity.",
+      output.example: >-
+        "Chemical": {{
+          "schemaResponse": {{
+            "mentions": [
+              "short-chain fatty acid butyrate",
+              "cytokines",
+              "albumin",
+              "pro-inflammatory cytokines",
+              "anti-inflammatory cytokines"
+            ]
+          }}
+        }}
+      annotators: sqlite:obo:chebi
+
+  Metabolites:
+    is_a: NamedEntity
+    description: >-
+      Metabolites in biochemistry are the
+      intermediate or end product of metabolism, and neurotransmitters, which
+      are endogenous compounds used to transmit information across the synapses.
+    attributes:
+      term:
+        identifier: true
+        slot_uri: CHEBI:59999
+    annotations:
+      prompt.examples: >-
+        microbial-derived neuroactive metabolites, Microbial metabolites
+      algorithmic_rules: "Metabolite-->Chemical"
+
+  DietarySupplement:
+    is_a: NamedEntity
+    description: >-
+      Concentrated nutritional products (e.g., capsules, tablets, liquids) intended to supplement dietary intake. Includes vitamins, minerals, prebiotics, probiotics, and fatty acids (e.g., “omega-3”, “dietary fiber”) that are not part of normal meals.
+    attributes:
+      term:
+        identifier: true
+        slot_uri: MESH:68019587
+    annotations:
+      prompt.examples: omega-3 fatty acids, pre- and pro-biotics
+      input.example: >-
+        "title": "Impact of dietary fiber on gut microbiota composition, function and gut-brain-modules in healthy adults - a systematic review protocol.",
+        "abstract": "The gut microbiota has been extensively implicated in health and disease. The functional outputs of the gut microbiota, such as microbial metabolites, are considered particularly important in this regard. Significant associations exist between alterations in the relative abundance of specific microbial taxa and mental health disorders. Dietary fiber has the potential to alter gut microbiota composition and function, modifying bacterial enzymatic function and the production of metabolites. As many taxa of microorganisms have enzymes capable of producing or degrading neurochemicals i.e. neuroactive gut brain modules, new predictive tools can be applied to existing datasets such as those harvested from dietary fiber interventions. We endeavor to perform a systematic review in order to identify studies reporting compositional gut microbiota alterations after interventions with dietary fiber in healthy individuals. We aim to also extract from the selected studies publicly available microbial genomic sequence datasets for reanalysis with a consistent bioinformatics pipeline, with the ultimate intention of identifying altered gut brain modules following dietary fiber interventions. Interventional trials and randomized controlled studies that are originally published, including cross-over and non-crossover design and involving healthy adult humans will be included. A systematic search of PubMed/MEDLINE and EMBASE, two electronic databases, will be completed. Various types of dietary fiber have an impact on the gut microbiota composition, with some promoting the growth of particular taxa while others are reduced in relative abundance. Our search focuses on the impact of this food component on the microbiota of healthy individuals. Compositional gut microbial changes have been reported and our review will compile and update these observations after reanalysis of their datasets with a consistent bioinformatic pipeline. From this it may be possible to predict more detailed functional consequences in terms of neuroactive gut brain modules, of the compositional alterations in gut microbial taxa.",
+      output.example: >-
+        "DietarySupplement": {
+          "schemaResponse": {{
+              "mentions": [
+                  "dietary fiber",
+                  "Dietary fiber",
+                  "dietary fiber",
+                  "dietary fiber",
+                  "dietary fiber"
+              ]
+            }}
+          }}
+      annotators: sqlite:obo:mesh
+
+  DiseaseDisorderOrFinding:
+    is_a: NamedEntity
+    description: >-
+      Any abnormal physical, mental, or physiological condition or diagnosis (e.g., “depression”, “Parkinson’s disease”, “anxiety”, “gut inflammation”). Includes clinical findings, disease subtypes, and diagnostic labels. Does not include symptoms unless they represent distinct medical conditions.
+    attributes:
+      term:
+        identifier: true
+        slot_uri: NCIT:C7057
+    annotations:
+      annotators: sqlite:obo:ncit
+      prompt.examples: >-
+        neuropsychiatric conditions, depression, autism, Parkinson's disease,
+        neurological diseases, Alzheimer's and Parkinson's disease, psychological
+        disorders, anxiety, depression, stress, psychiatric disorders, schizophrenia,
+        major depressive disorder, MDD, bipolar disorder, BD
+      input.example: >-
+        title: "IgA-Biome Profiles Correlate with Clinical Parkinson's Disease Subtypes."
+        abstract: "Parkinson's disease is a heterogeneous neurodegenerative disorder with distinctive gut microbiome patterns suggesting that interventions targeting the gut microbiota may prevent, slow, or reverse disease progression and severity. Because secretory IgA (SIgA) plays a key role in shaping the gut microbiota, characterization of the IgA-Biome of individuals classified into either the akinetic rigid (AR) or tremor dominant (TD) Parkinson's disease clinical subtypes was used to further define taxa unique to these distinct clinical phenotypes. Flow cytometry was used to separate IgA-coated and -uncoated bacteria from stool samples obtained from AR and TD patients followed by amplification and sequencing of the V4 region of the 16\u200aS rDNA gene on the MiSeq platform (Illumina). IgA-Biome analyses identified significant alpha and beta diversity differences between the Parkinson's disease phenotypes and the Firmicutes/Bacteroides ratio was significantly higher in those with TD compared to those with AR. In addition, discriminant taxa analyses identified a more pro-inflammatory bacterial profile in the IgA+ fraction of those with the AR clinical subclass compared to IgA-Biome analyses of those with the TD subclass and with the taxa identified in the unsorted control samples. IgA-Biome analyses underscores the importance of the host immune response in shaping the gut microbiome potentially affecting disease progression and presentation. In the present study, IgA-Biome analyses identified a unique proinflammatory microbial signature in the IgA+ fraction of those with AR that would have otherwise been undetected using conventional microbiome analysis approaches.",
+      output.example: >-
+        "DiseaseDisorderOrFinding": {{
+          "schemaResponse": {{
+            "mentions": [
+              "Clinical Parkinson's Disease Subtypes",
+              "Parkinson's disease",
+              "heterogeneous neurodegenerative disorder",
+              "akinetic rigid (AR) or tremor dominant (TD) Parkinson's disease clinical subtypes",
+              "TD",
+              "AR",
+              "AR clinical subclass",
+              "TD subclass",
+              "AR"
+            ]
+          }}
+        }}
+      algorithmic_rules: ^(?!.*(response|mechanism)$).*
+
+  Drug:
+    is_a: NamedEntity
+    description: >-
+      Pharmacological or therapeutic substances administered to modify biological processes or treat disease. Includes both named drugs (e.g., “fluoxetine”) and general categories (e.g., “broad-spectrum antibiotics”, “antidepressant”).
+    attributes:
+      term:
+        identifier: true
+        slot_uri: CHEBI:23888
+    annotations:
+      annotators: sqlite:obo:chebi
+      prompt.examples: >-
+        fluoxetine, FLU, antidepressive drug, N-methyl-D-aspartate receptor 
+        (NMDAR) antagonist, ketamine, N-methyl-D-aspartate receptor antagonist,
+        (R,S)-ketamine, antidepressant
+      input.example: >-
+        title: "Microbe and host interaction in gastrointestinal homeostasis.",
+        abstract: "Researchers in psychiatry and neuroscience are increasingly recognizing the importance of gut-brain communication in mental health. Both genetics and environmental factors influence gut microbiota composition and function. This study examines host-microbe signaling at the gastrointestinal barrier to identify bottom-up mechanisms of microbiota-brain communication. We examined differences in gut microbiota composition and fecal miRNA profiles in BALB/c and C57BL/6 mice, in relation to gastrointestinal homeostasis and evaluated the response to perturbation of the gut microbiota by broad-spectrum antibiotic treatment. Differences in the gut microbiota composition between BALB/c and C57BL/6 mice, evaluated by fecal 16S rRNA gene sequencing, included significant differences in genera Prevotella, Alistipes, Akkermansia, and Ruminococcus. Significant differences in fecal miRNA profiles were determined using the nCounter NanoString platform. A BLASTn analysis identified conserved fecal miRNA target regions in bacterial metagenomes with 14 significant correlations found between fecal miRNA and predicted taxa relative abundance in our dataset. Treatment with broad-spectrum antibiotics for 2\u00a0weeks resulted in a host-specific physiological response at the gastrointestinal barrier including a decrease in barrier permeability in BALB/c mice and alterations in the expression of barrier regulating genes in both strains. Genera Parabacteroides and Bacteroides were associated with changes in barrier function. The results of this study provide insight into how specific taxa influence gut barrier integrity and function. More generally, these data in the context of recent published studies makes a significant contribution to our understanding of host-microbe interactions providing new knowledge that can be harnessed by us and others in future mechanistic studies."
+      output.example: >-
+        "Drug": {{
+          "schemaResponse": {{
+            "mentions": [
+              "broad-spectrum antibiotic treatment",
+              "broad-spectrum antibiotics"
+            ]
+          }}
+        }}
+
+  Food:
+    is_a: NamedEntity
+    description: >-
+      Substances consumed as part of a regular diet for nutritional purposes. Includes meals, ingredients, and beverages (e.g., “dairy”, “fermented foods”, “LCHF diets”), but excludes supplements unless explicitly referred to as food.
+    attributes:
+      term:
+        identifier: true
+        slot_uri: NCIT:C1949
+    annotations:
+      annotators: sqlite:obo:ncit
+      prompt.examples: Fermented foods, unpasteurised milk, dairy products
+      input.example: >-
+        "title": "Ketogenic Diet: A Dietary Modification as an Anxiolytic Approach?",
+        "abstract": "Anxiety disorders comprise persistent, disabling conditions that are distributed across the globe, and are associated with the high medical and socioeconomic burden of the disease. Within the array of biopsychosocial treatment modalities-including monoaminergic antidepressants, benzodiazepines, and CBT-there is an unmet need for the effective treatment of anxiety disorders resulting in full remission and recovery. Nutritional intervention may be hypothesized as a promising treatment strategy; in particular, it facilitates relapse prevention. Low-carbohydrate high-fat diets (LCHF) may provide a rewarding outcome for some anxiety disorders; more research is needed before this regimen can be recommended to patients on a daily basis, but the evidence mentioned in this paper should encourage researchers and clinicians to consider LCHF as a piece of advice somewhere between psychotherapy and pharmacology, or as an add-on to those two.",
+      output.example: >-
+        "Food": {{
+          "schemaResponse": {{
+              "mentions": [
+                  "Ketogenic Diet",
+                  "Low-carbohydrate high-fat diets",
+                  "LCHF",
+                  "LCHF"
+              ]
+            }}
+        }}
+
+  Gene:
+    is_a: NamedEntity
+    description: >-
+      Named genes and their products, including proteins and cytokines when the biological context refers to their genetic role (e.g., gene expression, transcription). Includes entities like “IL-6”, “TNF-α”, and “GABA” only when context points to gene/protein, not chemical use.
+    attributes:
+      term:
+        identifier: true
+        slot_uri: SNOMEDCT:67261001
+    annotations:
+      annotators: bioportal:SNOMEDCT
+      annotation_rules: >-
+        In many cases, the proteins encoded by genes retain the same name as the genes
+        themselves. Context should be
+        used to determine whether the reference is to the gene or to the protein
+        encoded by that gene.
+      prompt.examples: >-
+        METTL8, ITGB2, OTULIN, and PROSER3 GABA-, proline-, and extracellular
+        matrix-related prefrontal cortex genes, Ephx2 gene
+      input.example: >-
+        title: "Plasma cytokine levels in patients with chronic alcohol overconsumption: Relations to gut microbiota markers and clinical correlates.",
+        abstract: "Alcohol-related morbidity may involve changes in the gut microbiota and immune dysregulation. We have previously demonstrated alterations in gut microbiota composition and functions in patients with alcohol overconsumption, and now aimed to investigate possible associations between cytokine levels, gut microbiota, and clinical symptoms. We included hospital inpatients with a history of chronic alcohol overconsumption. For comparison, we included control patients with a low alcohol intake. Cytokine levels (TGF-\u03b21, TNF-\u03b1, IL-10, IL-8, IL-6, IFN-\u03b3, MCP-1, IL-1RA, IL-1\u03b2, and IL-17) were determined using a customized V-plex assay. We then examined associations of cytokine levels with the abundance of Proteobacteria and Faecalibacterium, percentage of the short-chain fatty acid butyrate, psychiatric symptoms (Hospital Anxiety and Depression Scale), and biochemical liver variables. We included 28 patients with alcohol overconsumption (79% men), and 25 control patients (72% men). Patients with alcohol overconsumption had higher levels of IL-6 (p\u00a0=\u00a00.002), IFN-\u03b3 (p\u00a0=\u00a00.018), and MCP-1 (p\u00a0=\u00a00.006), and lower levels of TGF-\u03b21 (p\u00a0=\u00a00.017) compared with control patients. Inverse correlations were found between Proteobacteria abundance and TNF-\u03b1 (R<sub>s</sub>\u00a0=\u00a0-0.55, p\u00a0=\u00a00.02) and IL-8 (R<sub>s</sub>\u00a0=\u00a0-0.58, p\u00a0=\u00a00.014), and between Faecalibacterium and MCP-1 levels (R<sub>s</sub>\u00a0=\u00a0-0.56, p\u00a0=\u00a00.02) in the control patients, but not in patients with alcohol overconsumption. Patients with alcohol overconsumption reported more psychiatric symptoms, and these symptoms were inversely correlated with IL-10 levels. There were positive correlations between several of the assessed cytokines and biochemical liver variables, and negative correlations between cytokine levels and albumin. Patients with alcohol overconsumption had a cytokine profile suggestive of increased systemic inflammatory activity, with higher levels of pro-inflammatory cytokines (IL-6, IFN-\u03b3, and MCP-1) and lower levels of anti-inflammatory cytokines (TGF-\u03b21). The findings may represent a link between alcohol use and alcohol-related morbidity.",
+      output.example: >-
+        "Gene": {{
+          "schemaResponse": {{
+            "mentions": [
+              "TGF-\u03b21",
+              "TNF-\u03b1",
+              "IL-10",
+              "IL-8",
+              "IL-6",
+              "IFN-\u03b3",
+              "MCP-1",
+              "IL-1RA",
+              "IL-1\u03b2",
+              "IL-17"
+            ]
+          }}
+        }}
+
+  Human:
+    is_a: NamedEntity
+    description: >-
+      References to members of the species Homo sapiens, either collectively (e.g., “adults”, “infants”) or through roles (e.g., “psychiatrist”, “patients”). Used to distinguish from Animal or Population-level terms.
+
+    attributes:
+      term:
+        identifier: true
+        slot_uri: NCBITAXON:9606
+    annotations:
+      annotators: sqlite:obo:ncbitaxon
+      prompt.examples: populations, Homo sapiens, adults, infants, psychiatrist, clinicians, medical personnel
+      input.example: >-
+        title: "IgA-Biome Profiles Correlate with Clinical Parkinson's Disease Subtypes."
+        abstract: "Parkinson's disease is a heterogeneous neurodegenerative disorder with distinctive gut microbiome patterns suggesting that interventions targeting the gut microbiota may prevent, slow, or reverse disease progression and severity. Because secretory IgA (SIgA) plays a key role in shaping the gut microbiota, characterization of the IgA-Biome of individuals classified into either the akinetic rigid (AR) or tremor dominant (TD) Parkinson's disease clinical subtypes was used to further define taxa unique to these distinct clinical phenotypes. Flow cytometry was used to separate IgA-coated and -uncoated bacteria from stool samples obtained from AR and TD patients followed by amplification and sequencing of the V4 region of the 16\u200aS rDNA gene on the MiSeq platform (Illumina). IgA-Biome analyses identified significant alpha and beta diversity differences between the Parkinson's disease phenotypes and the Firmicutes/Bacteroides ratio was significantly higher in those with TD compared to those with AR. In addition, discriminant taxa analyses identified a more pro-inflammatory bacterial profile in the IgA+ fraction of those with the AR clinical subclass compared to IgA-Biome analyses of those with the TD subclass and with the taxa identified in the unsorted control samples. IgA-Biome analyses underscores the importance of the host immune response in shaping the gut microbiome potentially affecting disease progression and presentation. In the present study, IgA-Biome analyses identified a unique proinflammatory microbial signature in the IgA+ fraction of those with AR that would have otherwise been undetected using conventional microbiome analysis approaches.",
+      output.example: >-
+        "Human": {{
+          "schemaResponse": {{
+            "mentions": [
+              "individuals",
+              "AR and TD patients"
+            ]
+          }}
+        }}
+
+  Microbiome:
+    is_a: NamedEntity
+    description: >-
+      The community of microorganisms (and their collective genomes and interactions) that inhabit a specific environment. Includes terms like “gut microbiota”, “oral microbiome”, “IgA-Biome”. This class emphasizes ecosystem context over taxonomic specificity.
+    attributes:
+      term:
+        identifier: true
+        slot_uri: OHMI:0000003
+    annotations:
+      annotators: sqlite:obo:ohmi
+      prompt.examples: >-
+        human gut microbiome, gut microbiome, oral microbiome, salivary
+        microbiomes, tongue dorsum microbiomes
+      input.example: >-
+        title: "IgA-Biome Profiles Correlate with Clinical Parkinson's Disease Subtypes."
+        abstract: "Parkinson's disease is a heterogeneous neurodegenerative disorder with distinctive gut microbiome patterns suggesting that interventions targeting the gut microbiota may prevent, slow, or reverse disease progression and severity. Because secretory IgA (SIgA) plays a key role in shaping the gut microbiota, characterization of the IgA-Biome of individuals classified into either the akinetic rigid (AR) or tremor dominant (TD) Parkinson's disease clinical subtypes was used to further define taxa unique to these distinct clinical phenotypes. Flow cytometry was used to separate IgA-coated and -uncoated bacteria from stool samples obtained from AR and TD patients followed by amplification and sequencing of the V4 region of the 16\u200aS rDNA gene on the MiSeq platform (Illumina). IgA-Biome analyses identified significant alpha and beta diversity differences between the Parkinson's disease phenotypes and the Firmicutes/Bacteroides ratio was significantly higher in those with TD compared to those with AR. In addition, discriminant taxa analyses identified a more pro-inflammatory bacterial profile in the IgA+ fraction of those with the AR clinical subclass compared to IgA-Biome analyses of those with the TD subclass and with the taxa identified in the unsorted control samples. IgA-Biome analyses underscores the importance of the host immune response in shaping the gut microbiome potentially affecting disease progression and presentation. In the present study, IgA-Biome analyses identified a unique proinflammatory microbial signature in the IgA+ fraction of those with AR that would have otherwise been undetected using conventional microbiome analysis approaches.",
+      output.example: >-
+        "Microbiome": {{
+          "schemaResponse": {{
+            "mentions": [
+              "gut microbiota",
+              "gut microbiota",
+              "IgA-Biome",
+              "gut microbiome"
+            ]
+          }}
+        }}
+
+  StatisticalTechnique:
+    is_a: NamedEntity
+    description: >-
+      Named methods or procedures for analyzing data in a structured, quantitative way. Includes analytical models (e.g., “Pearson’s correlation”, “LDA”), clustering approaches, or statistical testing methods. Excludes general study designs (e.g., "cohort study").
+    attributes:
+      term:
+        identifier: true
+        slot_uri: NCIT:C19044
+    annotations:
+      annotators: sqlite:obo:ncit
+      prompt.examples: >-
+        Pearson's correlation analysis, Linear Discriminant Analysis, LDA
+      algorithmic_rules: "^(?!(randomized controlled trials|cohort studies)$).*"
+      input.example: >-
+        "title": "Development of the gut microbiota in the first 14\u00a0years of life and its relations to internalizing and externalizing difficulties and social anxiety during puberty.",
+        "abstract": "Relations between the gut microbiota and host mental health have been suggested by a growing number of case-control and cross-sectional studies, while supporting evidence is limited in large community samples followed during an extended period. Therefore, the current preregistered study ( https://osf.io/8ymav , September 7, 2022) described child gut microbiota development in the first 14\u00a0years of life and explored its relations to internalizing and externalizing difficulties and social anxiety in puberty, a period of high relevance for the development of mental health problems. Fecal microbiota composition was analysed by 16S ribosomal RNA gene amplicon sequencing in a total of 1003 samples from 193 children. Through a clustering method, four distinct microbial clusters were newly identified in puberty. Most children within three of these clusters remained in the same clusters from the age of 12 to 14\u00a0years, suggesting stability in microbial development and transition during this period. These three clusters were compositionally similar to enterotypes (i.e., a robust classification of the gut microbiota based on its composition across different populations) enriched in Bacteroides, Prevotella, and Ruminococcus, respectively. Two Prevotella 9-predominated clusters, including one reported by us earlier in middle childhood and the other one in puberty, were associated with more externalizing behavior at age 14. One Faecalibacterium-depleted pubertal cluster was related to more social anxiety at age 14. This finding was confirmed by a negative cross-sectional relation between Faecalibacterium and social anxiety in the 14-year-olds. The findings of this study continue to map gut microbiota development in a relatively large community sample followed from birth onwards, importantly extending our knowledge to puberty. Results indicate that Prevotella 9 and Faecalibacterium may be relevant microbial taxa in relation to externalizing behavior and social anxiety, respectively. These correlational findings need validations from other similar cohort studies, as well as well-designed mechanistic pre-clinical investigations before inferring cause and effect.",
+
+      output.example: >-
+        "StatisticalTechnique": {{
+          "schemaResponse": {{
+              "mentions": [
+                  "clustering method"
+              ]
+          }}
+        }}
+
+  AnatomicalLocationHumanPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between an anatomical location and a human
+    attributes:
+      id:
+        pattern: "located in"
+
+  AnatomicalLocationAnimalPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between an anatomical location and an animal
+    attributes:
+      id:
+        pattern: "located in"
+
+  BacteriaBacteriaPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a bacterium and a bacterium
+    attributes:
+      id:
+        pattern: "interact"
+
+  BacteriaChemicalPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a bacterium and a chemical
+    attributes:
+      id:
+        pattern: "interact"
+
+  BacteriaDrugPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a bacterium and a drug
+    attributes:
+      id:
+        pattern: "interact"
+
+  BacteriaDDFPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a bacterium and a DDF (Disease, Disorder, or Finding)
+    attributes:
+      id:
+        pattern: "influence"
+
+  BacteriaGenePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a bacterium and a gene
+    attributes:
+      id:
+        pattern: "change expression"
+
+  BacteriaHumanPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a bacterium and a human
+    attributes:
+      id:
+        pattern: "located in"
+
+  BacteriaAnimalPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a bacterium and an animal
+    attributes:
+      id:
+        pattern: "located in"
+
+  BacteriaMicrobiomePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a bacterium and a microbiome
+    attributes:
+      id:
+        pattern: "part of"
+
+  ChemicalAnatomicalLocationPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a chemical and an anatomical location
+    attributes:
+      id:
+        pattern: "located in"
+
+  ChemicalAnimalPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a chemical and an animal
+    attributes:
+      id:
+        pattern: "located in|administered"
+
+  ChemicalChemicalPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a chemical and a chemical
+    attributes:
+      id:
+        pattern: "interact|part of"
+
+  ChemicalMicrobiomePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a chemical and a microbiome
+    attributes:
+      id:
+        pattern: "impact|produced by"
+
+  ChemicalBacteriaPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a chemical and a bacterium
+    attributes:
+      id:
+        pattern: "impact"
+
+  DietarySupplementBacteriaPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a dietary supplement and a bacterium
+    attributes:
+      id:
+        pattern: "impact"
+
+  DietarySupplementMicrobiomePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a dietary supplement and a microbiome
+    attributes:
+      id:
+        pattern: "impact"
+
+  DrugBacteriaPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a drug and a bacterium
+    attributes:
+      id:
+        pattern: "impact"
+
+  DrugMicrobiomePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a drug and a microbiome
+    attributes:
+      id:
+        pattern: "impact"
+
+  FoodBacteriaPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a food and a bacterium
+    attributes:
+      id:
+        pattern: "impact"
+
+  FoodMicrobiomePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a food and a microbiome
+    attributes:
+      id:
+        pattern: "impact"
+
+  ChemicalDDFPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a chemical and a DDF (Disease, Disorder, or Finding)
+    attributes:
+      id:
+        pattern: "influence"
+
+  DietarySupplementDDFPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a dietary supplement and a DDF (Disease, Disorder, or Finding)
+    attributes:
+      id:
+        pattern: "influence"
+
+  FoodDDFPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a food and a DDF (Disease, Disorder, or Finding)
+    attributes:
+      id:
+        pattern: "influence"
+
+  ChemicalGenePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a chemical and a gene
+    attributes:
+      id:
+        pattern: "change expression"
+
+  DietarySupplementGenePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a dietary supplement and a gene
+    attributes:
+      id:
+        pattern: "change expression"
+
+  DrugGenePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a drug and a gene
+    attributes:
+      id:
+        pattern: "change expression"
+
+  FoodGenePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a food and a gene
+    attributes:
+      id:
+        pattern: "change expression"
+
+  ChemicalHumanPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a chemical and a human
+    attributes:
+      id:
+        pattern: "administered|located in"
+
+  DietarySupplementHumanPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a dietary supplement and a human
+    attributes:
+      id:
+        pattern: "administered"
+
+  DietarySupplementAnimalPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a dietary supplement and an animal
+    attributes:
+      id:
+        pattern: "administered"
+
+  DrugHumanPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a drug and a human
+    attributes:
+      id:
+        pattern: "administered"
+
+  DrugAnimalPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a drug and an animal
+    attributes:
+      id:
+        pattern: "administered"
+
+  FoodHumanPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a food and a human
+    attributes:
+      id:
+        pattern: "administered"
+
+  FoodAnimalPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a food and an animal
+    attributes:
+      id:
+        pattern: "administered"
+
+  DDFAnatomicalLocationPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a DDF (Disease, Disorder, or Finding) and an anatomical location
+    attributes:
+      id:
+        pattern: "strike"
+
+  DDFBacteriaPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a DDF (Disease, Disorder, or Finding) and a bacterium
+    attributes:
+      id:
+        pattern: "change abundance"
+
+  DDFMicrobiomePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a DDF (Disease, Disorder, or Finding) and a microbiome
+    attributes:
+      id:
+        pattern: "change abundance"
+
+  DDFChemicalPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a DDF (Disease, Disorder, or Finding) and a chemical
+    attributes:
+      id:
+        pattern: "interact"
+
+  DDFDDFPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a DDF (Disease, Disorder, or Finding) and a DDF (Disease, Disorder, or Finding)
+    attributes:
+      id:
+        pattern: "affect|is a"
+
+  DDFHumanPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a DDF (Disease, Disorder, or Finding) and a human
+    attributes:
+      id:
+        pattern: "target"
+
+  DDFAnimalPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a DDF (Disease, Disorder, or Finding) and an animal
+    attributes:
+      id:
+        pattern: "target"
+
+  DrugChemicalPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a drug and a chemical
+    attributes:
+      id:
+        pattern: "interact"
+
+  DrugDrugPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a drug and a drug
+    attributes:
+      id:
+        pattern: "interact"
+
+  DrugDDFPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a drug and a DDF (Disease, Disorder, or Finding)
+    attributes:
+      id:
+        pattern: "change effect"
+
+  HumanBioMedicalTechniquePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a human and a biomedical technique
+    attributes:
+      id:
+        pattern: "used by"
+
+  AnimalBioMedicalTechniquePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between an animal and a biomedical technique
+    attributes:
+      id:
+        pattern: "used by"
+
+  MicrobiomeBioMedicalTechniquePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a microbiome and a biomedical technique
+    attributes:
+      id:
+        pattern: "used by"
+
+  MicrobiomeAnatomicalLocationPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a microbiome and an anatomical location
+    attributes:
+      id:
+        pattern: "located in"
+
+  MicrobiomeHumanPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a microbiome and a human
+    attributes:
+      id:
+        pattern: "located in"
+
+  MicrobiomeAnimalPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a microbiome and an animal
+    attributes:
+      id:
+        pattern: "located in"
+
+  MicrobiomeGenePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a microbiome and a gene
+    attributes:
+      id:
+        pattern: "change expression"
+
+  MicrobiomeDDFPredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a microbiome and a DDF (Disease, Disorder, or Finding)
+    attributes:
+      id:
+        pattern: "is linked to"
+
+  MicrobiomeMicrobiomePredicate:
+    is_a: RelationshipType
+    description: >-
+      A predicate for a relationship between a microbiome and a microbiome
+    attributes:
+      id:
+        pattern: "compared to"
+
+  AnatomicalLocationHumanRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where an anatomical location is associated with a human.
+    attributes:
+      subject:
+        description: >-
+          The anatomical location involved in the relationship.
+        range: AnatomicalLocation
+      object:
+        description: >-
+          The human involved in the relationship.
+        range: Human
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'located in'.
+        range: AnatomicalLocationHumanPredicate
+        required: true
+
+  AnatomicalLocationAnimalRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where an anatomical location is associated with an animal.
+    attributes:
+      subject:
+        description: >-
+          The anatomical location involved in the relationship.
+        range: AnatomicalLocation
+      object:
+        description: >-
+          The animal involved in the relationship.
+        range: Animal
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'located in'.
+        range: AnatomicalLocationAnimalPredicate
+        required: true
+
+  BacteriaBacteriaRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a bacterium interacts with another bacterium.
+    attributes:
+      subject:
+        description: >-
+          The first bacterium involved in the relationship.
+        range: Bacterium
+      object:
+        description: >-
+          The second bacterium involved in the relationship.
+        range: Bacterium
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'interact'.
+        range: BacteriaBacteriaPredicate
+        required: true
+
+  BacteriaChemicalRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a bacterium interacts with a chemical.
+    attributes:
+      subject:
+        description: >-
+          The bacterium involved in the relationship.
+        range: Bacterium
+      object:
+        description: >-
+          The chemical involved in the relationship.
+        range: Chemical
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'interact'.
+        range: BacteriaChemicalPredicate
+        required: true
+
+  BacteriaDrugRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a bacterium interacts with a drug.
+    attributes:
+      subject:
+        description: >-
+          The bacterium involved in the relationship.
+        range: Bacterium
+      object:
+        description: >-
+          The drug involved in the relationship.
+        range: Drug
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'interact'.
+        range: BacteriaDrugPredicate
+        required: true
+
+  BacteriaDDFRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a bacterium influences a Disease, Disorder, or Finding (DDF).
+    attributes:
+      subject:
+        description: >-
+          The bacterium involved in the relationship.
+        range: Bacterium
+      object:
+        description: >-
+          The DDF involved in the relationship.
+        range: DDF
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'influence'.
+        range: BacteriaDDFPredicate
+        required: true
+
+  BacteriaGeneRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a bacterium changes the expression of a gene.
+    attributes:
+      subject:
+        description: >-
+          The bacterium involved in the relationship.
+        range: Bacterium
+      object:
+        description: >-
+          The gene affected by the bacterium.
+        range: Gene
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'change expression'.
+        range: BacteriaGenePredicate
+        required: true
+
+  BacteriaHumanRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a bacterium is located in a human.
+    attributes:
+      subject:
+        description: >-
+          The bacterium involved in the relationship.
+        range: Bacterium
+      object:
+        description: >-
+          The human involved in the relationship.
+        range: Human
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'located in'.
+        range: BacteriaHumanPredicate
+        required: true
+
+  BacteriaAnimalRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a bacterium is located in an animal.
+    attributes:
+      subject:
+        description: >-
+          The bacterium involved in the relationship.
+        range: Bacterium
+      object:
+        description: >-
+          The animal involved in the relationship.
+        range: Animal
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'located in'.
+        range: BacteriaAnimalPredicate
+        required: true
+
+  BacteriaMicrobiomeRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a bacterium is part of a microbiome.
+    attributes:
+      subject:
+        description: >-
+          The bacterium involved in the relationship.
+        range: Bacterium
+      object:
+        description: >-
+          The microbiome involved in the relationship.
+        range: Microbiome
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'part of'.
+        range: BacteriaMicrobiomePredicate
+        required: true
+
+  ChemicalAnatomicalLocationRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a chemical is located in an anatomical location.
+    attributes:
+      subject:
+        description: >-
+          The chemical involved in the relationship.
+        range: Chemical
+      object:
+        description: >-
+          The anatomical location involved in the relationship.
+        range: AnatomicalLocation
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'located in'.
+        range: ChemicalAnatomicalLocationPredicate
+        required: true
+
+  ChemicalAnimalRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a chemical is located in an animal.
+    attributes:
+      subject:
+        description: >-
+          The chemical involved in the relationship.
+        range: Chemical
+      object:
+        description: >-
+          The animal involved in the relationship.
+        range: Animal
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is either 'located in' or administered.
+        range: ChemicalAnimalPredicate
+        required: true
+
+  ChemicalChemicalRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a chemical interacts with or is part of another chemical.
+    attributes:
+      subject:
+        description: >-
+          The first chemical involved in the relationship.
+        range: Chemical
+      object:
+        description: >-
+          The second chemical involved in the relationship.
+        range: Chemical
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'interact' or 'part of'.
+        range: ChemicalChemicalPredicate
+        required: true
+
+  ChemicalMicrobiomeRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a chemical impacts or is produced by a microbiome.
+    attributes:
+      subject:
+        description: >-
+          The chemical involved in the relationship.
+        range: Chemical
+      object:
+        description: >-
+          The microbiome involved in the relationship.
+        range: Microbiome
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'impact' or 'produced by'.
+        range: ChemicalMicrobiomePredicate
+        required: true
+
+  ChemicalBacteriaRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a chemical impacts a bacterium.
+    attributes:
+      subject:
+        description: >-
+          The chemical involved in the relationship.
+        range: Chemical
+      object:
+        description: >-
+          The bacterium involved in the relationship.
+        range: Bacterium
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'impact'.
+        range: ChemicalBacteriaPredicate
+        required: true
+
+  DietarySupplementBacteriaRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a dietary supplement impacts a bacterium.
+    attributes:
+      subject:
+        description: >-
+          The dietary supplement involved in the relationship.
+        range: DietarySupplement
+      object:
+        description: >-
+          The bacterium involved in the relationship.
+        range: Bacterium
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'impact'.
+        range: DietarySupplementBacteriaPredicate
+        required: true
+
+  DietarySupplementMicrobiomeRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a dietary supplement impacts a microbiome.
+    attributes:
+      subject:
+        description: >-
+          The dietary supplement involved in the relationship.
+        range: DietarySupplement
+      object:
+        description: >-
+          The microbiome involved in the relationship.
+        range: Microbiome
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'impact'.
+        range: DietarySupplementMicrobiomePredicate
+        required: true
+
+  DrugBacteriaRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a drug impacts a bacterium.
+    attributes:
+      subject:
+        description: >-
+          The drug involved in the relationship.
+        range: Drug
+      object:
+        description: >-
+          The bacterium involved in the relationship.
+        range: Bacterium
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'impact'.
+        range: DrugBacteriaPredicate
+        required: true
+
+  DrugMicrobiomeRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a drug impacts a microbiome.
+    attributes:
+      subject:
+        description: >-
+          The drug involved in the relationship.
+        range: Drug
+      object:
+        description: >-
+          The microbiome involved in the relationship.
+        range: Microbiome
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'impact'.
+        range: DrugMicrobiomePredicate
+        required: true
+
+  FoodBacteriaRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where food impacts a bacterium.
+    attributes:
+      subject:
+        description: >-
+          The food involved in the relationship.
+        range: Food
+      object:
+        description: >-
+          The bacterium involved in the relationship.
+        range: Bacterium
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'impact'.
+        range: FoodBacteriaPredicate
+        required: true
+
+  FoodMicrobiomeRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where food impacts a microbiome.
+    attributes:
+      subject:
+        description: >-
+          The food involved in the relationship.
+        range: Food
+      object:
+        description: >-
+          The microbiome involved in the relationship.
+        range: Microbiome
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'impact'.
+        range: FoodMicrobiomePredicate
+        required: true
+
+  ChemicalDDFRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a chemical influences a disease, disorder, or finding.
+    attributes:
+      subject:
+        description: >-
+          The chemical involved in the relationship.
+        range: Chemical
+      object:
+        description: >-
+          The disease, disorder, or finding involved in the relationship.
+        range: DDF
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'influence'.
+        range: ChemicalDDFPredicate
+        required: true
+
+  DietarySupplementDDFRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a dietary supplement influences a disease, disorder, or finding (DDF).
+    attributes:
+      subject:
+        description: >-
+          The dietary supplement involved in the relationship.
+        range: DietarySupplement
+      object:
+        description: >-
+          The disease, disorder, or finding involved in the relationship.
+        range: DDF
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'influence'.
+        range: DietarySupplementDDFPredicate
+        required: true
+
+  FoodDDFRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where food influences a disease, disorder, or finding (DDF).
+    attributes:
+      subject:
+        description: >-
+          The food involved in the relationship.
+        range: Food
+      object:
+        description: >-
+          The disease, disorder, or finding involved in the relationship.
+        range: DDF
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'influence'.
+        range: FoodDDFPredicate
+        required: true
+
+  ChemicalGeneRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a chemical changes the expression of a gene.
+    attributes:
+      subject:
+        description: >-
+          The chemical involved in the relationship.
+        range: Chemical
+      object:
+        description: >-
+          The gene affected by the chemical.
+        range: Gene
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'change expression'.
+        range: ChemicalGenePredicate
+        required: true
+
+  DietarySupplementGeneRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a dietary supplement changes the expression of a gene.
+    attributes:
+      subject:
+        description: >-
+          The dietary supplement involved in the relationship.
+        range: DietarySupplement
+      object:
+        description: >-
+          The gene affected by the dietary supplement.
+        range: Gene
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'change expression'.
+        range: DietarySupplementGenePredicate
+        required: true
+
+  DrugGeneRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a drug changes the expression of a gene.
+    attributes:
+      subject:
+        description: >-
+          The drug involved in the relationship.
+        range: Drug
+      object:
+        description: >-
+          The gene affected by the drug.
+        range: Gene
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'change expression'.
+        range: DrugGenePredicate
+        required: true
+
+  FoodGeneRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where food changes the expression of a gene.
+    attributes:
+      subject:
+        description: >-
+          The food involved in the relationship.
+        range: Food
+      object:
+        description: >-
+          The gene affected by the food.
+        range: Gene
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'change expression'.
+        range: FoodGenePredicate
+        required: true
+
+  ChemicalHumanRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a chemical is administered to a human.
+    attributes:
+      subject:
+        description: >-
+          The chemical involved in the relationship.
+        range: Chemical
+      object:
+        description: >-
+          The human receiving the chemical.
+        range: Human
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is either 'administered' or 'located in'.
+        range: ChemicalHumanPredicate
+        required: true
+
+  DietarySupplementHumanRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a dietary supplement is administered to a human.
+    attributes:
+      subject:
+        description: >-
+          The dietary supplement involved in the relationship.
+        range: DietarySupplement
+      object:
+        description: >-
+          The human receiving the dietary supplement.
+        range: Human
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'administered'.
+        range: DietarySupplementHumanPredicate
+        required: true
+
+  DietarySupplementAnimalRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a dietary supplement is administered to an animal.
+    attributes:
+      subject:
+        description: >-
+          The dietary supplement involved in the relationship.
+        range: DietarySupplement
+      object:
+        description: >-
+          The animal receiving the dietary supplement.
+        range: Animal
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'administered'.
+        range: DietarySupplementAnimalPredicate
+        required: true
+
+  DrugHumanRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a drug is administered to a human.
+    attributes:
+      subject:
+        description: >-
+          The drug involved in the relationship.
+        range: Drug
+      object:
+        description: >-
+          The human receiving the drug.
+        range: Human
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'administered'.
+        range: DrugHumanPredicate
+        required: true
+
+  DrugAnimalRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a drug is administered to an animal.
+    attributes:
+      subject:
+        description: >-
+          The drug involved in the relationship.
+        range: Drug
+      object:
+        description: >-
+          The animal receiving the drug.
+        range: Animal
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'administered'.
+        range: DrugAnimalPredicate
+        required: true
+
+  FoodHumanRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where food is administered to a human.
+    attributes:
+      subject:
+        description: >-
+          The food involved in the relationship.
+        range: Food
+      object:
+        description: >-
+          The human receiving the food.
+        range: Human
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'administered'.
+        range: FoodHumanPredicate
+        required: true
+
+  FoodAnimalRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where food is administered to an animal.
+    attributes:
+      subject:
+        description: >-
+          The food involved in the relationship.
+        range: Food
+      object:
+        description: >-
+          The animal receiving the food.
+        range: Animal
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'administered'.
+        range: FoodAnimalPredicate
+        required: true
+
+  DDFAnatomicalLocationRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a disease, disorder, or finding (DDF) strikes an anatomical location.
+    attributes:
+      subject:
+        description: >-
+          The disease, disorder, or finding involved in the relationship.
+        range: DDF
+      object:
+        description: >-
+          The anatomical location involved in the relationship.
+        range: AnatomicalLocation
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'strike'.
+        range: DDFAnatomicalLocationPredicate
+        required: true
+
+  DDFBacteriaRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a disease, disorder, or finding (DDF) changes the abundance of a bacterium.
+    attributes:
+      subject:
+        description: >-
+          The disease, disorder, or finding involved in the relationship.
+        range: DDF
+      object:
+        description: >-
+          The bacterium affected in the relationship.
+        range: Bacterium
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'change abundance'.
+        range: DDFBacteriaPredicate
+        required: true
+
+  DDFMicrobiomeRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a disease, disorder, or finding (DDF) changes the abundance of a microbiome.
+    attributes:
+      subject:
+        description: >-
+          The disease, disorder, or finding involved in the relationship.
+        range: DDF
+      object:
+        description: >-
+          The microbiome affected in the relationship.
+        range: Microbiome
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'change abundance'.
+        range: DDFMicrobiomePredicate
+        required: true
+
+  DDFChemicalRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a disease, disorder, or finding (DDF) interacts with a chemical.
+    attributes:
+      subject:
+        description: >-
+          The disease, disorder, or finding involved in the relationship.
+        range: DDF
+      object:
+        description: >-
+          The chemical involved in the relationship.
+        range: Chemical
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'interact'.
+        range: DDFChemicalPredicate
+        required: true
+
+  DDFDDFRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where one disease, disorder, or finding (DDF) affects or is a type of another DDF.
+    attributes:
+      subject:
+        description: >-
+          The first disease, disorder, or finding involved in the relationship.
+        range: DDF
+      object:
+        description: >-
+          The second disease, disorder, or finding involved in the relationship.
+        range: DDF
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'affect' or 'is a'.
+        range: DDFDDFPredicate
+        required: true
+
+  DDFHumanRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a disease, disorder, or finding (DDF) targets a human.
+    attributes:
+      subject:
+        description: >-
+          The disease, disorder, or finding involved in the relationship.
+        range: DDF
+      object:
+        description: >-
+          The human affected in the relationship.
+        range: Human
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'target'.
+        range: DDFHumanPredicate
+        required: true
+
+  DDFAnimalRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a disease, disorder, or finding (DDF) targets an animal.
+    attributes:
+      subject:
+        description: >-
+          The disease, disorder, or finding involved in the relationship.
+        range: DDF
+      object:
+        description: >-
+          The animal affected in the relationship.
+        range: Animal
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'target'.
+        range: DDFAnimalPredicate
+        required: true
+
+  DrugChemicalRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a drug interacts with a chemical.
+    attributes:
+      subject:
+        description: >-
+          The drug involved in the relationship.
+        range: Drug
+      object:
+        description: >-
+          The chemical involved in the relationship.
+        range: Chemical
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'interact'.
+        range: DrugChemicalPredicate
+        required: true
+
+  DrugDrugRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a drug interacts with another drug.
+    attributes:
+      subject:
+        description: >-
+          The first drug involved in the relationship.
+        range: Drug
+      object:
+        description: >-
+          The second drug involved in the relationship.
+        range: Drug
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'interact'.
+        range: DrugDrugPredicate
+        required: true
+
+  DrugDDFRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a drug changes the effect of a disease, disorder, or finding (DDF).
+    attributes:
+      subject:
+        description: >-
+          The drug involved in the relationship.
+        range: Drug
+      object:
+        description: >-
+          The disease, disorder, or finding involved in the relationship.
+        range: DDF
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'change effect'.
+        range: DrugDDFPredicate
+        required: true
+
+  HumanBioMedicalTechniqueRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a biomedical technique is used by a human.
+    attributes:
+      subject:
+        description: >-
+          The human involved in the relationship.
+        range: Human
+      object:
+        description: >-
+          The biomedical technique involved in the relationship.
+        range: BiomedicalTechnique
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'used by'.
+        range: HumanBioMedicalTechniquePredicate
+        required: true
+
+  AnimalBioMedicalTechniqueRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a biomedical technique is used by an animal.
+    attributes:
+      subject:
+        description: >-
+          The animal involved in the relationship.
+        range: Animal
+      object:
+        description: >-
+          The biomedical technique involved in the relationship.
+        range: BiomedicalTechnique
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'used by'.
+        range: AnimalBioMedicalTechniquePredicate
+        required: true
+
+  MicrobiomeBioMedicalTechniqueRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a biomedical technique is used by a microbiome.
+    attributes:
+      subject:
+        description: >-
+          The microbiome involved in the relationship.
+        range: Microbiome
+      object:
+        description: >-
+          The biomedical technique involved in the relationship.
+        range: BiomedicalTechnique
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'used by'.
+        range: MicrobiomeBioMedicalTechniquePredicate
+        required: true
+
+  MicrobiomeAnatomicalLocationRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a microbiome is located in an anatomical location.
+    attributes:
+      subject:
+        description: >-
+          The microbiome involved in the relationship.
+        range: Microbiome
+      object:
+        description: >-
+          The anatomical location involved in the relationship.
+        range: AnatomicalLocation
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'located in'.
+        range: MicrobiomeAnatomicalLocationPredicate
+        required: true
+
+  MicrobiomeHumanRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a microbiome is located in a human.
+    attributes:
+      subject:
+        description: >-
+          The microbiome involved in the relationship.
+        range: Microbiome
+      object:
+        description: >-
+          The human involved in the relationship.
+        range: Human
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'located in'.
+        range: MicrobiomeHumanPredicate
+        required: true
+
+  MicrobiomeAnimalRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a microbiome is located in an animal.
+    attributes:
+      subject:
+        description: >-
+          The microbiome involved in the relationship.
+        range: Microbiome
+      object:
+        description: >-
+          The animal involved in the relationship.
+        range: Animal
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'located in'.
+        range: MicrobiomeAnimalPredicate
+        required: true
+
+  MicrobiomeGeneRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a microbiome changes the expression of a gene.
+    attributes:
+      subject:
+        description: >-
+          The microbiome involved in the relationship.
+        range: Microbiome
+      object:
+        description: >-
+          The gene affected in the relationship.
+        range: Gene
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'change expression'.
+        range: MicrobiomeGenePredicate
+        required: true
+
+  MicrobiomeDDFRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a microbiome is linked to a disease, disorder, or finding (DDF).
+    attributes:
+      subject:
+        description: >-
+          The microbiome involved in the relationship.
+        range: Microbiome
+      object:
+        description: >-
+          The disease, disorder, or finding involved in the relationship.
+        range: DDF
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'is linked to'.
+        range: MicrobiomeDDFPredicate
+        required: true
+
+  MicrobiomeMicrobiomeRelationship:
+    is_a: Triple
+    description: >-
+      A relationship where a microbiome is compared to another microbiome.
+    attributes:
+      subject:
+        description: >-
+          The first microbiome involved in the relationship.
+        range: Microbiome
+      object:
+        description: >-
+          The second microbiome involved in the relationship.
+        range: Microbiome
+      predicate:
+        description: >-
+          The type of relationship. In this case, it is always 'compared to'.
+        range: MicrobiomeMicrobiomePredicate
+        required: true

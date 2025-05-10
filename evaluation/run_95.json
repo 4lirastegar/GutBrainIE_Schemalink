@@ -1,0 +1,289 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "SMARCA4",
+                "ALK",
+                "MYC",
+                "NFKB2"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "SMARCA4",
+                    "synonyms": [
+                        "BRG1",
+                        "hBRM",
+                        "SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily A member 4"
+                    ],
+                    "sequence": "MDNTVSSDEQQDLVEIAVKKDEFLQFEPEADYEDED"
+                },
+                {
+                    "label": "ALK",
+                    "synonyms": [
+                        "Anaplastic lymphoma kinase",
+                        "CD246"
+                    ],
+                    "sequence": "MFRRRKSASGQKQGSLPASQADGPTGTNQSVRIPQPIPDMTTRMARAWGALPERRALLAPL"
+                },
+                {
+                    "label": "MYC",
+                    "synonyms": [
+                        "c-Myc",
+                        "bHLHe39"
+                    ],
+                    "sequence": "MEVKNNDKDVTETEGESSTQAEEQRRNHNEEVVHLKRSSPHLIDSAPSDRGGGSGAPAPR"
+                },
+                {
+                    "label": "NFKB2",
+                    "synonyms": [
+                        "Nuclear factor NF-kappa-B p100 subunit",
+                        "LYT-10"
+                    ],
+                    "sequence": "MADASNRFLAGYPANYTFRETNFINMSNQLRRKALALGSAVSDF"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "SMARCA4",
+                "ALK",
+                "MYC",
+                "NFKB2"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "SMARCA4",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "BRG1",
+                        "SNF2-beta"
+                    ]
+                },
+                {
+                    "label": "ALK",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Anaplastic lymphoma kinase"
+                    ]
+                },
+                {
+                    "label": "MYC",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "c-Myc",
+                        "Myc proto-oncogene"
+                    ]
+                },
+                {
+                    "label": "NFKB2",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "NF-kappa-B p100 subunit"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "myocardial infarction",
+                "lymphoma",
+                "leukemia",
+                "glioma",
+                "gout",
+                "proteinuria"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "myocardial infarction",
+                    "synonyms": [
+                        "heart attack",
+                        "myocardial infarct",
+                        "coronary thrombosis",
+                        "acute myocardial infarction"
+                    ]
+                },
+                {
+                    "label": "lymphoma",
+                    "synonyms": [
+                        "lymphatic cancer",
+                        "malignant lymphoma",
+                        "lymphatic neoplasm"
+                    ]
+                },
+                {
+                    "label": "leukemia",
+                    "synonyms": [
+                        "leukaemia",
+                        "blood cancer",
+                        "hematologic neoplasm"
+                    ]
+                },
+                {
+                    "label": "glioma",
+                    "synonyms": [
+                        "glial tumor",
+                        "neuroglial tumor"
+                    ]
+                },
+                {
+                    "label": "gout",
+                    "synonyms": [
+                        "gouty arthritis",
+                        "crystal arthropathy"
+                    ]
+                },
+                {
+                    "label": "proteinuria",
+                    "synonyms": [
+                        "albuminuria",
+                        "urinary protein"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "SMARCA4",
+                "object": "SMARCA4",
+                "predicate": "gene_product_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "SMARCA4",
+                "object": "SMARCA4",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "ALK",
+                "object": "ALK",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "MYC",
+                "object": "MYC",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "NFKB2",
+                "object": "NFKB2",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "myocardial infarction",
+                "object": "lymphoma",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "glioma",
+                "object": "gout",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "glioma",
+                "object": "myocardial infarction",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "myeloproliferative disorders",
+                "object": "proteinuria",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "SMARCA4",
+                "object": "myocardial infarction",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "ALK",
+                "object": "lymphoma",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "MYC",
+                "object": "lymphoma",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "NFKB2",
+                "object": "lymphoma",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "SMARCA4",
+                "object": "leukemia",
+                "predicate": "causally_related_to"
+            }
+        ]
+    }
+}

@@ -1,0 +1,392 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "Notch1",
+                "TRPC6",
+                "PPP3CA",
+                "PPP3CB",
+                "PPP3R1",
+                "NFATC3",
+                "calcineurin"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "Notch1",
+                    "synonyms": [
+                        "Neurogenic locus Notch homolog protein 1"
+                    ],
+                    "sequence": "MTTVAAAAFFLLWSATACPSGSPASSPGDGLASTAPANLFDPPQQAQQQQLPPAPQLASAPLASSWLSPAGGAGWPLLPSPAPTTTLFPLPLTLHLQAGAKPQDLVVYVGAAITGKTQHFFEVKQINSSSATQQLGHVESCDTEDCVASKRSFFRREBI"
+                },
+                {
+                    "label": "TRPC6",
+                    "synonyms": [
+                        "Transient receptor potential cation channel, subfamily C, member 6"
+                    ],
+                    "sequence": "MSCTNGDQGMNVLSGELQKTTVMARPEMEKEKYVRKLARQKEQRKKAYFAIYHIYPVWENLERHRKRLFEIEARRIAEILQPGGRFHPEKSFASKLLHAGGDBVAEVYKDPVYGWRHSSLGSAAARDYHCAVDTDVGDKFN"
+                },
+                {
+                    "label": "PPP3CA",
+                    "synonyms": [
+                        "Protein phosphatase 3 catalytic subunit alpha isoform",
+                        "Calcineurin A alpha"
+                    ],
+                    "sequence": "MAAAAAAAAAGGGGGGGGGRRAARPAASLACMPAPQPMPAPPKQYVAAMGRRGDLKEKSRKAAEESPLECGSSEPSHLTVSATTVFAADPSATQTYAGRRSVRRWEDKNELDALRFAIRHTNYEIMLEGYESKQKLRMLRYYY"
+                },
+                {
+                    "label": "PPP3CB",
+                    "synonyms": [
+                        "Protein phosphatase 3 catalytic subunit beta isoform",
+                        "Calcineurin A beta"
+                    ],
+                    "sequence": "MFDVKHKHGPLAGVGKDFPPGSVRYHHGAGROFFFKGQEFIRAEPMETECGFPSTYDRIGTYSIERYYRKLTRTGLDLVKSBGKRHGDYTDYSPKLVRWIDSEALQDVIVFDHFEVIKTLDINTFTMLKVLLVDIIS"
+                },
+                {
+                    "label": "PPP3R1",
+                    "synonyms": [
+                        "Calcineurin B"
+                    ],
+                    "sequence": "MFDYKDDDDKIESTLDSGSSLGSDPNLPQTSVQKPRRPPRDPPAPLPGVTRCPENCPFCLQKGRVPRETGPDSTVRFSIVNGGASHSLKGGTQRRKMKILSVSST"
+                },
+                {
+                    "label": "NFATC3",
+                    "synonyms": [
+                        "Nuclear factor of activated T-cells, cytoplasmic 3"
+                    ],
+                    "sequence": "MMGAAAVAPMFHHPAVDDNLRVQELIQIPVENKFIFTEDTESLIYSVQELPISKYQMYPSEKIEAYCRVRIFPLEVVNHVDTAVRICQKLDGEGCRFSHSFLCLTTKVF"
+                },
+                {
+                    "label": "calcineurin",
+                    "synonyms": [
+                        "Calcium-dependent serine/threonine phosphatase"
+                    ],
+                    "sequence": "ASGGGGGAFRPQKSGLSIKCPVPLEKLHDPVLEDFTWVDAHIIIIANNEGDLSLRSPDDEVNDADFNYVRMHLPMSDTQILDPILLAISEVENFTEQNRRQALEGAQDAVIDRVVWVRNCAWQMRGRKHNGLEDVDCGIPI"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "Notch1",
+                "TRPC6",
+                "PPP3CA",
+                "PPP3CB",
+                "PPP3R1",
+                "NFATC3"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "Notch1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Neurogenic locus Notch homolog protein 1"
+                    ]
+                },
+                {
+                    "label": "TRPC6",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Transient Receptor Potential Cation Channel, Subfamily C, Member 6"
+                    ]
+                },
+                {
+                    "label": "PPP3CA",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Protein phosphatase 3 catalytic subunit alpha isoform"
+                    ]
+                },
+                {
+                    "label": "PPP3CB",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Protein phosphatase 3 catalytic subunit beta isoform"
+                    ]
+                },
+                {
+                    "label": "PPP3R1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Protein phosphatase 3 regulatory subunit B, alpha isoform"
+                    ]
+                },
+                {
+                    "label": "NFATC3",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Nuclear factor of activated T-cells, cytoplasmic 3"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "miR-30",
+                "miR-30d",
+                "miR-30a",
+                "miR-30c",
+                "miR-30e"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "miR-30",
+                    "miRNAfamily": "miR-30",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-30d",
+                    "miRNAfamily": "miR-30",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-30a",
+                    "miRNAfamily": "miR-30",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-30c",
+                    "miRNAfamily": "miR-30",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-30e",
+                    "miRNAfamily": "miR-30",
+                    "sequence": "",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "glucocorticoid",
+                "calcium",
+                "calcineurin",
+                "transforming growth factor-\u03b2",
+                "cisplatin"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "glucocorticoid",
+                    "synonyms": []
+                },
+                {
+                    "label": "calcium",
+                    "synonyms": []
+                },
+                {
+                    "label": "calcineurin",
+                    "synonyms": []
+                },
+                {
+                    "label": "transforming growth factor-\u03b2",
+                    "synonyms": [
+                        "TGF-\u03b2"
+                    ]
+                },
+                {
+                    "label": "cisplatin",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "calcineurin",
+                "object": "PPP3CA",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "calcineurin",
+                "object": "PPP3CB",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "calcineurin",
+                "object": "PPP3R1",
+                "predicate": "gene_product_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "Notch1",
+                "object": "Notch1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "TRPC6",
+                "object": "TRPC6",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "PPP3CA",
+                "object": "PPP3CA",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "PPP3CB",
+                "object": "PPP3CB",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "PPP3R1",
+                "object": "PPP3R1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "NFATC3",
+                "object": "NFATC3",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "MiRNAToGeneRelationship": {
+        "MiRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "miR-30",
+                "object": "Notch1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-30",
+                "object": "TRPC6",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-30",
+                "object": "PPP3CA",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-30",
+                "object": "PPP3CB",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-30",
+                "object": "PPP3R1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-30",
+                "object": "NFATC3",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": [
+            {
+                "subject": "miR-30d",
+                "object": "miR-30",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-30",
+                "object": "miR-30a",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-30",
+                "object": "miR-30c",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-30",
+                "object": "miR-30e",
+                "predicate": "regulates_activity_of"
+            }
+        ]
+    },
+    "MiRNAToChemicalRelationship": {
+        "MiRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "miR-30",
+                "object": "glucocorticoid",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "miR-30",
+                "object": "calcium",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "miR-30",
+                "object": "calcineurin",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "miR-30d",
+                "object": "transforming growth factor-\u03b2",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "miR-30c",
+                "object": "cisplatin",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    }
+}

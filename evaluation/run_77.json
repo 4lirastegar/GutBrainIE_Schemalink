@@ -1,0 +1,240 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "NKCC1",
+                "NKCC2",
+                "NCC"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "NKCC1",
+                    "synonyms": [],
+                    "sequence": "Not provided"
+                },
+                {
+                    "label": "NKCC2",
+                    "synonyms": [
+                        "SLC12A1"
+                    ],
+                    "sequence": "Not provided"
+                },
+                {
+                    "label": "NCC",
+                    "synonyms": [
+                        "SLC12A3"
+                    ],
+                    "sequence": "Not provided"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "SLC12A2"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "SLC12A2",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "NKCC1"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "Na+",
+                "chloride"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "Na+",
+                    "synonyms": [
+                        "sodium ion"
+                    ]
+                },
+                {
+                    "label": "chloride",
+                    "synonyms": [
+                        "Cl-",
+                        "chlorine ion"
+                    ]
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "Bartter syndrome",
+                "Gitelman syndrome",
+                "deafness",
+                "hypotonia",
+                "hearing loss"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "Bartter syndrome",
+                    "synonyms": [
+                        "Bartter's syndrome",
+                        "Hypercalciuric hypokalemic alkalosis"
+                    ]
+                },
+                {
+                    "label": "Gitelman syndrome",
+                    "synonyms": [
+                        "Gitelman's syndrome",
+                        "Hypomagnesemic hypokalemic alkalosis"
+                    ]
+                },
+                {
+                    "label": "deafness",
+                    "synonyms": [
+                        "hearing impairment",
+                        "hearing loss"
+                    ]
+                },
+                {
+                    "label": "hypotonia",
+                    "synonyms": [
+                        "decreased muscle tone",
+                        "floppy baby syndrome"
+                    ]
+                },
+                {
+                    "label": "hearing loss",
+                    "synonyms": [
+                        "hearing impairment",
+                        "deafness"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "NKCC1",
+                "object": "SLC12A2",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "NKCC1",
+                "object": "SLC12A2",
+                "predicate": "gene_product_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "SLC12A2",
+                "object": "NKCC1",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "Bartter syndrome",
+                "object": "Gitelman syndrome",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "deafness",
+                "object": "hypotonia",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "hearing loss",
+                "object": "neurodevelopmental disorders",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "NKCC2",
+                "object": "Bartter syndrome",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "NCC",
+                "object": "Gitelman syndrome",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "NKCC1",
+                "object": "deafness",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "NKCC1",
+                "object": "hypotonia",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "NKCC1",
+                "object": "hearing loss",
+                "predicate": "causally_related_to"
+            }
+        ]
+    }
+}

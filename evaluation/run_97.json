@@ -1,0 +1,317 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "METTL3",
+                "Bcl-2",
+                "Bax",
+                "AKT",
+                "NOTCH3",
+                "DLL3",
+                "HES1"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "METTL3",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "Bcl-2",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "Bax",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "AKT",
+                    "synonyms": [
+                        "Protein Kinase B"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "NOTCH3",
+                    "synonyms": [
+                        "Neurogenic locus notch homolog protein 3"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "DLL3",
+                    "synonyms": [
+                        "Delta-like ligand 3"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "HES1",
+                    "synonyms": [
+                        "Hairy and Enhancer of Split-1"
+                    ],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "METTL3",
+                "Bax",
+                "NOTCH3",
+                "DLL3",
+                "HES1"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "METTL3",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Methyltransferase Like 3"
+                    ]
+                },
+                {
+                    "label": "Bax",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Bcl-2-associated X protein"
+                    ]
+                },
+                {
+                    "label": "NOTCH3",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Neurogenic locus notch homolog protein 3"
+                    ]
+                },
+                {
+                    "label": "DLL3",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Delta-like ligand 3"
+                    ]
+                },
+                {
+                    "label": "HES1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Hairy and Enhancer of Split-1"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "NOTCH3",
+                "DLL3",
+                "HES1"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "NOTCH3",
+                    "synonyms": [
+                        "Neurogenic locus notch homolog protein 3"
+                    ]
+                },
+                {
+                    "label": "DLL3",
+                    "synonyms": [
+                        "Delta-like ligand 3"
+                    ]
+                },
+                {
+                    "label": "HES1",
+                    "synonyms": [
+                        "Hairy and Enhancer of Split-1"
+                    ]
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "siRNA"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "siRNA",
+                    "synonyms": [
+                        "small interfering RNA",
+                        "silencing RNA"
+                    ]
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "lung cancer",
+                "glioblastoma"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "lung cancer",
+                    "synonyms": []
+                },
+                {
+                    "label": "glioblastoma",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "METTL3",
+                "object": "Bax",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "METTL3",
+                "object": "NOTCH3",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "METTL3",
+                "object": "DLL3",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "METTL3",
+                "object": "HES1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "METTL3",
+                "object": "METTL3",
+                "predicate": "gene_product_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "METTL3",
+                "object": "METTL3",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "METTL3",
+                "object": "Bcl-2",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "NOTCH3",
+                "object": "NOTCH3",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "DLL3",
+                "object": "DLL3",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "HES1",
+                "object": "HES1",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "lung cancer",
+                "object": "glioblastoma",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "METTL3",
+                "object": "lung cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "METTL3",
+                "object": "glioblastoma",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "MRNAToChemicalRelationship": {
+        "MRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "NOTCH3",
+                "object": "siRNA",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "DLL3",
+                "object": "siRNA",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "HES1",
+                "object": "siRNA",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    }
+}

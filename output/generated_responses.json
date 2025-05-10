@@ -1,0 +1,127 @@
+{
+    "AnatomicalLocation": {
+        "schemaResponse": {
+            "mentions": [
+                "gut",
+                "gums",
+                "skin",
+                "blood",
+                "brain",
+                "substantia nigra"
+            ]
+        }
+    },
+    "Animal": {
+        "schemaResponse": {
+            "mentions": [
+                "rodents",
+                "mice"
+            ]
+        }
+    },
+    "BiomedicalTechnique": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "Bacteria": {
+        "schemaResponse": {
+            "mentions": [
+                "gram-negative bacteria",
+                "endotoxin-producing bacterial species"
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "mentions": [
+                "endotoxin",
+                "lipopolysaccharide",
+                "LPS",
+                "amyloid \u03b2",
+                "tau",
+                "nitric oxide",
+                "oxidants",
+                "cytokines"
+            ]
+        }
+    },
+    "Metabolites": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "DietarySupplement": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "DiseaseDisorderOrFinding": {
+        "schemaResponse": {
+            "mentions": [
+                "neurodegeneration",
+                "gut inflammation",
+                "gum disease",
+                "neurodegenerative disease",
+                "systemic inflammation",
+                "memory deficits",
+                "loss of brain synapses",
+                "Alzheimer's disease",
+                "systemic infections",
+                "gum disease",
+                "Parkinson's disease",
+                "\u03b1-synuclein production",
+                "aggregation",
+                "loss of dopaminergic neurons",
+                "amyotrophic lateral sclerosis",
+                "TDP-43 aggregation",
+                "neuropathology",
+                "Peripheral diseases",
+                "sepsis",
+                "AIDS",
+                "liver failure",
+                "neurodegeneration"
+            ]
+        }
+    },
+    "Drug": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "Food": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "mentions": [
+                "amyloid \u03b2",
+                "tau",
+                "\u03b1-synuclein",
+                "TDP-43"
+            ]
+        }
+    },
+    "Human": {
+        "schemaResponse": {
+            "mentions": [
+                "humans",
+                "patients"
+            ]
+        }
+    },
+    "Microbiome": {
+        "schemaResponse": {
+            "mentions": [
+                "gut microbiome"
+            ]
+        }
+    },
+    "StatisticalTechnique": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    }
+}

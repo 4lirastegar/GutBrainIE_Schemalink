@@ -1,0 +1,162 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "CD36",
+                "MGLL"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "CD36",
+                    "synonyms": [
+                        "Platelet glycoprotein 4",
+                        "Fatty acid translocase"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "MGLL",
+                    "synonyms": [
+                        "Monoglyceride lipase"
+                    ],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": [
+                "SNORD46"
+            ]
+        },
+        "attributeResponse": {
+            "SnoRNAAttributes": [
+                {
+                    "label": "SNORD46",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": [
+                "G11A"
+            ]
+        },
+        "attributeResponse": {
+            "SNPAttributes": [
+                {
+                    "label": "G11A",
+                    "synonyms": [
+                        ""
+                    ]
+                }
+            ]
+        }
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "Obesity"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "Obesity",
+                    "synonyms": [
+                        "Excessive Weight Gain",
+                        "Overweight"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNPTosnoRNARelationship": {
+        "SNPTosnoRNARelationshipRelationships": [
+            {
+                "subject": "G11A",
+                "object": "SNORD46",
+                "predicate": "causally_influences"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "Obesity",
+                "object": "many cancer types",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "CD36",
+                "object": "Obesity",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "MGLL",
+                "object": "Obesity",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "SnoRNAToDiseaseRelationship": {
+        "SnoRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "SNORD46",
+                "object": "Obesity",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    }
+}

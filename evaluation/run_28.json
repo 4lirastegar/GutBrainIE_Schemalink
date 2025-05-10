@@ -1,0 +1,225 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "p53",
+                "RPL5",
+                "RPL11",
+                "MDM2"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "p53",
+                    "synonyms": [
+                        "TP53",
+                        "Tumor protein p53"
+                    ],
+                    "sequence": "Not provided"
+                },
+                {
+                    "label": "RPL5",
+                    "synonyms": [
+                        "Ribosomal Protein L5"
+                    ],
+                    "sequence": "Not provided"
+                },
+                {
+                    "label": "RPL11",
+                    "synonyms": [
+                        "Ribosomal Protein L11"
+                    ],
+                    "sequence": "Not provided"
+                },
+                {
+                    "label": "MDM2",
+                    "synonyms": [
+                        "Mouse Double Minute 2 Homolog"
+                    ],
+                    "sequence": "Not provided"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "TP53"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "TP53",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "p53",
+                        "tumor protein p53"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": [
+                "SNORA18L5"
+            ]
+        },
+        "attributeResponse": {
+            "SnoRNAAttributes": [
+                {
+                    "label": "SNORA18L5",
+                    "synonyms": [
+                        "small nucleolar RNA H/ACA box 18-like 5",
+                        "H/ACA box snoRNA 18L5"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "MDM2"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "MDM2",
+                    "synonyms": [
+                        "HDMX",
+                        "Hdm2",
+                        "E3 ubiquitin-protein ligase Mdm2"
+                    ]
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "hepatitis B virus",
+                "hepatocellular carcinoma"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "hepatitis B virus",
+                    "synonyms": [
+                        "HBV"
+                    ]
+                },
+                {
+                    "label": "hepatocellular carcinoma",
+                    "synonyms": [
+                        "HCC"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "p53",
+                "object": "TP53",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "MDM2",
+                "object": "TP53",
+                "predicate": "regulates_activity_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "TP53",
+                "object": "p53",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "hepatitis B virus",
+                "object": "hepatocellular carcinoma",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "p53",
+                "object": "hepatocellular carcinoma",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "MDM2",
+                "object": "hepatocellular carcinoma",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "SnoRNAToDiseaseRelationship": {
+        "SnoRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "SNORA18L5",
+                "object": "hepatocellular carcinoma",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "SnoRNAToGeneRelationship": {
+        "SnoRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "SNORA18L5",
+                "object": "TP53",
+                "predicate": "interacts_with"
+            }
+        ]
+    }
+}

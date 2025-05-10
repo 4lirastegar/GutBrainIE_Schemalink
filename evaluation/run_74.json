@@ -1,0 +1,137 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "hsa-miR-590-5p",
+                "hsa-miR-128",
+                "hsa-miR-9*",
+                "hsa-miR-330"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "hsa-miR-590-5p",
+                    "miRNAfamily": "mir-590",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-128",
+                    "miRNAfamily": "mir-128",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-9*",
+                    "miRNAfamily": "mir-9",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-330",
+                    "miRNAfamily": "mir-330",
+                    "sequence": "",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "Huntington's disease"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "Huntington's disease",
+                    "synonyms": [
+                        "Huntington disease",
+                        "HD"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNAToDiseaseRelationship": {
+        "MiRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "hsa-miR-128",
+                "object": "Huntington's disease",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-9*",
+                "object": "Huntington's disease",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-330",
+                "object": "Huntington's disease",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": []
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": []
+    }
+}

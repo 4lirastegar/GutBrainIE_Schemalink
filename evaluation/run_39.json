@@ -1,0 +1,237 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "Hey2",
+                "Hand1",
+                "Hand2",
+                "Irx5"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "Hey2",
+                    "geneType": "transcriptional repressor",
+                    "synonyms": [
+                        "Hrt2"
+                    ]
+                },
+                {
+                    "label": "Hand1",
+                    "geneType": "bHLH transcription factor",
+                    "synonyms": []
+                },
+                {
+                    "label": "Hand2",
+                    "geneType": "bHLH transcription factor",
+                    "synonyms": [
+                        "a paralog of Hand1"
+                    ]
+                },
+                {
+                    "label": "Irx5",
+                    "geneType": "transcription factor",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "Hrt2",
+                "Hey2",
+                "Hand1",
+                "Hand2",
+                "Irx5"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "Hrt2",
+                    "synonyms": [
+                        "Hey2"
+                    ]
+                },
+                {
+                    "label": "Hand1",
+                    "synonyms": []
+                },
+                {
+                    "label": "Hand2",
+                    "synonyms": []
+                },
+                {
+                    "label": "Irx5",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "miR-1-2",
+                "miR-1",
+                "miR-133a",
+                "miR-1-1"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "miR-1-2",
+                    "miRNAfamily": "miR-1",
+                    "sequence": "unknown",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-1",
+                    "miRNAfamily": "miR-1",
+                    "sequence": "unknown",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-133a",
+                    "miRNAfamily": "miR-133",
+                    "sequence": "unknown",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-1-1",
+                    "miRNAfamily": "miR-1",
+                    "sequence": "unknown",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "cardiac disease",
+                "ventricular septal defects",
+                "heart disease"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "cardiac disease",
+                    "synonyms": [
+                        "heart disease"
+                    ]
+                },
+                {
+                    "label": "ventricular septal defects",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNAToGeneRelationship": {
+        "MiRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "miR-1-2",
+                "object": "Hey2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-1-2",
+                "object": "Hand1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-1-2",
+                "object": "Hand2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-1-2",
+                "object": "Irx5",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "MiRNAToDiseaseRelationship": {
+        "MiRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "miR-1-2",
+                "object": "cardiac disease",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-1-2",
+                "object": "ventricular septal defects",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-1-2",
+                "object": "heart disease",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "ventricular septal defects",
+                "object": "heart disease",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": [
+            {
+                "subject": "miR-1-1",
+                "object": "miR-1-2",
+                "predicate": "regulates_activity_of"
+            }
+        ]
+    }
+}

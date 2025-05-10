@@ -1,0 +1,768 @@
+id: https://github.com/AnacletoLAB/RNA-KG
+name: RNA-KG-template
+title: RNA-KG test Template
+description: A template centered on RNA interactions. This template is intended to
+  represent associations among genes, proteins, RNAs, chemicals, GO terms, variants
+  (SNPs), and diseases.
+prefixes:
+  linkml: https://w3id.org/linkml/
+  core: http://w3id.org/ontogpt/core/
+  PRO: http://purl.obolibrary.org/obo/PR_
+default_range: string
+imports:
+- linkml:types
+- core
+classes:
+  ProteinToGeneRelationship:
+    is_a: Triple
+    description: A triple where the subject is a protein and the object is a gene.
+    attributes:
+      subject:
+        range: Protein
+        annotations:
+          prompt.examples: TNF protein, lipocalin-1, transcription factor GATA-4,
+            transcription factor GATA-6, sonic hedgehog protein, catenin (Cadherin-Associated
+            Protein)
+      object:
+        range: Gene
+        annotations:
+          prompt.examples: EGFR, IL6, CTNNA1, GRB2, CCR5
+      predicate:
+        range: ProteinToGenePredicate
+        annotations:
+          prompt.examples: regulates, is translated from, gene product of, directly
+            regulates the activity of, is directly regulating the activity of
+  SnoRNAToLncRNARelationship:
+    is_a: Triple
+    description: A triple where the subject is a snoRNA and the object is a lncRNA.
+    attributes:
+      subject:
+        range: SnoRNA
+        annotations:
+          prompt.examples: SNORD44, SNORD76, SNORD113-1
+      object:
+        range: LncRNA
+        annotations:
+          prompt.examples: HOTTIP, MALAT1, TUG1
+      predicate:
+        range: SnoRNAToLncRNAPredicate
+        annotations:
+          prompt.examples: interacts with
+  SNPTosnoRNARelationship:
+    is_a: Triple
+    description: A triple where the subject is a SNP and the object is a snoRNA.
+    attributes:
+      subject:
+        range: SNP
+        annotations:
+          prompt.examples: rs13183672, rs58502383, rs1555581087, rs1555581087
+      object:
+        range: SnoRNA
+        annotations:
+          prompt.examples: SNORD44, SNORD76, SNORD113-1
+      predicate:
+        range: SNPtoSnoRNAPredicate
+        annotations:
+          prompt.examples: causally influences
+  GeneToProteinRelationship:
+    is_a: Triple
+    description: A triple where the subject is a gene and the object is a protein.
+    attributes:
+      subject:
+        range: Gene
+        annotations:
+          prompt.examples: EGFR, IL6, CTNNA1, GRB2, CCR5
+      object:
+        range: Protein
+        annotations:
+          prompt.examples: TNF protein, lipocalin-1, transcription factor GATA-4,
+            transcription factor GATA-6, sonic hedgehog protein, catenin (Cadherin-Associated
+            Protein)
+      predicate:
+        range: GeneToProteinPredicate
+        annotations:
+          prompt.examples: has gene product, activated by, repressed by
+  MiRNAToGeneRelationship:
+    is_a: Triple
+    description: A triple where the subject is a miRNA and the object is a gene.
+    attributes:
+      subject:
+        range: MiRNA
+        annotations:
+          prompt.examples: hsa-mir-19b-1, hsa-let-7a-3, hsa-miR-215-5p, hsa-miR-215-3p,
+            hsa-miR-181a-5p
+      object:
+        range: Gene
+        annotations:
+          prompt.examples: EGFR, IL6, CTNNA1, GRB2, CCR5
+      predicate:
+        range: MiRNAtoGenePredicate
+        annotations:
+          prompt.examples: interacts with, downregulates, downregulates gene, regulates,
+            directly regulates the activity of, is directly regulating the activity
+            of
+  MiRNAToDiseaseRelationship:
+    is_a: Triple
+    description: A triple where the subject is a miRNA and the object is a disease.
+    attributes:
+      subject:
+        range: MiRNA
+        annotations:
+          prompt.examples: hsa-mir-19b-1, hsa-let-7a-3, hsa-miR-215-5p, hsa-miR-215-3p,
+            hsa-miR-181a-5p
+      object:
+        range: Disease
+        annotations:
+          prompt.examples: prostate cancer, lung cancer, parkinson disease, heart
+            failure, stroke
+      predicate:
+        range: MiRNAtoDiseasePredicate
+        annotations:
+          prompt.examples: causes condition, treats, is substance that treats, causes
+            or contributes to condition
+  DiseaseToDiseaseRelationship:
+    is_a: Triple
+    description: A triple where the subject is a disease and the object is a disease.
+    attributes:
+      subject:
+        range: Disease
+        annotations:
+          prompt.examples: respiratory syndrome, lung cancer, poisoning, heart failure,
+            achoo syndrome
+      object:
+        range: Disease
+        annotations:
+          prompt.examples: prostate cancer, lung cancer, parkinson disease, heart
+            failure, stroke
+      predicate:
+        range: DiseasetoDiseasePredicate
+        annotations:
+          prompt.examples: causes condition, causally related to, related to, causes
+            or contributes to condition
+  ProteinToDiseaseRelationship:
+    is_a: Triple
+    description: A triple where the subject is a protein and the object is a disease.
+    attributes:
+      subject:
+        range: Protein
+        annotations:
+          prompt.examples: PPM1F, A2M, MSH2, musculin
+      object:
+        range: Disease
+        annotations:
+          prompt.examples: prostate cancer, lung cancer, parkinson disease, heart
+            failure, stroke
+      predicate:
+        range: DiseasetoDiseasePredicate
+        annotations:
+          prompt.examples: causes condition, causally related to, related to, causes
+            or contributes to condition
+  LncRNAToDiseaseRelationship:
+    is_a: Triple
+    description: A triple where the subject is a lncRNA and the object is a disease.
+    attributes:
+      subject:
+        range: LncRNA
+        annotations:
+          prompt.examples: HOTTIP, MALAT1, TUG1
+      object:
+        range: Disease
+        annotations:
+          prompt.examples: prostate cancer, lung cancer, parkinson disease, heart
+            failure, stroke
+      predicate:
+        range: LncRNAtoDiseasePredicate
+        annotations:
+          prompt.examples: causes condition, causes or contributes to condition
+  MRNAvaccineToDiseaseRelationship:
+    is_a: Triple
+    description: A triple where the subject is an mRNA vaccine and the object is a
+      disease.
+    attributes:
+      subject:
+        range: MRNAvaccine
+        annotations:
+          prompt.examples: Moderna COVID-19 Vaccine, BNT162b1 SARS-CoV-2 Vaccine,
+            Famtozinameran
+      object:
+        range: Disease
+        annotations:
+          prompt.examples: COVID-19, cancer, lung cancer
+      predicate:
+        range: MRNAvaccinetoDiseasePredicate
+        annotations:
+          prompt.examples: treats, is substance that treats
+  SnoRNAToDiseaseRelationship:
+    is_a: Triple
+    description: A triple where the subject is a snoRNA and the object is a disease.
+    attributes:
+      subject:
+        range: SnoRNA
+        annotations:
+          prompt.examples: SNORD44, SNORD76
+      object:
+        range: Disease
+        annotations:
+          prompt.examples: prostate cancer, lung cancer, parkinson disease, heart
+            failure, stroke
+      predicate:
+        range: SnoRNAtoDiseasePredicate
+        annotations:
+          prompt.examples: causes condition, causes or contributes to condition
+  LncRNAToGORelationship:
+    is_a: Triple
+    description: A triple where the subject is a lncRNA and the object is a GO term.
+    attributes:
+      subject:
+        range: LncRNA
+        annotations:
+          prompt.examples: HOTTIP, MALAT1, TUG1
+      object:
+        range: GO
+        annotations:
+          prompt.examples: circadian rhythm, ATP-dependent activity, ATPase inhibitor
+            complex, ASAP complex
+      predicate:
+        range: LncRNAtoGOPredicate
+        annotations:
+          prompt.examples: molecularly interacts with, participates in, located in,
+            has function
+  SnoRNAToGORelationship:
+    is_a: Triple
+    description: A triple where the subject is a snoRNA and the object is a GO term.
+    attributes:
+      subject:
+        range: SnoRNA
+        annotations:
+          prompt.examples: SNORD44, SNORD113-1, SNORD76
+      object:
+        range: GO
+        annotations:
+          prompt.examples: circadian rhythm, ATP-dependent activity, ATPase inhibitor
+            complex, ASAP complex
+      predicate:
+        range: SnoRNAtoGOPredicate
+        annotations:
+          prompt.examples: molecularly interacts with, participates in, located in,
+            has function
+  MiRNAToGORelationship:
+    is_a: Triple
+    description: A triple where the subject is a miRNA and the object is a GO term.
+    attributes:
+      subject:
+        range: MiRNA
+        annotations:
+          prompt.examples: hsa-mir-19b-1, hsa-let-7a-3, hsa-miR-215-5p, hsa-miR-215-3p,
+            hsa-miR-181a-5p
+      object:
+        range: GO
+        annotations:
+          prompt.examples: circadian rhythm, ATP-dependent activity, ATPase inhibitor
+            complex, ASAP complex
+      predicate:
+        range: MiRNAtoGOPredicate
+        annotations:
+          prompt.examples: molecularly interacts with, participates in, located in,
+            has function
+  MiRNAtoMiRNARelationship:
+    is_a: Triple
+    description: A triple where the subject is a miRNA and the object is a miRNA.
+    attributes:
+      subject:
+        range: MiRNA
+        annotations:
+          prompt.examples: hsa-mir-19b-1, hsa-let-7a-3, hsa-miR-215-5p, hsa-miR-215-3p,
+            hsa-miR-181a-5p
+      object:
+        range: MiRNA
+        annotations:
+          prompt.examples: hsa-miR-660-3p, hsa-let-7a-3, hsa-miR-6862-3p, hsa-miR-215-3p
+      predicate:
+        range: MiRNAtoMiRNAPredicate
+        annotations:
+          prompt.examples: related to, similar to, correlated with, regulates, regulates
+            activity of
+  LncRNAToMiRNARelationship:
+    is_a: Triple
+    description: A triple where the subject is a lncRNA and the object is a miRNA.
+    attributes:
+      subject:
+        range: LncRNA
+        annotations:
+          prompt.examples: SPRY4-IT1, BACE1-AS, CCAT1, SFTA3
+      object:
+        range: MiRNA
+        annotations:
+          prompt.examples: hsa-mir-19b-1, hsa-let-7a-3, hsa-miR-215-5p, hsa-miR-215-3p,
+            hsa-miR-181a-5p
+      predicate:
+        range: LncRNAToMiRNAPredicate
+        annotations:
+          prompt.examples: interacts with
+  SnoRNAToMiRNARelationship:
+    is_a: Triple
+    description: A triple where the subject is a snoRNA and the object is a miRNA.
+    attributes:
+      subject:
+        range: SnoRNA
+        annotations:
+          prompt.examples: SNORD44, SNORD113-1, SNORD76, h5sn2
+      object:
+        range: MiRNA
+        annotations:
+          prompt.examples: hsa-mir-19b-1, hsa-let-7a-3, hsa-miR-215-5p, hsa-miR-215-3p,
+            hsa-miR-181a-5p
+      predicate:
+        range: SnoRNAToMiRNAPredicate
+        annotations:
+          prompt.examples: interacts with
+  LncRNAToGeneRelationship:
+    is_a: Triple
+    description: A triple where the subject is a lncRNA and the object is a gene.
+    attributes:
+      subject:
+        range: LncRNA
+        annotations:
+          prompt.examples: SPRY4-IT1, BACE1-AS, CCAT1, SFTA3
+      object:
+        range: Gene
+        annotations:
+          prompt.examples: EGFR, IL6, CTNNA1, GRB2, CCR5
+      predicate:
+        range: LncRNAToGenePredicate
+        annotations:
+          prompt.examples: interacts with
+  SnoRNAToGeneRelationship:
+    is_a: Triple
+    description: A triple where the subject is a snoRNA and the object is a gene.
+    attributes:
+      subject:
+        range: SnoRNA
+        annotations:
+          prompt.examples: SNORD44, SNORD113-1, SNORD76
+      object:
+        range: Gene
+        annotations:
+          prompt.examples: EGFR, IL6, CTNNA1, GRB2, CCR5
+      predicate:
+        range: SnoRNAToGenePredicate
+        annotations:
+          prompt.examples: interacts with
+  LncRNAToMRNARelationship:
+    is_a: Triple
+    description: A triple where the subject is a lncRNA and the object is an mRNA.
+    attributes:
+      subject:
+        range: LncRNA
+        annotations:
+          prompt.examples: SPRY4-IT1, BACE1-AS, CCAT1, SFTA3
+      object:
+        range: MRNA
+        annotations:
+          prompt.examples: EGFR, IL6, CTNNA1, GRB2, CCR5
+      predicate:
+        range: LncRNAToMRNAPredicate
+        annotations:
+          prompt.examples: interacts with
+  MiRNAToChemicalRelationship:
+    is_a: Triple
+    description: A triple where the subject is a miRNA and the object is a chemical.
+    attributes:
+      subject:
+        range: MiRNA
+        annotations:
+          prompt.examples: hsa-mir-19b-1, hsa-let-7a-3, hsa-miR-215-5p, hsa-miR-215-3p,
+            hsa-miR-181a-5p
+      object:
+        range: Chemical
+        annotations:
+          prompt.examples: fluorocarbon, halide, (2-Chloro-4-pyridinyl)methanol, 2-bromo-N-[2-(1,3,3-trimethyl-2-indolylidene)ethylideneamino]benzamide
+      predicate:
+        range: MiRNAToChemicalPredicate
+        annotations:
+          prompt.examples: interacts with, molecularly interacts with
+  MRNAToChemicalRelationship:
+    is_a: Triple
+    description: A triple where the subject is a mRNA and the object is a chemical.
+    attributes:
+      subject:
+        range: MRNA
+        annotations:
+          prompt.examples: EGFR, IL6, CTNNA1, GRB2, CCR5
+      object:
+        range: Chemical
+        annotations:
+          prompt.examples: fluorocarbon, halide, (2-Chloro-4-pyridinyl)methanol, 2-bromo-N-[2-(1,3,3-trimethyl-2-indolylidene)ethylideneamino]benzamide
+      predicate:
+        range: MRNAToChemicalPredicate
+        annotations:
+          prompt.examples: interacts with, molecularly interacts with
+  LncRNAToChemicalRelationship:
+    is_a: Triple
+    description: A triple where the subject is a lncRNA and the object is a chemical.
+    attributes:
+      subject:
+        range: LncRNA
+        annotations:
+          prompt.examples: SPRY4-IT1, BACE1-AS, CCAT1, SFTA3
+      object:
+        range: Chemical
+        annotations:
+          prompt.examples: fluorocarbon, halide, (2-Chloro-4-pyridinyl)methanol, 2-bromo-N-[2-(1,3,3-trimethyl-2-indolylidene)ethylideneamino]benzamide
+      predicate:
+        range: LncRNAToChemicalPredicate
+        annotations:
+          prompt.examples: interacts with, molecularly interacts with
+  Protein:
+    is_a: NamedEntity
+    attributes:
+      label:
+        description: the name of the protein
+        identifier: true
+      synonyms:
+        description: alternative names of the protein
+        multivalued: true
+      sequence:
+        description: 'the amino-acid sequence of the protein. For example: DIEFRVLH'
+    id_prefixes:
+    - PR
+    annotations:
+      annotators: sqlite:obo:pr
+  Gene:
+    is_a: NamedEntity
+    attributes:
+      label:
+        description: the name of the gene
+        identifier: true
+      geneType:
+        description: 'the gene type or category. For example: protein-coding gene'
+      synonyms:
+        description: alternative names of the gene
+        multivalued: true
+    id_prefixes:
+    - HGNC
+    annotations:
+      annotators: sqlite:obo:hgnc
+  MRNA:
+    is_a: NamedEntity
+    attributes:
+      label:
+        description: the name of the gene producing the messenger RNA (mRNA)
+        identifier: true
+      synonyms:
+        description: alternative names of the gene
+        multivalued: true
+    id_prefixes:
+    - HGNC
+    annotations:
+      annotators: sqlite:obo:hgnc
+  LncRNA:
+    is_a: NamedEntity
+    attributes:
+      label:
+        description: the name of the long non-coding RNA (lncRNA)
+        identifier: true
+      synonyms:
+        description: alternative names of the lncRNA
+        multivalued: true
+    id_prefixes:
+    - HGNC
+    annotations:
+      annotators: sqlite:obo:hgnc
+  SnoRNA:
+    is_a: NamedEntity
+    attributes:
+      label:
+        description: the name of the small nucleolar RNA (snoRNA)
+        identifier: true
+      synonyms:
+        description: alternative names of the snoRNA
+        multivalued: true
+    id_prefixes:
+    - HGNC
+    annotations:
+      annotators: sqlite:obo:hgnc
+  MRNAvaccine:
+    is_a: NamedEntity
+    attributes:
+      label:
+        description: the name of the mRNA vaccine
+        identifier: true
+      synonyms:
+        description: alternative names of the mRNA vaccine
+        multivalued: true
+    annotations:
+      annotators: sqlite:obo:drugbank
+  SNP:
+    is_a: NamedEntity
+    attributes:
+      label:
+        description: the name of the Single Nucleotide Polymorphism (SNP)
+        identifier: true
+      synonyms:
+        description: alternative names of the SNP
+        multivalued: true
+  MiRNA:
+    is_a: NamedEntity
+    attributes:
+      label:
+        description: the name of the microRNA (miRNA)
+        identifier: true
+      miRNAfamily:
+        description: 'the miRNA family. For example: let-7 mir-19'
+      sequence:
+        description: 'the nucleotidic sequence of the miRNA. For example: UAGCUAGCCGC'
+      synonyms:
+        description: alternative names of the miRNA
+        multivalued: true
+  Chemical:
+    is_a: NamedEntity
+    attributes:
+      label:
+        description: the name of the chemical
+        identifier: true
+      synonyms:
+        description: alternative names of the chemical
+        multivalued: true
+    id_prefixes:
+    - CHEBI
+    annotations:
+      annotators: sqlite:obo:chebi
+  Disease:
+    is_a: NamedEntity
+    attributes:
+      label:
+        description: the name of the disease or of the phenotype
+        identifier: true
+      synonyms:
+        description: alternative names of the disease or of the phenotype
+        multivalued: true
+    id_prefixes:
+    - MONDO
+    - HP
+    annotations:
+      annotators: sqlite:obo:mondo, sqlite:obo:hp
+  GO:
+    is_a: NamedEntity
+    description: The process by which a cell progresses over time from its initial
+      formation to its mature state, including differentiation, growth, and specialization
+      to perform specific functions
+    attributes:
+      label:
+        description: the name of the gene ontology term (biological process, cellular
+          component, and/or molecular function)
+        identifier: true
+      synonyms:
+        description: alternative names of the gene ontology term
+        multivalued: true
+    id_prefixes:
+    - GO
+    annotations:
+      annotators: sqlite:obo:go
+  MiRNAToChemicalPredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: interacts_with | molecularly_interacts_with
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  MRNAToChemicalPredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: interacts_with | molecularly_interacts_with
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  LncRNAToChemicalPredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: interacts_with | molecularly_interacts_with
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  LncRNAToMiRNAPredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: interacts_with
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  SnoRNAToMiRNAPredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: interacts_with
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  SnoRNAToGenePredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: interacts_with
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  ProteinToGenePredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: regulates | regulates_activity_of | gene_product_of
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  GeneToProteinPredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: has_gene_product
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  MiRNAtoGenePredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: regulates | regulates_activity_of | interacts_with
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  LncRNAToGenePredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: interacts_with
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  LncRNAToMRNAPredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: interacts_with
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  MiRNAtoDiseasePredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: causes_or_contributes_to_condition | causes_condition
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  DiseasetoDiseasePredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: causally_related_to
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  SnoRNAToLncRNAPredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: interacts_with
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  LncRNAtoDiseasePredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: causes_or_contributes_to_condition | causes_condition
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  SnoRNAtoDiseasePredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: causes_or_contributes_to_condition | causes_condition
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  MRNAvaccinetoDiseasePredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: is_substance_that_treats
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  LncRNAtoGOPredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: molecularly_interacts_with | participates_in | located_in | has_function
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  MiRNAtoGOPredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: molecularly_interacts_with | participates_in | located_in | has_function
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  SnoRNAtoGOPredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: molecularly_interacts_with | participates_in | located_in | has_function
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  MiRNAtoMiRNAPredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: regulates_activity_of
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  SNPtoSnoRNAPredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: causally_influences
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio
+  ProteinToDiseasePredicate:
+    is_a: RelationshipType
+    attributes:
+      id:
+        pattern: causes_or_contributes_to_condition | causes_condition
+    id_prefixes:
+    - RO
+    annotations:
+      annotators: gilda:, sqlite:obo:ro, bioportal:so, bioportal:sio

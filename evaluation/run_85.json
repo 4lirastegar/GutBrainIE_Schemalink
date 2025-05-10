@@ -1,0 +1,937 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "ATG7",
+                "BACH1",
+                "PDGFRA",
+                "TRIM28",
+                "PPM1F",
+                "CCND1",
+                "CDK6",
+                "SERBP1",
+                "SATB1",
+                "S100A11",
+                "HOXB7",
+                "FAM3A",
+                "RASA1"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "ATG7",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "BACH1",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "PDGFRA",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "TRIM28",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "PPM1F",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "CCND1",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "CDK6",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "SERBP1",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "SATB1",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "S100A11",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "HOXB7",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "FAM3A",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "RASA1",
+                    "synonyms": [],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "ZBTB20",
+                "PYGO2",
+                "ATG7",
+                "BACH1",
+                "PDGFRA",
+                "TRIM28",
+                "PPM1F",
+                "CCND1",
+                "CDK6",
+                "SERBP1",
+                "SATB1",
+                "S100A11",
+                "HOXB7",
+                "Hoxa13",
+                "FAM3A",
+                "RASA1"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "ZBTB20",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "zinc finger and BTB domain containing 20"
+                    ]
+                },
+                {
+                    "label": "PYGO2",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Pygopus homolog 2"
+                    ]
+                },
+                {
+                    "label": "ATG7",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Autophagy Related 7"
+                    ]
+                },
+                {
+                    "label": "BACH1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "BTB Domain and CNC Homolog 1"
+                    ]
+                },
+                {
+                    "label": "PDGFRA",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Platelet Derived Growth Factor Receptor Alpha"
+                    ]
+                },
+                {
+                    "label": "TRIM28",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Tripartite Motif Containing 28"
+                    ]
+                },
+                {
+                    "label": "PPM1F",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Protein Phosphatase, Mg2+/Mn2+ Dependent 1F"
+                    ]
+                },
+                {
+                    "label": "CCND1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Cyclin D1"
+                    ]
+                },
+                {
+                    "label": "CDK6",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Cyclin Dependent Kinase 6"
+                    ]
+                },
+                {
+                    "label": "SERBP1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "SERPINE1 mRNA Binding Protein 1"
+                    ]
+                },
+                {
+                    "label": "SATB1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Special AT-rich Sequence-Binding Protein 1"
+                    ]
+                },
+                {
+                    "label": "S100A11",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "S100 Calcium Binding Protein A11"
+                    ]
+                },
+                {
+                    "label": "HOXB7",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Homeobox B7"
+                    ]
+                },
+                {
+                    "label": "Hoxa13",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Homeobox A13"
+                    ]
+                },
+                {
+                    "label": "FAM3A",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Family With Sequence Similarity 3, Member A"
+                    ]
+                },
+                {
+                    "label": "RASA1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "RAS P21 Protein Activator 1"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": [
+                "SNHG8"
+            ]
+        },
+        "attributeResponse": {
+            "LncRNAAttributes": [
+                {
+                    "label": "SNHG8",
+                    "synonyms": [
+                        "Small nucleolar RNA host gene 8"
+                    ]
+                }
+            ]
+        }
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "miR-634",
+                "miR-335-5p",
+                "miR-588",
+                "miR-152",
+                "miR-1270",
+                "miR-491",
+                "miR-512-5p",
+                "miR-149-5p",
+                "miR-542-3p",
+                "miR-656-3p",
+                "miR-384",
+                "miR-335"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "miR-634",
+                    "miRNAfamily": "miR-634",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-335-5p",
+                    "miRNAfamily": "mir-335",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-588",
+                    "miRNAfamily": "miR-588",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-152",
+                    "miRNAfamily": "mir-152",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-1270",
+                    "miRNAfamily": "mir-1270",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-491",
+                    "miRNAfamily": "mir-491",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-512-5p",
+                    "miRNAfamily": "mir-512",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-149-5p",
+                    "miRNAfamily": "mir-149",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-542-3p",
+                    "miRNAfamily": "mir-542",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-656-3p",
+                    "miRNAfamily": "mir-656",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-384",
+                    "miRNAfamily": "mir-384",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-335",
+                    "miRNAfamily": "mir-335",
+                    "sequence": "",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "cancer",
+                "ischemic stroke",
+                "myocardial infarction"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "cancer",
+                    "synonyms": []
+                },
+                {
+                    "label": "ischemic stroke",
+                    "synonyms": []
+                },
+                {
+                    "label": "myocardial infarction",
+                    "synonyms": [
+                        "heart attack"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "ATG7",
+                "object": "ATG7",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "BACH1",
+                "object": "BACH1",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "PDGFRA",
+                "object": "PDGFRA",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "TRIM28",
+                "object": "TRIM28",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "PPM1F",
+                "object": "PPM1F",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "CCND1",
+                "object": "CCND1",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "SERBP1",
+                "object": "SERBP1",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "SATB1",
+                "object": "SATB1",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "S100A11",
+                "object": "S100A11",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "HOXB7",
+                "object": "HOXB7",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "FAM3A",
+                "object": "FAM3A",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "RASA1",
+                "object": "RASA1",
+                "predicate": "gene_product_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "ATG7",
+                "object": "ATG7",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "BACH1",
+                "object": "BACH1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "PDGFRA",
+                "object": "PDGFRA",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "TRIM28",
+                "object": "TRIM28",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "PPM1F",
+                "object": "PPM1F",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "CCND1",
+                "object": "CCND1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "CDK6",
+                "object": "CDK6",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "SERBP1",
+                "object": "SERBP1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "SATB1",
+                "object": "SATB1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "S100A11",
+                "object": "S100A11",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "HOXB7",
+                "object": "HOXB7",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "FAM3A",
+                "object": "FAM3A",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "RASA1",
+                "object": "RASA1",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "MiRNAToGeneRelationship": {
+        "MiRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "miR-634",
+                "object": "ZBTB20",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-335-5p",
+                "object": "PYGO2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-588",
+                "object": "ATG7",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-1270",
+                "object": "BACH1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-491",
+                "object": "PDGFRA",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-512-5p",
+                "object": "TRIM28",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-149-5p",
+                "object": "PPM1F",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-542-3p",
+                "object": "CCND1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-656-3p",
+                "object": "SERBP1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-656-3p",
+                "object": "SATB1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-384",
+                "object": "HOXB7",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "miR-335",
+                "object": "RASA1",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "MiRNAToDiseaseRelationship": {
+        "MiRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "miR-384",
+                "object": "ischemic stroke",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-335",
+                "object": "ischemic stroke",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-384",
+                "object": "myocardial infarction",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-335",
+                "object": "myocardial infarction",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-634",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-335-5p",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-588",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-152",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-1270",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-491",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-512-5p",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-149-5p",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-542-3p",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-656-3p",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "ischemic stroke",
+                "object": "myocardial infarction",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "myocardial infarction",
+                "object": "ischemic stroke",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "ATG7",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "BACH1",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "PDGFRA",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "TRIM28",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "PPM1F",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "CCND1",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "CDK6",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "SERBP1",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "SATB1",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "S100A11",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "FAM3A",
+                "object": "ischemic stroke",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "FAM3A",
+                "object": "myocardial infarction",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "RASA1",
+                "object": "ischemic stroke",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "RASA1",
+                "object": "myocardial infarction",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "LncRNAToDiseaseRelationship": {
+        "LncRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "SNHG8",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "ischemic stroke",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "myocardial infarction",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": [
+            {
+                "subject": "miR-656-3p",
+                "object": "miR-384",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-1270",
+                "object": "miR-491",
+                "predicate": "regulates_activity_of"
+            }
+        ]
+    },
+    "LncRNAToMiRNARelationship": {
+        "LncRNAToMiRNARelationshipRelationships": [
+            {
+                "subject": "SNHG8",
+                "object": "miR-634",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "miR-335-5p",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "miR-588",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "miR-152",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "miR-1270",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "miR-491",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "miR-512-5p",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "miR-149-5p",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "miR-542-3p",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "miR-656-3p",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "miR-384",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "miR-335",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "LncRNAToGeneRelationship": {
+        "LncRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "SNHG8",
+                "object": "ZBTB20",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "PYGO2",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "ATG7",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "BACH1",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "PDGFRA",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "TRIM28",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "PPM1F",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "CCND1",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "CDK6",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "SERBP1",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "SATB1",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "S100A11",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "HOXB7",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "Hoxa13",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNHG8",
+                "object": "RASA1",
+                "predicate": "interacts_with"
+            }
+        ]
+    }
+}

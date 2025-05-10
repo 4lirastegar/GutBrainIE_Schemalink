@@ -1,0 +1,95 @@
+{
+  "entities": [
+    {
+      "start_idx": 4,
+      "end_idx": 27,
+      "location": "title",
+      "text_span": "dormant blood microbiome",
+      "label": "microbiome"
+    },
+    {
+      "start_idx": 32,
+      "end_idx": 61,
+      "location": "title",
+      "text_span": "chronic, inflammatory diseases",
+      "label": "DDF"
+    },
+    {
+      "start_idx": 551,
+      "end_idx": 593,
+      "location": "abstract",
+      "text_span": "sequence-based and ultramicroscopic studies",
+      "label": "biomedical technique"
+    },
+    {
+      "start_idx": 623,
+      "end_idx": 638,
+      "location": "abstract",
+      "text_span": "blood microbiome",
+      "label": "microbiome"
+    },
+    {
+      "start_idx": 655,
+      "end_idx": 679,
+      "location": "abstract",
+      "text_span": "non-communicable diseases",
+      "label": "DDF"
+    },
+    {
+      "start_idx": 724,
+      "end_idx": 737,
+      "location": "abstract",
+      "text_span": "gut microbiome",
+      "label": "microbiome"
+    },
+    {
+      "start_idx": 811,
+      "end_idx": 819,
+      "location": "abstract",
+      "text_span": "dysbiosis",
+      "label": "DDF"
+    },
+    {
+      "start_idx": 873,
+      "end_idx": 883,
+      "location": "abstract",
+      "text_span": "oral cavity",
+      "label": "anatomical location"
+    },
+    {
+      "start_idx": 887,
+      "end_idx": 895,
+      "location": "abstract",
+      "text_span": "Dysbiosis",
+      "label": "DDF"
+    },
+    {
+      "start_idx": 1158,
+      "end_idx": 1178,
+      "location": "abstract",
+      "text_span": "inflammatory diseases",
+      "label": "DDF"
+    },
+    {
+      "start_idx": 1214,
+      "end_idx": 1261,
+      "location": "abstract",
+      "text_span": "chronic, non-communicable, inflammatory diseases",
+      "label": "DDF"
+    },
+    {
+      "start_idx": 1352,
+      "end_idx": 1375,
+      "location": "abstract",
+      "text_span": "bactericidal antibiotics",
+      "label": "drug"
+    },
+    {
+      "start_idx": 1380,
+      "end_idx": 1387,
+      "location": "abstract",
+      "text_span": "vaccines",
+      "label": "drug"
+    }
+  ]
+}

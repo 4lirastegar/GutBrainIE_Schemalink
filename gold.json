@@ -1,0 +1,172 @@
+{
+  "entities": [
+            {
+                "start_idx": 0,
+                "end_idx": 16,
+                "location": "title",
+                "text_span": "Fiber deprivation",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 22,
+                "end_idx": 43,
+                "location": "title",
+                "text_span": "microbiome-borne curli",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 51,
+                "end_idx": 75,
+                "location": "title",
+                "text_span": "gut bacterial populations",
+                "label": "bacteria"
+            },
+            {
+                "start_idx": 120,
+                "end_idx": 138,
+                "location": "title",
+                "text_span": "Parkinson's disease",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 0,
+                "end_idx": 18,
+                "location": "abstract",
+                "text_span": "Parkinson's disease",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 21,
+                "end_idx": 22,
+                "location": "abstract",
+                "text_span": "PD",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 30,
+                "end_idx": 50,
+                "location": "abstract",
+                "text_span": "neurological disorder",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 69,
+                "end_idx": 85,
+                "location": "abstract",
+                "text_span": "motor dysfunction",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 88,
+                "end_idx": 111,
+                "location": "abstract",
+                "text_span": "dopaminergic neuron loss",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 118,
+                "end_idx": 150,
+                "location": "abstract",
+                "text_span": "alpha-synuclein (\u03b1Syn) inclusions",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 234,
+                "end_idx": 266,
+                "location": "abstract",
+                "text_span": "Lifestyle and microbial dysbiosis",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 300,
+                "end_idx": 324,
+                "location": "abstract",
+                "text_span": "Diet-driven gut dysbiosis",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 330,
+                "end_idx": 353,
+                "location": "abstract",
+                "text_span": "reduced barrier function",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 380,
+                "end_idx": 394,
+                "location": "abstract",
+                "text_span": "enteric neurons",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 399,
+                "end_idx": 404,
+                "location": "abstract",
+                "text_span": "toxins",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 430,
+                "end_idx": 446,
+                "location": "abstract",
+                "text_span": "fiber deprivation",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 464,
+                "end_idx": 478,
+                "location": "abstract",
+                "text_span": "bacterial curli",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 483,
+                "end_idx": 489,
+                "location": "abstract",
+                "text_span": "protein",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 510,
+                "end_idx": 513,
+                "location": "abstract",
+                "text_span": "\u03b1Syn",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 651,
+                "end_idx": 664,
+                "location": "abstract",
+                "text_span": "gut microbiome",
+                "label": "microbiome"
+            },
+            {
+                "start_idx": 687,
+                "end_idx": 724,
+                "location": "abstract",
+                "text_span": "gastrointestinal and brain pathologies",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 749,
+                "end_idx": 763,
+                "location": "abstract",
+                "text_span": "bacterial curli",
+                "label": "chemical"
+            },
+            {
+                "start_idx": 831,
+                "end_idx": 862,
+                "location": "abstract",
+                "text_span": "intestinal and brain pathologies",
+                "label": "DDF"
+            },
+            {
+                "start_idx": 1065,
+                "end_idx": 1066,
+                "location": "abstract",
+                "text_span": "PD",
+                "label": "DDF"
+            }
+        ]
+      }

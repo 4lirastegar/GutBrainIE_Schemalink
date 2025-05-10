@@ -1,0 +1,108 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "miR-223",
+                "miR 17-5p-92",
+                "106a-92"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "miR-223",
+                    "miRNAfamily": "miR-223",
+                    "sequence": "UAGCUAGCCGC",
+                    "synonyms": [
+                        "miR-223"
+                    ]
+                },
+                {
+                    "label": "miR 17-5p-92",
+                    "miRNAfamily": "miR-17",
+                    "sequence": "CAGUGCAAUCUUUGUUGCUGAA",
+                    "synonyms": [
+                        "miR-17-5p"
+                    ]
+                },
+                {
+                    "label": "106a-92",
+                    "miRNAfamily": "miR-106",
+                    "sequence": "AAAGUGCUGACAGUGCAGAU",
+                    "synonyms": [
+                        "miR-106a"
+                    ]
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": [
+            {
+                "subject": "miR 17-5p-92",
+                "object": "106a-92",
+                "predicate": "regulates_activity_of"
+            }
+        ]
+    }
+}

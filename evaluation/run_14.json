@@ -1,0 +1,365 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "phosphatase and tensin homolog",
+                "FoXO1",
+                "Smad1",
+                "Smad2",
+                "Smad4",
+                "IGF-1",
+                "matrix metalloproteinase-19",
+                "Sp5",
+                "histone acetyltransferase 1"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "phosphatase and tensin homolog",
+                    "synonyms": [
+                        "PTEN"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "FoXO1",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "Smad1",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "Smad2",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "Smad4",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "IGF-1",
+                    "synonyms": [
+                        "Insulin-like growth factor 1"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "matrix metalloproteinase-19",
+                    "synonyms": [
+                        "MMP-19"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "Sp5",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "histone acetyltransferase 1",
+                    "synonyms": [
+                        "HAT1"
+                    ],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "PTEN",
+                "FoXO1",
+                "Smad1",
+                "Smad2",
+                "Smad4",
+                "Sp5",
+                "HAT1",
+                "NFAT5"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "PTEN",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "phosphatase and tensin homolog"
+                    ]
+                },
+                {
+                    "label": "FoXO1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": []
+                },
+                {
+                    "label": "Smad1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": []
+                },
+                {
+                    "label": "Smad2",
+                    "geneType": "protein-coding gene",
+                    "synonyms": []
+                },
+                {
+                    "label": "Smad4",
+                    "geneType": "protein-coding gene",
+                    "synonyms": []
+                },
+                {
+                    "label": "Sp5",
+                    "geneType": "protein-coding gene",
+                    "synonyms": []
+                },
+                {
+                    "label": "HAT1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "histone acetyltransferase 1"
+                    ]
+                },
+                {
+                    "label": "NFAT5",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "nuclear factor of activated T cells-5"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "miR-486-5p"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "miR-486-5p",
+                    "miRNAfamily": "miR-486",
+                    "sequence": "",
+                    "synonyms": [
+                        "miR-486-5p"
+                    ]
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "phosphatase and tensin homolog",
+                "object": "PTEN",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "phosphatase and tensin homolog",
+                "object": "FoXO1",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "Smad1",
+                "object": "Smad1",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "Smad1",
+                "object": "Smad2",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "Smad1",
+                "object": "Smad4",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "Smad2",
+                "object": "Smad1",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "Smad2",
+                "object": "Smad2",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "Smad2",
+                "object": "Smad4",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "Smad4",
+                "object": "Smad1",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "Smad4",
+                "object": "Smad2",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "Smad4",
+                "object": "Smad4",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "IGF-1",
+                "object": "IGF-1",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "matrix metalloproteinase-19",
+                "object": "Sp5",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "histone acetyltransferase 1",
+                "object": "HAT1",
+                "predicate": "gene_product_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "PTEN",
+                "object": "phosphatase and tensin homolog",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "FoXO1",
+                "object": "FoXO1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "Smad1",
+                "object": "Smad1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "Smad2",
+                "object": "Smad2",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "Smad4",
+                "object": "Smad4",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "Sp5",
+                "object": "Sp5",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "HAT1",
+                "object": "histone acetyltransferase 1",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "MiRNAToGeneRelationship": {
+        "MiRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "miR-486-5p",
+                "object": "PTEN",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-486-5p",
+                "object": "FoXO1",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-486-5p",
+                "object": "Smad1",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-486-5p",
+                "object": "Smad2",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-486-5p",
+                "object": "Smad4",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-486-5p",
+                "object": "Sp5",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-486-5p",
+                "object": "HAT1",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "miR-486-5p",
+                "object": "NFAT5",
+                "predicate": "regulates_activity_of"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": []
+    }
+}

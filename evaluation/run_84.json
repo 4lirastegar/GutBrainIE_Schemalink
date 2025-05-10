@@ -1,0 +1,175 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "FGF-1",
+                "FGF-2",
+                "IGF-1",
+                "IGF-2",
+                "CSF-1",
+                "PGF",
+                "VEGF",
+                "IGF-I",
+                "IL-37"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "FGF-1",
+                    "synonyms": [
+                        "fibroblast growth factor 1"
+                    ],
+                    "sequence": "Missing sequence data"
+                },
+                {
+                    "label": "FGF-2",
+                    "synonyms": [
+                        "fibroblast growth factor 2"
+                    ],
+                    "sequence": "Missing sequence data"
+                },
+                {
+                    "label": "IGF-1",
+                    "synonyms": [
+                        "insulin-like growth factor 1"
+                    ],
+                    "sequence": "Missing sequence data"
+                },
+                {
+                    "label": "IGF-2",
+                    "synonyms": [
+                        "insulin-like growth factor 2"
+                    ],
+                    "sequence": "Missing sequence data"
+                },
+                {
+                    "label": "CSF-1",
+                    "synonyms": [
+                        "macrophage colony-stimulating factor 1"
+                    ],
+                    "sequence": "Missing sequence data"
+                },
+                {
+                    "label": "PGF",
+                    "synonyms": [
+                        "placenta growth factor"
+                    ],
+                    "sequence": "Missing sequence data"
+                },
+                {
+                    "label": "VEGF",
+                    "synonyms": [
+                        "vascular endothelial growth factor"
+                    ],
+                    "sequence": "Missing sequence data"
+                },
+                {
+                    "label": "IGF-I",
+                    "synonyms": [
+                        "insulin-like growth factor I"
+                    ],
+                    "sequence": "Missing sequence data"
+                },
+                {
+                    "label": "IL-37",
+                    "synonyms": [
+                        "interleukin 37"
+                    ],
+                    "sequence": "Missing sequence data"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "cancer"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "cancer",
+                    "synonyms": [
+                        "malignant neoplasm",
+                        "tumor",
+                        "carcinoma"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "various cancer types",
+                "object": "various cancer types",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "VEGF",
+                "object": "cancer",
+                "predicate": "causally_related_to"
+            }
+        ]
+    }
+}

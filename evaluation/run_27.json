@@ -1,0 +1,275 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "NOP58",
+                "EIF4A3",
+                "LAMC2"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "NOP58",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "EIF4A3",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "LAMC2",
+                    "synonyms": [],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "EIF4A3",
+                "LAMC2"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "EIF4A3",
+                    "synonyms": []
+                },
+                {
+                    "label": "LAMC2",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": [
+                "ZFAS1"
+            ]
+        },
+        "attributeResponse": {
+            "LncRNAAttributes": [
+                {
+                    "label": "ZFAS1",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": [
+                "SNORD12C",
+                "SNORD78"
+            ]
+        },
+        "attributeResponse": {
+            "SnoRNAAttributes": [
+                {
+                    "label": "SNORD12C",
+                    "synonyms": [
+                        "snoRNA U12-2"
+                    ]
+                },
+                {
+                    "label": "SNORD78",
+                    "synonyms": [
+                        "snoRNA U78"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "Me"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "rRNA 2'-O-methylation",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "colorectal cancer",
+                "CRC"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "colorectal cancer",
+                    "synonyms": [
+                        "CRC"
+                    ]
+                },
+                {
+                    "label": "CRC",
+                    "synonyms": [
+                        "colorectal cancer"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNAToLncRNARelationship": {
+        "SnoRNAToLncRNARelationshipRelationships": [
+            {
+                "subject": "SNORD12C",
+                "object": "ZFAS1",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "SNORD78",
+                "object": "ZFAS1",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "colorectal cancer",
+                "object": "CRC",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "CRC",
+                "object": "colorectal cancer",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "NOP58",
+                "object": "CRC",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "EIF4A3",
+                "object": "CRC",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "LAMC2",
+                "object": "CRC",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "LncRNAToDiseaseRelationship": {
+        "LncRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "ZFAS1",
+                "object": "colorectal cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "SnoRNAToDiseaseRelationship": {
+        "SnoRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "SNORD12C",
+                "object": "CRC",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "SNORD78",
+                "object": "CRC",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "SNORD12C",
+                "object": "colorectal cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "SNORD78",
+                "object": "colorectal cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "LncRNAToMRNARelationship": {
+        "LncRNAToMRNARelationshipRelationships": [
+            {
+                "subject": "ZFAS1",
+                "object": "EIF4A3",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "ZFAS1",
+                "object": "LAMC2",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "MRNAToChemicalRelationship": {
+        "MRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "EIF4A3",
+                "object": "Me",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "LAMC2",
+                "object": "Me",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    },
+    "LncRNAToChemicalRelationship": {
+        "LncRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "ZFAS1",
+                "object": "2'-O-Me",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    }
+}

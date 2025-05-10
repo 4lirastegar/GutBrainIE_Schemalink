@@ -1,0 +1,96 @@
+{
+    "AnatomicalLocation": {
+        "schemaResponse": {
+            "mentions": [
+                "CNS",
+                "brain",
+                "gut",
+                "human brain",
+                "brain cells",
+                "brain",
+                "BrainBiota"
+            ]
+        }
+    },
+    "Animal": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "BiomedicalTechnique": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "Bacteria": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "Metabolites": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "DietarySupplement": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "DiseaseDisorderOrFinding": {
+        "schemaResponse": {
+            "mentions": [
+                "Parkinson's disease",
+                "Alzheimer disease",
+                "multiple sclerosis",
+                "autoimmune inflammation",
+                "brain diseases",
+                "chronic inflammation"
+            ]
+        }
+    },
+    "Drug": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "Food": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    },
+    "Human": {
+        "schemaResponse": {
+            "mentions": [
+                "patients"
+            ]
+        }
+    },
+    "Microbiome": {
+        "schemaResponse": {
+            "mentions": [
+                "gut microbiota",
+                "brain microbiota",
+                "BrainBiota",
+                "gut microbiome",
+                "BrainBiota",
+                "gut microbiota"
+            ]
+        }
+    },
+    "StatisticalTechnique": {
+        "schemaResponse": {
+            "mentions": []
+        }
+    }
+}

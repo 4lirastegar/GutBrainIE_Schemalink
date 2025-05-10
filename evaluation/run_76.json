@@ -1,0 +1,446 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "JunB",
+                "UCHL1",
+                "p53",
+                "Ezh2",
+                "JAM2",
+                "E-cadherin"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "JunB",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "UCHL1",
+                    "synonyms": [
+                        "Ubiquitin carboxyl-terminal hydrolase isozyme L1"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "p53",
+                    "synonyms": [
+                        "Tumor protein p53"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "Ezh2",
+                    "synonyms": [
+                        "Enhancer of zeste homolog 2"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "JAM2",
+                    "synonyms": [
+                        "Junctional adhesion molecule B"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "E-cadherin",
+                    "synonyms": [
+                        "Cadherin-1",
+                        "CDH1"
+                    ],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "JunB",
+                "UCHL1",
+                "Ezh2",
+                "JAM2"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "JunB",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "jun-B"
+                    ]
+                },
+                {
+                    "label": "UCHL1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "ubiquitin C-terminal hydrolase L1",
+                        "PGP9.5"
+                    ]
+                },
+                {
+                    "label": "Ezh2",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "enhancer of zeste homolog 2",
+                        "EZH2"
+                    ]
+                },
+                {
+                    "label": "JAM2",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "junctional adhesion molecule B"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "JunB",
+                "\u03b2-catenin",
+                "p53",
+                "SNAIL",
+                "E-cadherin"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "JunB",
+                    "synonyms": []
+                },
+                {
+                    "label": "\u03b2-catenin",
+                    "synonyms": []
+                },
+                {
+                    "label": "p53",
+                    "synonyms": []
+                },
+                {
+                    "label": "SNAIL",
+                    "synonyms": []
+                },
+                {
+                    "label": "E-cadherin",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": [
+                "lincRNA-p21",
+                "lncRNA antisense (Uchl1)",
+                "Linc-RoR",
+                "HOTAIR",
+                "MALAT1",
+                "ANCR"
+            ]
+        },
+        "attributeResponse": {
+            "LncRNAAttributes": [
+                {
+                    "label": "lincRNA-p21",
+                    "synonyms": []
+                },
+                {
+                    "label": "lncRNA antisense (Uchl1)",
+                    "synonyms": []
+                },
+                {
+                    "label": "Linc-RoR",
+                    "synonyms": []
+                },
+                {
+                    "label": "HOTAIR",
+                    "synonyms": []
+                },
+                {
+                    "label": "MALAT1",
+                    "synonyms": []
+                },
+                {
+                    "label": "ANCR",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "translational regulation",
+                "Ezh2",
+                "\u03b2-catenin"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "translational regulation",
+                    "synonyms": []
+                },
+                {
+                    "label": "Ezh2",
+                    "synonyms": []
+                },
+                {
+                    "label": "\u03b2-catenin",
+                    "synonyms": []
+                },
+                {
+                    "label": "Linc-RoR",
+                    "synonyms": []
+                },
+                {
+                    "label": "HOTAIR",
+                    "synonyms": []
+                },
+                {
+                    "label": "MALAT1",
+                    "synonyms": []
+                },
+                {
+                    "label": "ANCR",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "breast cancer"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "breast cancer",
+                    "synonyms": [
+                        "breast carcinoma",
+                        "mammary carcinoma",
+                        "breast malignancy",
+                        "breast tumor",
+                        "breast neoplasm"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "UCHL1",
+                "object": "Uchl1",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "Ezh2",
+                "object": "JAM2",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "Ezh2",
+                "object": "Ezh2",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "Uchl1",
+                "object": "UCHL1",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "breast cancer",
+                "object": "breast cancer",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "Ezh2",
+                "object": "breast cancer",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "LncRNAToDiseaseRelationship": {
+        "LncRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "ANCR",
+                "object": "breast cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "LncRNAToGeneRelationship": {
+        "LncRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "lincRNA-p21",
+                "object": "JunB",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "lncRNA antisense (Uchl1)",
+                "object": "UCHL1",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "HOTAIR",
+                "object": "Ezh2",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "HOTAIR",
+                "object": "JAM2",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "MALAT1",
+                "object": "Ezh2",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "ANCR",
+                "object": "Ezh2",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "LncRNAToMRNARelationship": {
+        "LncRNAToMRNARelationshipRelationships": [
+            {
+                "subject": "lincRNA-p21",
+                "object": "JunB",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "lincRNA-p21",
+                "object": "\u03b2-catenin",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "Linc-RoR",
+                "object": "p53",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "HOTAIR",
+                "object": "SNAIL",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "MALAT1",
+                "object": "E-cadherin",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "MALAT1",
+                "object": "\u03b2-catenin",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "MRNAToChemicalRelationship": {
+        "MRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "JunB",
+                "object": "translational regulation",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "\u03b2-catenin",
+                "object": "translational regulation",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "SNAIL",
+                "object": "Ezh2",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "E-cadherin",
+                "object": "Ezh2",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "\u03b2-catenin",
+                "object": "Ezh2",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "LncRNAToChemicalRelationship": {
+        "LncRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "lincRNA-p21",
+                "object": "\u03b2-catenin",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "HOTAIR",
+                "object": "Ezh2",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "MALAT1",
+                "object": "Ezh2",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "ANCR",
+                "object": "Ezh2",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    }
+}

@@ -1,0 +1,237 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "miR-29a",
+                "miR-29b-1",
+                "miR-29b-2",
+                "miR-29c",
+                "miR-29s"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "miR-29a",
+                    "miRNAfamily": "miR-29",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-29b-1",
+                    "miRNAfamily": "miR-29",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-29b-2",
+                    "miRNAfamily": "miR-29",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-29c",
+                    "miRNAfamily": "miR-29",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "miR-29s",
+                    "miRNAfamily": "miR-29",
+                    "sequence": "",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "osteoarthritis",
+                "osteoporosis",
+                "immune disease"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "osteoarthritis",
+                    "synonyms": [
+                        "degenerative joint disease",
+                        "OA"
+                    ]
+                },
+                {
+                    "label": "osteoporosis",
+                    "synonyms": [
+                        "bone loss",
+                        "brittle bone disease"
+                    ]
+                },
+                {
+                    "label": "immune disease",
+                    "synonyms": [
+                        "autoimmune disorder",
+                        "immune disorder"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": [
+                "apoptosis"
+            ]
+        },
+        "attributeResponse": {
+            "GOAttributes": [
+                {
+                    "label": "apoptosis",
+                    "synonyms": [
+                        "programmed cell death",
+                        "cellular suicide"
+                    ]
+                }
+            ]
+        }
+    },
+    "MiRNAToDiseaseRelationship": {
+        "MiRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "miR-29a",
+                "object": "osteoarthritis",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-29b-1",
+                "object": "osteoarthritis",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-29b-2",
+                "object": "osteoarthritis",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-29c",
+                "object": "osteoarthritis",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-29a",
+                "object": "osteoporosis",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-29b-1",
+                "object": "osteoporosis",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-29b-2",
+                "object": "osteoporosis",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-29c",
+                "object": "osteoporosis",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-29a",
+                "object": "immune disease",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-29b-1",
+                "object": "immune disease",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-29b-2",
+                "object": "immune disease",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-29c",
+                "object": "immune disease",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "osteoarthritis",
+                "object": "immune disease",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "osteoporosis",
+                "object": "immune disease",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "MiRNAToGORelationship": {
+        "MiRNAToGORelationshipRelationships": [
+            {
+                "subject": "miR-29s",
+                "object": "apoptosis",
+                "predicate": "participates_in"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": []
+    }
+}

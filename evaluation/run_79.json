@@ -1,0 +1,194 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "FAF2",
+                "mTOR"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "FAF2",
+                    "synonyms": [],
+                    "sequence": "DIEFRVLH"
+                },
+                {
+                    "label": "mTOR",
+                    "synonyms": [],
+                    "sequence": "DIEFRVLH"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": [
+                "SNHG6"
+            ]
+        },
+        "attributeResponse": {
+            "LncRNAAttributes": [
+                {
+                    "label": "SNHG6",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "Cholesterol"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "Cholesterol",
+                    "synonyms": [
+                        "cholesterol",
+                        "cholesteryl alcohol"
+                    ]
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "non-alcoholic fatty liver disease",
+                "hepatocellular carcinoma",
+                "liver cancer"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "non-alcoholic fatty liver disease",
+                    "synonyms": [
+                        "NAFLD"
+                    ]
+                },
+                {
+                    "label": "hepatocellular carcinoma",
+                    "synonyms": [
+                        "HCC"
+                    ]
+                },
+                {
+                    "label": "liver cancer",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "non-alcoholic fatty liver disease",
+                "object": "hepatocellular carcinoma",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "mTOR",
+                "object": "non-alcoholic fatty liver disease",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "mTOR",
+                "object": "hepatocellular carcinoma",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "FAF2",
+                "object": "non-alcoholic fatty liver disease",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "FAF2",
+                "object": "hepatocellular carcinoma",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "FAF2",
+                "object": "liver cancer",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "LncRNAToDiseaseRelationship": {
+        "LncRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "SNHG6",
+                "object": "non-alcoholic fatty liver disease",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "SNHG6",
+                "object": "hepatocellular carcinoma",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "SNHG6",
+                "object": "liver cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "LncRNAToChemicalRelationship": {
+        "LncRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "SNHG6",
+                "object": "Cholesterol",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    }
+}

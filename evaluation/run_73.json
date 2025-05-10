@@ -1,0 +1,168 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "IGF2BP1",
+                "PEG10",
+                "PABPC1"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "IGF2BP1",
+                    "synonyms": [
+                        "Insulin-like growth factor 2 mRNA-binding protein 1"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "PEG10",
+                    "synonyms": [
+                        "Paternally Expressed Gene 10"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "PABPC1",
+                    "synonyms": [
+                        "Polyadenylate-binding protein 1"
+                    ],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "IGF2BP1",
+                "PEG10"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "IGF2BP1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Insulin-like growth factor 2 mRNA-binding protein 1"
+                    ]
+                },
+                {
+                    "label": "PEG10",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Paternally Expressed Gene 10"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "PEG10"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "PEG10",
+                    "synonyms": [
+                        "Paternally Expressed Gene 10"
+                    ]
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "endometrial cancer"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "endometrial cancer",
+                    "synonyms": [
+                        "EC"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "IGF2BP1",
+                "object": "PEG10",
+                "predicate": "regulates_activity_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "PEG10",
+                "object": "PEG10",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": []
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "IGF2BP1",
+                "object": "endometrial cancer",
+                "predicate": "causally_related_to"
+            }
+        ]
+    }
+}

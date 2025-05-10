@@ -1,0 +1,297 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "hsa-miR-302a-3p",
+                "hsa-miR-302b-3p",
+                "hsa-miR-302c-3p",
+                "hsa-miR-302d-3p",
+                "hsa-miR-367-3p",
+                "hsa-miR-367-5p",
+                "hsa-miR-9",
+                "hsa-miR-29a",
+                "hsa-miR34a",
+                "hsa-miR-106b",
+                "hsa-miR-125b",
+                "hsa-miR-146a",
+                "hsa-miR-155",
+                "hsa-miR-577",
+                "hsa-miR-37a",
+                "hsa-miR-375",
+                "hsa-miR-181a",
+                "hsa-miR-17",
+                "hsa-miR-24"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "hsa-miR-302a-3p",
+                    "miRNAfamily": "miR-302",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-302b-3p",
+                    "miRNAfamily": "miR-302",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-302c-3p",
+                    "miRNAfamily": "miR-302",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-302d-3p",
+                    "miRNAfamily": "miR-302",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-367-3p",
+                    "miRNAfamily": "miR-367",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-367-5p",
+                    "miRNAfamily": "miR-367",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-9",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-29a",
+                    "miRNAfamily": "miR-29",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR34a",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": [
+                        "miR-34a"
+                    ]
+                },
+                {
+                    "label": "hsa-miR-106b",
+                    "miRNAfamily": "miR-106",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-125b",
+                    "miRNAfamily": "miR-125",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-146a",
+                    "miRNAfamily": "miR-146",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-155",
+                    "miRNAfamily": "miR-155",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-577",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-37a",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-375",
+                    "miRNAfamily": "",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-181a",
+                    "miRNAfamily": "miR-181",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-17",
+                    "miRNAfamily": "miR-17",
+                    "sequence": "",
+                    "synonyms": []
+                },
+                {
+                    "label": "hsa-miR-24",
+                    "miRNAfamily": "miR-24",
+                    "sequence": "",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "Myocardial infarction",
+                "Diabetes mellitus"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "Myocardial infarction",
+                    "synonyms": []
+                },
+                {
+                    "label": "Diabetes mellitus",
+                    "synonyms": []
+                },
+                {
+                    "label": "Alzheimer\u2019s disease",
+                    "synonyms": [
+                        "Alzheimer disease"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNAToDiseaseRelationship": {
+        "MiRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "hsa-miR-302a-3p",
+                "object": "Myocardial infarction",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-302b-3p",
+                "object": "Myocardial infarction",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-302c-3p",
+                "object": "Myocardial infarction",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-302d-3p",
+                "object": "Myocardial infarction",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-367-3p",
+                "object": "Myocardial infarction",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-367-5p",
+                "object": "Myocardial infarction",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-577",
+                "object": "Diabetes mellitus",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-37a",
+                "object": "Diabetes mellitus",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-375",
+                "object": "Diabetes mellitus",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-181a",
+                "object": "Diabetes mellitus",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-17",
+                "object": "Diabetes mellitus",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "hsa-miR-24",
+                "object": "Diabetes mellitus",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": []
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": []
+    }
+}

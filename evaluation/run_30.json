@@ -1,0 +1,254 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "apolipoprotein E",
+                "Il-6"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "apolipoprotein E",
+                    "synonyms": [
+                        "ApoE"
+                    ]
+                },
+                {
+                    "label": "Il-6",
+                    "synonyms": [
+                        "Interleukin 6",
+                        "IL6"
+                    ]
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "estrogen",
+                "insulin",
+                "mammalian target of rapamycin inhibitors",
+                "hydrogen sulfide",
+                "phytochemicals",
+                "glucose",
+                "AKT kinase",
+                "iron"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "estrogen",
+                    "synonyms": [
+                        "oestrogen"
+                    ]
+                },
+                {
+                    "label": "insulin",
+                    "synonyms": []
+                },
+                {
+                    "label": "mammalian target of rapamycin inhibitors",
+                    "synonyms": [
+                        "mTOR inhibitors"
+                    ]
+                },
+                {
+                    "label": "hydrogen sulfide",
+                    "synonyms": [
+                        "H2S"
+                    ]
+                },
+                {
+                    "label": "phytochemicals",
+                    "synonyms": []
+                },
+                {
+                    "label": "glucose",
+                    "synonyms": [
+                        "dextrose"
+                    ]
+                },
+                {
+                    "label": "AKT kinase",
+                    "synonyms": [
+                        "protein kinase B"
+                    ]
+                },
+                {
+                    "label": "iron",
+                    "synonyms": [
+                        "Fe",
+                        "ferrum"
+                    ]
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "Osteoporosis",
+                "Alzheimer's disease",
+                "AD",
+                "osteoporosis",
+                "AD",
+                "osteoporosis",
+                "AD",
+                "osteoporosis",
+                "diabetes",
+                "AD"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "Osteoporosis",
+                    "synonyms": [
+                        "osteoporosis"
+                    ]
+                },
+                {
+                    "label": "Alzheimer's disease",
+                    "synonyms": [
+                        "AD"
+                    ]
+                },
+                {
+                    "label": "diabetes",
+                    "synonyms": [
+                        "type 2 diabetes"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "osteoporosis",
+                "object": "AD",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "diabetes",
+                "object": "AD",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "MRNAToChemicalRelationship": {
+        "MRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "apolipoprotein E",
+                "object": "glucose",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "Il-6",
+                "object": "glucose",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "apolipoprotein E",
+                "object": "estrogen",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "apolipoprotein E",
+                "object": "insulin",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "apolipoprotein E",
+                "object": "mammalian target of rapamycin inhibitors",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "apolipoprotein E",
+                "object": "hydrogen sulfide",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "apolipoprotein E",
+                "object": "phytochemicals",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "Il-6",
+                "object": "estrogen",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "Il-6",
+                "object": "insulin",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "Il-6",
+                "object": "mammalian target of rapamycin inhibitors",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "Il-6",
+                "object": "hydrogen sulfide",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "Il-6",
+                "object": "phytochemicals",
+                "predicate": "interacts_with"
+            }
+        ]
+    }
+}

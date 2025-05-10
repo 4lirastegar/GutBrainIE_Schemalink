@@ -1,0 +1,230 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "CREB1",
+                "ESM1"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "CREB1",
+                    "synonyms": [
+                        "Cyclic AMP-responsive element-binding protein 1",
+                        "cAMP response element-binding protein 1"
+                    ],
+                    "sequence": "MDYYQKRQKVEQFVQKVLQNQMNALLRKEIEVQTQKVLADVSEAIAQA"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "CREB1",
+                "CBL",
+                "ILK",
+                "ESM1"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "CREB1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "CAMP Responsive Element Binding Protein 1"
+                    ]
+                },
+                {
+                    "label": "CBL",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Casitas B-lineage Lymphoma"
+                    ]
+                },
+                {
+                    "label": "ILK",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Integrin Linked Kinase"
+                    ]
+                },
+                {
+                    "label": "ESM1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "Endothelial Cell-specific Molecule 1"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "CREB1",
+                "HIF1\u03b1",
+                "ESM1"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "CREB1",
+                    "synonyms": []
+                },
+                {
+                    "label": "HIF1\u03b1",
+                    "synonyms": []
+                },
+                {
+                    "label": "ESM1",
+                    "synonyms": [
+                        "endothelial cell-specific molecule 1"
+                    ]
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "Venous thromboembolism"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "Venous thromboembolism",
+                    "synonyms": [
+                        "VTE",
+                        "unprovoked VTE",
+                        "uVTE"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": [
+                "cell adhesion",
+                "cell proliferation",
+                "cellular response to growth factor stimulus"
+            ]
+        },
+        "attributeResponse": {
+            "GOAttributes": [
+                {
+                    "label": "cell adhesion",
+                    "synonyms": [
+                        "adhesion, cell-cell adhesion",
+                        "cell-substrate adhesion"
+                    ]
+                },
+                {
+                    "label": "cell proliferation",
+                    "synonyms": [
+                        "cell growth",
+                        "proliferation of cells"
+                    ]
+                },
+                {
+                    "label": "cellular response to growth factor stimulus",
+                    "synonyms": [
+                        "response to growth factor",
+                        "growth factor mediated signaling"
+                    ]
+                }
+            ]
+        }
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "CREB1",
+                "object": "CREB1",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "CREB1",
+                "object": "CBL",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "CREB1",
+                "object": "ILK",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "CREB1",
+                "object": "CREB1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "ESM1",
+                "object": "ESM1",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": []
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "ESM1",
+                "object": "Venous thromboembolism",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "CREB1",
+                "object": "Venous thromboembolism",
+                "predicate": "causally_related_to"
+            }
+        ]
+    }
+}

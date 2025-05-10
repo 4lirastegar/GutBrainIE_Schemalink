@@ -1,0 +1,183 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "miR-21"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "miR-21",
+                    "miRNAfamily": "mir-21",
+                    "sequence": "",
+                    "synonyms": [
+                        "microRNA-21",
+                        "pri-miR-21",
+                        "mature miR-21"
+                    ]
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "cancer",
+                "pulmonary diseases",
+                "pulmonary fibrosis",
+                "myocardial infarction"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "cancer",
+                    "synonyms": [
+                        "malignant neoplasm",
+                        "malignant tumor",
+                        "carcinoma"
+                    ]
+                },
+                {
+                    "label": "cardiovascular diseases",
+                    "synonyms": [
+                        "heart diseases",
+                        "cardiac diseases"
+                    ]
+                },
+                {
+                    "label": "pulmonary diseases",
+                    "synonyms": [
+                        "lung diseases",
+                        "respiratory diseases"
+                    ]
+                },
+                {
+                    "label": "pulmonary fibrosis",
+                    "synonyms": [
+                        "interstitial lung disease",
+                        "lung fibrosis"
+                    ]
+                },
+                {
+                    "label": "myocardial infarction",
+                    "synonyms": [
+                        "heart attack",
+                        "acute myocardial infarction"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNAToDiseaseRelationship": {
+        "MiRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "miR-21",
+                "object": "cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-21",
+                "object": "pulmonary diseases",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-21",
+                "object": "pulmonary fibrosis",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "miR-21",
+                "object": "myocardial infarction",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "pulmonary diseases",
+                "object": "pulmonary fibrosis",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "cardiovascular diseases",
+                "object": "myocardial infarction",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "pulmonary diseases",
+                "object": "myocardial infarction",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "cancer",
+                "object": "pulmonary diseases",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "cancer",
+                "object": "pulmonary fibrosis",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": []
+    }
+}

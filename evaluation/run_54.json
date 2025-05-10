@@ -1,0 +1,213 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": [
+                "NEAT1"
+            ]
+        },
+        "attributeResponse": {
+            "LncRNAAttributes": [
+                {
+                    "label": "NEAT1",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "acute myeloid leukemia",
+                "breast cancer",
+                "cervical cancer",
+                "colorectal cancer",
+                "esophageal squamous cell carcinoma",
+                "glioma",
+                "non-small cell lung cancer",
+                "ovarian cancer",
+                "prostate cancer",
+                "retinoblastoma"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "acute myeloid leukemia",
+                    "synonyms": [
+                        "acute myelogenous leukemia",
+                        "AML"
+                    ]
+                },
+                {
+                    "label": "breast cancer",
+                    "synonyms": [
+                        "mammary carcinoma"
+                    ]
+                },
+                {
+                    "label": "cervical cancer",
+                    "synonyms": [
+                        "cervical carcinoma"
+                    ]
+                },
+                {
+                    "label": "colorectal cancer",
+                    "synonyms": [
+                        "colon cancer",
+                        "rectal cancer"
+                    ]
+                },
+                {
+                    "label": "esophageal squamous cell carcinoma",
+                    "synonyms": [
+                        "ESCC",
+                        "esophageal carcinoma"
+                    ]
+                },
+                {
+                    "label": "glioma",
+                    "synonyms": [
+                        "glioblastoma",
+                        "astrocytoma"
+                    ]
+                },
+                {
+                    "label": "non-small cell lung cancer",
+                    "synonyms": [
+                        "NSCLC"
+                    ]
+                },
+                {
+                    "label": "ovarian cancer",
+                    "synonyms": [
+                        "ovarian carcinoma"
+                    ]
+                },
+                {
+                    "label": "prostate cancer",
+                    "synonyms": [
+                        "prostate carcinoma"
+                    ]
+                },
+                {
+                    "label": "retinoblastoma",
+                    "synonyms": [
+                        "Rb",
+                        "eye cancer"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": []
+    },
+    "LncRNAToDiseaseRelationship": {
+        "LncRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "NEAT1",
+                "object": "acute myeloid leukemia",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "NEAT1",
+                "object": "breast cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "NEAT1",
+                "object": "cervical cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "NEAT1",
+                "object": "colorectal cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "NEAT1",
+                "object": "esophageal squamous cell carcinoma",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "NEAT1",
+                "object": "glioma",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "NEAT1",
+                "object": "non-small cell lung cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "NEAT1",
+                "object": "ovarian cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "NEAT1",
+                "object": "prostate cancer",
+                "predicate": "causes_or_contributes_to_condition"
+            },
+            {
+                "subject": "NEAT1",
+                "object": "retinoblastoma",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    }
+}

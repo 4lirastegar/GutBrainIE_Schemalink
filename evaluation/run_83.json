@@ -1,0 +1,276 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "caspase-3",
+                "solute carrier family 7 member 11",
+                "lymphoid-specific helicase"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "caspase-3",
+                    "synonyms": [],
+                    "sequence": ""
+                },
+                {
+                    "label": "solute carrier family 7 member 11",
+                    "synonyms": [
+                        "SLC7A11"
+                    ],
+                    "sequence": ""
+                },
+                {
+                    "label": "lymphoid-specific helicase",
+                    "synonyms": [
+                        "LSH"
+                    ],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "BAX",
+                "SLC7A11"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "BAX",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "BCL2-Associated X"
+                    ]
+                },
+                {
+                    "label": "SLC7A11",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "solute carrier family 7 member 11"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": [
+                "SLC7A11"
+            ]
+        },
+        "attributeResponse": {
+            "MRNAAttributes": [
+                {
+                    "label": "SLC7A11",
+                    "synonyms": [
+                        "solute carrier family 7 member 11"
+                    ]
+                }
+            ]
+        }
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": [
+                "LINC00618"
+            ]
+        },
+        "attributeResponse": {
+            "LncRNAAttributes": [
+                {
+                    "label": "LINC00618",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "iron",
+                "vincristine"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "iron",
+                    "synonyms": []
+                },
+                {
+                    "label": "vincristine",
+                    "synonyms": [
+                        "VCR"
+                    ]
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "leukemia"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "leukemia",
+                    "synonyms": [
+                        "leukaemia"
+                    ]
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "caspase-3",
+                "object": "BAX",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "solute carrier family 7 member 11",
+                "object": "SLC7A11",
+                "predicate": "gene_product_of"
+            },
+            {
+                "subject": "lymphoid-specific helicase",
+                "object": "SLC7A11",
+                "predicate": "regulates_activity_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "BAX",
+                "object": "caspase-3",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "SLC7A11",
+                "object": "solute carrier family 7 member 11",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": []
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "caspase-3",
+                "object": "leukemia",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "solute carrier family 7 member 11",
+                "object": "leukemia",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "lymphoid-specific helicase",
+                "object": "leukemia",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "LncRNAToDiseaseRelationship": {
+        "LncRNAToDiseaseRelationshipRelationships": [
+            {
+                "subject": "LINC00618",
+                "object": "leukemia",
+                "predicate": "causes_or_contributes_to_condition"
+            }
+        ]
+    },
+    "LncRNAToGeneRelationship": {
+        "LncRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "LINC00618",
+                "object": "BAX",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "LINC00618",
+                "object": "SLC7A11",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "LncRNAToMRNARelationship": {
+        "LncRNAToMRNARelationshipRelationships": [
+            {
+                "subject": "LINC00618",
+                "object": "SLC7A11",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "MRNAToChemicalRelationship": {
+        "MRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "SLC7A11",
+                "object": "iron",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "SLC7A11",
+                "object": "vincristine",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    },
+    "LncRNAToChemicalRelationship": {
+        "LncRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "LINC00618",
+                "object": "iron",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "LINC00618",
+                "object": "vincristine",
+                "predicate": "interacts_with"
+            }
+        ]
+    }
+}

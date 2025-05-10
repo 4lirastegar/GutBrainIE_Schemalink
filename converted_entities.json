@@ -1,0 +1,109 @@
+{
+    "mentions": [
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "brain",
+            "label": "anatomical location"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "gut",
+            "label": "anatomical location"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "human brain",
+            "label": "anatomical location"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "metabolites",
+            "label": "chemical"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "neurological diseases",
+            "label": "DDF"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "Parkinson's disease",
+            "label": "DDF"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "Alzheimer disease",
+            "label": "DDF"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "multiple sclerosis",
+            "label": "DDF"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "brain diseases",
+            "label": "DDF"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "chronic inflammation",
+            "label": "DDF"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "patients",
+            "label": "human"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "brain microbiota",
+            "label": "microbiome"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "BrainBiota",
+            "label": "microbiome"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "gut microbiota",
+            "label": "microbiome"
+        },
+        {
+            "start_idx": "",
+            "end_idx": "",
+            "location": "",
+            "text_span": "gut microbiome",
+            "label": "microbiome"
+        }
+    ]
+}

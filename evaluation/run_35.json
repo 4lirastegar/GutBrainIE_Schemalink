@@ -1,0 +1,191 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "C-reactive protein",
+                "CRP"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "C-reactive protein",
+                    "synonyms": [
+                        "CRP"
+                    ],
+                    "sequence": ""
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "C-reactive protein"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "C-reactive protein",
+                    "synonyms": [
+                        "CRP"
+                    ]
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": [
+                "rheumatoid arthritis",
+                "cardiovascular disease",
+                "diabetes",
+                "metabolic syndrome",
+                "pulmonary diseases",
+                "depression"
+            ]
+        },
+        "attributeResponse": {
+            "DiseaseAttributes": [
+                {
+                    "label": "rheumatoid arthritis",
+                    "synonyms": [
+                        "RA"
+                    ]
+                },
+                {
+                    "label": "cardiovascular disease",
+                    "synonyms": []
+                },
+                {
+                    "label": "diabetes",
+                    "synonyms": []
+                },
+                {
+                    "label": "metabolic syndrome",
+                    "synonyms": []
+                },
+                {
+                    "label": "pulmonary diseases",
+                    "synonyms": []
+                },
+                {
+                    "label": "depression",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "DiseaseToDiseaseRelationship": {
+        "DiseaseToDiseaseRelationshipRelationships": [
+            {
+                "subject": "rheumatoid arthritis",
+                "object": "cardiovascular disease",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "rheumatoid arthritis",
+                "object": "diabetes",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "rheumatoid arthritis",
+                "object": "metabolic syndrome",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "rheumatoid arthritis",
+                "object": "pulmonary diseases",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "rheumatoid arthritis",
+                "object": "depression",
+                "predicate": "causally_related_to"
+            }
+        ]
+    },
+    "ProteinToDiseaseRelationship": {
+        "ProteinToDiseaseRelationshipRelationships": [
+            {
+                "subject": "C-reactive protein",
+                "object": "rheumatoid arthritis",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "C-reactive protein",
+                "object": "cardiovascular disease",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "C-reactive protein",
+                "object": "diabetes",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "C-reactive protein",
+                "object": "metabolic syndrome",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "C-reactive protein",
+                "object": "pulmonary diseases",
+                "predicate": "causally_related_to"
+            },
+            {
+                "subject": "C-reactive protein",
+                "object": "depression",
+                "predicate": "causally_related_to"
+            }
+        ]
+    }
+}

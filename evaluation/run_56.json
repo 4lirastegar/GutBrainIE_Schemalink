@@ -1,0 +1,369 @@
+{
+    "Protein": {
+        "schemaResponse": {
+            "label": [
+                "CTNNBIP1",
+                "CTNNB1",
+                "AMPK",
+                "BCL2L4",
+                "BCL2",
+                "CASP3",
+                "DPP4",
+                "FGF2",
+                "MAP1LC3B"
+            ]
+        },
+        "attributeResponse": {
+            "ProteinAttributes": [
+                {
+                    "label": "CTNNBIP1",
+                    "synonyms": [
+                        "ICAT"
+                    ],
+                    "sequence": "Unknown"
+                },
+                {
+                    "label": "CTNNB1",
+                    "synonyms": [
+                        "Catenin beta 1"
+                    ],
+                    "sequence": "Unknown"
+                },
+                {
+                    "label": "AMPK",
+                    "synonyms": [
+                        "AMP-activated protein kinase",
+                        "Protein kinase AMP-activated"
+                    ],
+                    "sequence": "Unknown"
+                },
+                {
+                    "label": "BCL2L4",
+                    "synonyms": [
+                        "BAX",
+                        "BCL2 associated X, apoptosis regulator"
+                    ],
+                    "sequence": "Unknown"
+                },
+                {
+                    "label": "BCL2",
+                    "synonyms": [
+                        "BCL2 apoptosis regulator"
+                    ],
+                    "sequence": "Unknown"
+                },
+                {
+                    "label": "CASP3",
+                    "synonyms": [
+                        "Caspase 3"
+                    ],
+                    "sequence": "Unknown"
+                },
+                {
+                    "label": "DPP4",
+                    "synonyms": [
+                        "Dipeptidyl peptidase 4"
+                    ],
+                    "sequence": "Unknown"
+                },
+                {
+                    "label": "FGF2",
+                    "synonyms": [
+                        "FGF-2",
+                        "Fibroblast growth factor 2"
+                    ],
+                    "sequence": "Unknown"
+                },
+                {
+                    "label": "MAP1LC3B",
+                    "synonyms": [
+                        "LC3B",
+                        "Microtubule associated protein 1 light chain 3 beta"
+                    ],
+                    "sequence": "Unknown"
+                }
+            ]
+        }
+    },
+    "Gene": {
+        "schemaResponse": {
+            "label": [
+                "CTNNBIP1",
+                "CTNNB1",
+                "DPP4",
+                "BAX",
+                "BCL2"
+            ]
+        },
+        "attributeResponse": {
+            "GeneAttributes": [
+                {
+                    "label": "CTNNBIP1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "ICAT",
+                        "catenin beta interacting protein 1"
+                    ]
+                },
+                {
+                    "label": "CTNNB1",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "catenin beta 1"
+                    ]
+                },
+                {
+                    "label": "DPP4",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "dipeptidyl peptidase 4"
+                    ]
+                },
+                {
+                    "label": "BAX",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "BCL2L4",
+                        "BCL2 associated X, apoptosis regulator"
+                    ]
+                },
+                {
+                    "label": "BCL2",
+                    "geneType": "protein-coding gene",
+                    "synonyms": [
+                        "BCL2 apoptosis regulator"
+                    ]
+                }
+            ]
+        }
+    },
+    "MRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "LncRNA": {
+        "schemaResponse": {
+            "label": [
+                "CA7-4"
+            ]
+        },
+        "attributeResponse": {
+            "LncRNAAttributes": [
+                {
+                    "label": "CA7-4",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "SnoRNA": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MRNAvaccine": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "SNP": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "MiRNA": {
+        "schemaResponse": {
+            "label": [
+                "MIR877-3P",
+                "MIR5680"
+            ]
+        },
+        "attributeResponse": {
+            "MiRNAAttributes": [
+                {
+                    "label": "MIR877-3P",
+                    "miRNAfamily": "miR-877",
+                    "sequence": "",
+                    "synonyms": [
+                        "microRNA 877-3p"
+                    ]
+                },
+                {
+                    "label": "MIR5680",
+                    "miRNAfamily": "miR-5680",
+                    "sequence": "",
+                    "synonyms": [
+                        "microRNA 5680"
+                    ]
+                }
+            ]
+        }
+    },
+    "Chemical": {
+        "schemaResponse": {
+            "label": [
+                "3-benzyl-5-([2-nitrophenoxy] methyl)-dihydrofuran-2(3H)-one",
+                "3BDO",
+                "glucose"
+            ]
+        },
+        "attributeResponse": {
+            "ChemicalAttributes": [
+                {
+                    "label": "3-benzyl-5-([2-nitrophenoxy] methyl)-dihydrofuran-2(3H)-one",
+                    "synonyms": [
+                        "3BDO"
+                    ]
+                },
+                {
+                    "label": "glucose",
+                    "synonyms": []
+                }
+            ]
+        }
+    },
+    "Disease": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "GO": {
+        "schemaResponse": {
+            "label": []
+        },
+        "attributeResponse": null
+    },
+    "ProteinToGeneRelationship": {
+        "ProteinToGeneRelationshipRelationships": [
+            {
+                "subject": "CTNNBIP1",
+                "object": "CTNNB1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "AMPK",
+                "object": "DPP4",
+                "predicate": "regulates_activity_of"
+            }
+        ]
+    },
+    "GeneToProteinRelationship": {
+        "GeneToProteinRelationshipRelationships": [
+            {
+                "subject": "CTNNBIP1",
+                "object": "CTNNBIP1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "CTNNB1",
+                "object": "CTNNB1",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "DPP4",
+                "object": "DPP4",
+                "predicate": "has_gene_product"
+            },
+            {
+                "subject": "BCL2",
+                "object": "BCL2",
+                "predicate": "has_gene_product"
+            }
+        ]
+    },
+    "MiRNAToGeneRelationship": {
+        "MiRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "MIR877-3P",
+                "object": "CTNNBIP1",
+                "predicate": "regulates"
+            },
+            {
+                "subject": "MIR5680",
+                "object": "DPP4",
+                "predicate": "regulates"
+            }
+        ]
+    },
+    "MiRNAtoMiRNARelationship": {
+        "MiRNAtoMiRNARelationshipRelationships": [
+            {
+                "subject": "MIR877-3P",
+                "object": "MIR5680",
+                "predicate": "regulates_activity_of"
+            },
+            {
+                "subject": "MIR5680",
+                "object": "MIR877-3P",
+                "predicate": "regulates_activity_of"
+            }
+        ]
+    },
+    "LncRNAToMiRNARelationship": {
+        "LncRNAToMiRNARelationshipRelationships": [
+            {
+                "subject": "CA7-4",
+                "object": "MIR877-3P",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "CA7-4",
+                "object": "MIR5680",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "LncRNAToGeneRelationship": {
+        "LncRNAToGeneRelationshipRelationships": [
+            {
+                "subject": "CA7-4",
+                "object": "CTNNBIP1",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "CA7-4",
+                "object": "CTNNB1",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "CA7-4",
+                "object": "DPP4",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "MiRNAToChemicalRelationship": {
+        "MiRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "MIR877-3P",
+                "object": "glucose",
+                "predicate": "interacts_with"
+            },
+            {
+                "subject": "MIR5680",
+                "object": "glucose",
+                "predicate": "interacts_with"
+            }
+        ]
+    },
+    "LncRNAToChemicalRelationship": {
+        "LncRNAToChemicalRelationshipRelationships": [
+            {
+                "subject": "CA7-4",
+                "object": "3-benzyl-5-([2-nitrophenoxy] methyl)-dihydrofuran-2(3H)-one",
+                "predicate": "molecularly_interacts_with"
+            },
+            {
+                "subject": "CA7-4",
+                "object": "glucose",
+                "predicate": "molecularly_interacts_with"
+            }
+        ]
+    }
+}
